@@ -1,0 +1,44 @@
+{
+   "BLPS":[
+      {
+         "firstName":"Patrick",
+         "lastName":"O'Brien",
+         "track":"IT ",
+         "role":"IT PM",
+         "location":"Stamford",
+         "interests":"Netflix"
+      },
+      {
+         "firstName":"Dan",
+         "lastName":"Garofalo",
+         "track":"IT ",
+         "role":"Midrange",
+         "location":"Stamford",
+         "interests":"Birds, Dota"
+      },
+      {
+         "firstName":"Stephen",
+         "lastName":"Ecsedy",
+         "track":"Finance",
+         "role":"Treasury",
+         "location":"Chicago",
+         "interests":"Germans"
+      },
+      {
+         "firstName":"Katie",
+         "lastName":"Senk",
+         "track":"Risk",
+         "role":"PM",
+         "location":"Kettering",
+         "interests":"State of Ohio"
+      },
+      {
+         "firstName":"Brandon",
+         "lastName":"Cohen",
+         "track":"Sales",
+         "role":"client relations",
+         "location":"Costa Mesa",
+         "interests":"surfing"
+      }
+   ]
+}

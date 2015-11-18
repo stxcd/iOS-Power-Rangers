@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		144C1CE31BFBDC180006D509 /* JSON ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE11BFBDC180006D509 /* JSON ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		144C1CE51BFBDDE40006D509 /* BlpProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 144C1CE41BFBDDE40006D509 /* BlpProfiles.json */; settings = {ASSET_TAGS = (); }; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FirstViewController.swift */; };
 		65CF9B771BF14F4E0085B446 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* SecondViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144C1CE01BFBDC180006D509 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		144C1CE11BFBDC180006D509 /* JSON ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON ViewController.swift"; sourceTree = "<group>"; };
+		144C1CE41BFBDDE40006D509 /* BlpProfiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlpProfiles.json; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CF9B741BF14F4E0085B446 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 		65CF9B711BF14F4E0085B446 /* PowerRangers */ = {
 			isa = PBXGroup;
 			children = (
+				144C1CE41BFBDDE40006D509 /* BlpProfiles.json */,
+				144C1CE01BFBDC180006D509 /* DataManager.swift */,
+				144C1CE11BFBDC180006D509 /* JSON ViewController.swift */,
 				65CF9B721BF14F4E0085B446 /* AppDelegate.swift */,
 				65CF9B741BF14F4E0085B446 /* FirstViewController.swift */,
 				65CF9B761BF14F4E0085B446 /* SecondViewController.swift */,
@@ -233,6 +242,7 @@
 			files = (
 				65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */,
 				65CF9B7C1BF14F4E0085B446 /* Assets.xcassets in Resources */,
+				144C1CE51BFBDDE40006D509 /* BlpProfiles.json in Resources */,
 				65CF9B7A1BF14F4E0085B446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144C1CE31BFBDC180006D509 /* JSON ViewController.swift in Sources */,
 				65CF9B771BF14F4E0085B446 /* SecondViewController.swift in Sources */,
+				144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */,
 				65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */,
 				65CF9B751BF14F4E0085B446 /* FirstViewController.swift in Sources */,
 			);
@@ -487,6 +499,7 @@
 				65CF9B9B1BF14F4E0085B446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65CF9B9C1BF14F4E0085B446 /* Build configuration list for PBXNativeTarget "PowerRangersTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				65CF9B9E1BF14F4E0085B446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65CF9B9F1BF14F4E0085B446 /* Build configuration list for PBXNativeTarget "PowerRangersUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				65CF9BA11BF14F4E0085B446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
