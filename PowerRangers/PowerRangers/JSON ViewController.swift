@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        
+        
+        
         var names = [String]()
         var tracks = [String]()
         var roles = [String]()
