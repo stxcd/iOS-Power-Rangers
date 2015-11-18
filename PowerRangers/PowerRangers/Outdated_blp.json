@@ -3,57 +3,42 @@
       {
          "firstName":"Patrick",
          "lastName":"O'Brien",
-         "phoneNum":"8476360873",
-         "email":"pbobrien0@gmail.com",
          "track":"IT ",
          "role":"IT PM",
          "location":"Stamford",
-         "interests":"Netflix",
-         "housing":"Yes"
+         "interests":"Netflix"
       },
       {
          "firstName":"Dan",
          "lastName":"Garofalo",
-         "phoneNum":"6693600316",
-         "email":"dangdota@hotmail.com",
          "track":"IT ",
          "role":"Midrange",
          "location":"Stamford",
-         "interests":"Birds, Dota",
-         "housing":"No"
+         "interests":"Birds, Dota"
       },
       {
          "firstName":"Stephen",
          "lastName":"Ecsedy",
-         "phoneNum":"6351034161",
-         "email":"iheartgermany@yahoo.com",
          "track":"Finance",
          "role":"Treasury",
          "location":"Chicago",
-         "interests":"Germans",
-         "housing":"Yes"
+         "interests":"Germans"
       },
       {
          "firstName":"Katie",
          "lastName":"Senk",
-         "phoneNum":"9676783362",
-         "email":"seknk@yahoo.com",
          "track":"Risk",
          "role":"PM",
          "location":"Kettering",
-         "interests":"State of Ohio",
-         "housing":"Yes"
+         "interests":"State of Ohio"
       },
       {
          "firstName":"Brandon",
          "lastName":"Cohen",
-         "phoneNum":"6663218006",
-         "email":"bcohen@gmail.com",
          "track":"Sales",
          "role":"client relations",
          "location":"Costa Mesa",
-         "interests":"surfing",
-         "housing":"No"
+         "interests":"surfing"
       }
    ]
 }

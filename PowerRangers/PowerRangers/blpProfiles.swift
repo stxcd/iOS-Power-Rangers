@@ -18,6 +18,9 @@ class blpProfiles: UIViewController {
         var roles = [String]()
         var locations = [String]()
         var interestsDict = [String]()
+        var phoneNumbers = [String]()
+        var emails = [String]()
+        var housingDict = [String]()
         
         DataManager.grabNames { (data) -> Void in
             do {
@@ -47,13 +50,25 @@ class blpProfiles: UIViewController {
                         if let interests = blps["interests"] as? String {
                             interestsDict.append(interests)
                         }
+                        // pull phone
+                        if let phoneNum = blps["phoneNum"] as? String {
+                            phoneNumbers.append(phoneNum)
+                        }
+                        //pull emails
+                        if let email = blps["email"] as? String {
+                            emails.append(email)
+                        }
+                        //pull housing
+                        if let housing = blps["housing"] as? String {
+                            housingDict.append(housing)
+                        }
                     }
                 }
             } catch {
                 print("error serializing JSON: \(error)")
             }
             
-            print(tracks)
+            print(housingDict)
         
         }
         
