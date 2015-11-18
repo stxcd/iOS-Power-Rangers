@@ -8,11 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class blpProfiles: UIViewController {
     
     override func viewDidLoad() {
-        
-        
         
         
         var names = [String]()
@@ -55,52 +53,20 @@ class ViewController: UIViewController {
                 print("error serializing JSON: \(error)")
             }
             
-            print(interestsDict)
+            print(tracks)
         
         }
         
     
-}
-    
-            
-    
-            
-          /*  DataManager.grabNames{ (data) -> Void in
-                // Get the number 1 app using optional binding and NSJSONSerialization
-                //1
-                var parseError: NSError?
-                
-                do {
-                    if let parsedObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary {
-                        if let topApps = parsedObject as? NSDictionary {
-                            if let feed = topApps["feed"] as? NSDictionary {
-                                if let apps = feed["entry"] as? NSArray {
-                                    if let firstApp = apps[0] as? NSDictionary {
-                                        if let imname = firstApp["im:name"] as? NSDictionary {
-                                            if let appName = imname["label"] as? NSString {
-                                                //3
-                                                print("Optional Binding: \(appName)")
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                } catch {
-                    print(parseError)
-                }
-                
-            }
-            
-            super.viewDidLoad()
     }
-    */
+    
+    
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 }

@@ -1,6 +1,6 @@
 //
 //  DataManager.swift
-//  JSON testing
+//  Power Rangers
 //
 //  Created by Zack on 11/17/15.
 //  Copyright © 2015 Zack. All rights reserved.
