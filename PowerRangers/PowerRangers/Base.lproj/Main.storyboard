@@ -220,7 +220,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tempor purus
         <!--BLP Profiles View-->
         <scene sceneID="4M9-Ff-jxU">
             <objects>
-                <tableViewController title="BLP Profiles View" id="UXQ-n9-S3E" sceneMemberID="viewController">
+                <tableViewController title="BLP Profiles View" id="UXQ-n9-S3E" customClass="blpProfiles" customModule="PowerRangers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="cjY-p3-1JU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +230,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tempor purus
                                 <rect key="frame" x="0.0" y="28" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCV-j4-giL" id="DGV-op-hDN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

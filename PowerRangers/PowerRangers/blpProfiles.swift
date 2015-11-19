@@ -8,8 +8,15 @@
 
 import UIKit
 
-class blpProfiles {
+import UIKit
+
+// BLP JSON pull for the tableviewcontroller
+
+class blpProfiles: UITableViewController {
     
+    override func viewDidLoad() {
+        
+        
         var names = [String]()
         var tracks = [String]()
         var roles = [String]()
@@ -19,9 +26,7 @@ class blpProfiles {
         var emails = [String]()
         var housingDict = [String]()
         
-    func getJSON () {
-        
-    DataManager.grabNames { (data) -> Void in
+        DataManager.grabNames { (data) -> Void in
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
                 
@@ -30,36 +35,36 @@ class blpProfiles {
                         // Pulling first and last names and combining into one dictionary
                         if let firstName = blps["firstName"] as? String {
                             if let lastName = blps["lastName"] as? String {
-                                self.names.append(firstName + " " + lastName)
+                                names.append(firstName + " " + lastName)
                             }
                         }
                         // pulling track info into separate dictionary
                         if let track = blps["track"] as? String {
-                            self.tracks.append(track)
+                            tracks.append(track)
                         }
                         // pulling role into separate dictionary
                         if let role = blps["role"] as? String {
-                            self.roles.append(role)
+                            roles.append(role)
                         }
                         //pulling locations into dictionary
                         if let location = blps["location"] as? String {
-                            self.locations.append(location)
+                            locations.append(location)
                         }
                         // pull interests
                         if let interests = blps["interests"] as? String {
-                            self.interestsDict.append(interests)
+                            interestsDict.append(interests)
                         }
                         // pull phone
                         if let phoneNum = blps["phoneNum"] as? String {
-                            self.phoneNumbers.append(phoneNum)
+                            phoneNumbers.append(phoneNum)
                         }
                         //pull emails
                         if let email = blps["email"] as? String {
-                            self.emails.append(email)
+                            emails.append(email)
                         }
                         //pull housing
                         if let housing = blps["housing"] as? String {
-                            self.housingDict.append(housing)
+                            housingDict.append(housing)
                         }
                     }
                 }
@@ -67,12 +72,22 @@ class blpProfiles {
                 print("error serializing JSON: \(error)")
             }
             
-            print(self.housingDict)
-        
+            print(housingDict)
+            
         }
         
-    
+        
     }
+    
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
 }
 
 
