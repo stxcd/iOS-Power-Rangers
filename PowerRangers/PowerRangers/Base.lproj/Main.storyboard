@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--FAQ-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="PowerRangers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FAQ" title="FAQ" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FAQViewController" customModule="PowerRangers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -16,33 +17,145 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1. What is Lorum Ipsum?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sg-QB-Odr">
+                                <rect key="frame" x="20" y="86" width="219" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2. Why do we use it?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3x-kq-bkC">
+                                <rect key="frame" x="20" y="159" width="187" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jck-wC-Zfv">
+                                <rect key="frame" x="20" y="118" width="286" height="21"/>
+                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCv-0d-oBT">
+                                <rect key="frame" x="20" y="191" width="435" height="21"/>
+                                <string key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3. Where does it come from?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3U-8c-Alg">
+                                <rect key="frame" x="20" y="235" width="258" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-aL-cPw">
+                                <rect key="frame" x="20" y="267" width="435" height="21"/>
+                                <string key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4. Where can I get some?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-aX-7MJ">
+                                <rect key="frame" x="20" y="303" width="229" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mle-cL-CS3">
+                                <rect key="frame" x="20" y="335" width="435" height="21"/>
+                                <string key="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m9-Dv-HfH">
+                                <rect key="frame" x="20" y="396" width="435" height="21"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat interdum mauris, aliquam venenatis est dictum sit amet. Nam dapibus dignissim purus eget ornare. Morbi suscipit ac felis vel facilisis. Morbi laoreet lacus eget orci placerat volutpat. Integer consectetur ipsum porta, dictum mauris vel, pretium justo. Vestibulum vel tincidunt ligula, id faucibus nibh. Ut vitae sapien elit. Morbi mollis malesuada odio, vitae commodo urna feugiat et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum quam quis erat porttitor mattis. Aliquam mattis, magna eget posuere elementum, odio enim sollicitudin turpis, et iaculis nunc nibh in mi.
+
+Duis ornare eu urna in pharetra. Cras efficitur leo tortor, vel efficitur nunc facilisis eu. Aenean in lectus vitae orci tristique facilisis a et dui. Sed nisl arcu, mollis sit amet interdum ac, tincidunt id eros. Praesent dapibus purus fringilla, aliquam tortor eget, faucibus tellus. Morbi eget nulla eu eros luctus ullamcorper et non neque. Ut tincidunt sagittis turpis ut iaculis. Pellentesque a faucibus sapien. Donec rutrum congue magna at pellentesque. Integer pretium est vitae augue laoreet, ut euismod arcu feugiat.
+
+Phasellus consectetur vitae sem ac ultricies. Sed in convallis metus. Morbi sagittis, diam eu posuere ultricies, elit tellus sagittis ex, vel cursus erat purus eu erat. Pellentesque id magna vel mi rutrum consectetur nec at enim. Pellentesque sed libero est. Curabitur viverra molestie dui, nec dignissim est finibus ac. Pellentesque fringilla facilisis dui vitae semper. Nullam tincidunt eleifend ipsum, ac molestie magna laoreet non. Integer varius sit amet felis eu tempor. Etiam pellentesque efficitur auctor. Donec purus magna, consectetur rhoncus urna vel, dignissim fermentum mauris. Sed faucibus sapien auctor efficitur tincidunt. Praesent sed lacinia purus.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tempor purus. Quisque ornare consequat varius. Donec id dolor metus. Aliquam in convallis sapien. Sed pharetra, ipsum eu sodales gravida, elit purus auctor nibh, at pharetra odio metus sed lectus. Donec vitae vulputate dolor, eu placerat tellus. Etiam varius risus a urna blandit viverra. Pellentesque malesuada, ligula sit amet porttitor lobortis, justo risus tristique leo, fringilla hendrerit turpis enim sit amet purus. Pellentesque ornare enim sed facilisis vulputate.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5. Ok... so, what is Lorum Ipsum???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-Vc-4Ui">
+                                <rect key="frame" x="20" y="364" width="317" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Frequently Asked Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH3-Tp-H8S">
+                                <rect key="frame" x="103" y="46" width="215" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="U3U-8c-Alg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="1Zb-Kx-d7B"/>
+                            <constraint firstItem="vlC-aL-cPw" firstAttribute="top" secondItem="U3U-8c-Alg" secondAttribute="bottom" constant="8" symbolic="YES" id="5T9-sX-WRv"/>
+                            <constraint firstItem="2RB-aX-7MJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="5Vi-wD-bIQ"/>
+                            <constraint firstItem="U3U-8c-Alg" firstAttribute="top" secondItem="FCv-0d-oBT" secondAttribute="bottom" constant="15" id="5j2-pM-9wK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C3x-kq-bkC" secondAttribute="trailing" constant="341" id="82F-Xl-XBE"/>
+                            <constraint firstItem="FCv-0d-oBT" firstAttribute="top" secondItem="C3x-kq-bkC" secondAttribute="bottom" constant="8" id="8D8-CI-BIS"/>
+                            <constraint firstItem="FCv-0d-oBT" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="95G-f8-tHH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FCv-0d-oBT" secondAttribute="trailing" constant="20" id="ALh-OZ-g7c"/>
+                            <constraint firstItem="mle-cL-CS3" firstAttribute="top" secondItem="2RB-aX-7MJ" secondAttribute="bottom" constant="8" symbolic="YES" id="AtO-fN-3Oc"/>
+                            <constraint firstItem="9sg-QB-Odr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="EsJ-X4-uPU"/>
+                            <constraint firstItem="9sg-QB-Odr" firstAttribute="top" secondItem="rH3-Tp-H8S" secondAttribute="bottom" constant="20" id="EzH-9d-Nhw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7m9-Dv-HfH" secondAttribute="trailing" constant="20" id="FPo-ZQ-dkg"/>
+                            <constraint firstItem="7m9-Dv-HfH" firstAttribute="top" secondItem="Bxy-Vc-4Ui" secondAttribute="bottom" constant="8" symbolic="YES" id="Kp8-y1-Fvo"/>
+                            <constraint firstItem="C3x-kq-bkC" firstAttribute="top" secondItem="jck-wC-Zfv" secondAttribute="bottom" constant="15" id="Myo-oM-Lvx"/>
+                            <constraint firstItem="vlC-aL-cPw" firstAttribute="top" secondItem="U3U-8c-Alg" secondAttribute="bottom" constant="8" id="O1B-Fr-nHG"/>
+                            <constraint firstItem="2RB-aX-7MJ" firstAttribute="top" secondItem="vlC-aL-cPw" secondAttribute="bottom" constant="15" id="Qme-qe-MzS"/>
+                            <constraint firstItem="rH3-Tp-H8S" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="RTB-94-PVT"/>
+                            <constraint firstItem="C3x-kq-bkC" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="Re8-KM-MFf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mle-cL-CS3" secondAttribute="trailing" constant="20" id="SEj-jB-0vT"/>
+                            <constraint firstItem="C3x-kq-bkC" firstAttribute="top" secondItem="jck-wC-Zfv" secondAttribute="bottom" constant="20" id="Td8-LP-ljj"/>
+                            <constraint firstItem="Bxy-Vc-4Ui" firstAttribute="top" secondItem="mle-cL-CS3" secondAttribute="bottom" constant="15" id="U0G-hE-GkQ"/>
+                            <constraint firstItem="rH3-Tp-H8S" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="UhN-KO-goN"/>
+                            <constraint firstItem="mle-cL-CS3" firstAttribute="top" secondItem="2RB-aX-7MJ" secondAttribute="bottom" constant="8" id="V4w-I6-HRU"/>
+                            <constraint firstItem="9sg-QB-Odr" firstAttribute="top" secondItem="rH3-Tp-H8S" secondAttribute="bottom" constant="8" symbolic="YES" id="VcC-jh-dNz"/>
+                            <constraint firstItem="7m9-Dv-HfH" firstAttribute="top" secondItem="Bxy-Vc-4Ui" secondAttribute="bottom" constant="8" id="WLH-oN-1CF"/>
+                            <constraint firstItem="vlC-aL-cPw" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="Zhh-Zz-Qmu"/>
+                            <constraint firstItem="Bxy-Vc-4Ui" firstAttribute="top" secondItem="mle-cL-CS3" secondAttribute="bottom" constant="8" id="cA1-dj-JIH"/>
+                            <constraint firstItem="jck-wC-Zfv" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="cdp-FX-6ht"/>
+                            <constraint firstItem="jck-wC-Zfv" firstAttribute="top" secondItem="9sg-QB-Odr" secondAttribute="bottom" constant="8" id="cf2-Ph-5Gz"/>
+                            <constraint firstItem="C3x-kq-bkC" firstAttribute="top" secondItem="jck-wC-Zfv" secondAttribute="bottom" constant="20" id="dBU-Qg-7Dq"/>
+                            <constraint firstItem="9sg-QB-Odr" firstAttribute="top" secondItem="rH3-Tp-H8S" secondAttribute="bottom" constant="19" id="eKx-u2-dGx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vlC-aL-cPw" secondAttribute="trailing" constant="20" id="eLa-Nm-nAg"/>
+                            <constraint firstItem="mle-cL-CS3" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="fbc-d8-vkF"/>
+                            <constraint firstItem="rH3-Tp-H8S" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" symbolic="YES" id="giz-t8-AQe"/>
+                            <constraint firstItem="7m9-Dv-HfH" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="owp-wv-N05"/>
+                            <constraint firstItem="Bxy-Vc-4Ui" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="sWG-oj-uca"/>
+                            <constraint firstItem="7m9-Dv-HfH" firstAttribute="top" secondItem="Bxy-Vc-4Ui" secondAttribute="bottom" constant="8" id="saL-AV-1Ns"/>
+                            <constraint firstItem="2RB-aX-7MJ" firstAttribute="top" secondItem="vlC-aL-cPw" secondAttribute="bottom" constant="15" id="uT7-rQ-YkH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jck-wC-Zfv" secondAttribute="trailing" constant="20" id="ub9-a0-ZyY"/>
+                            <constraint firstItem="jck-wC-Zfv" firstAttribute="top" secondItem="9sg-QB-Odr" secondAttribute="bottom" constant="8" symbolic="YES" id="utT-1C-Z4o"/>
+                            <constraint firstItem="mle-cL-CS3" firstAttribute="top" secondItem="2RB-aX-7MJ" secondAttribute="bottom" constant="8" id="w16-o7-Ulb"/>
+                            <constraint firstItem="FCv-0d-oBT" firstAttribute="top" secondItem="C3x-kq-bkC" secondAttribute="bottom" constant="8" symbolic="YES" id="wrf-or-alR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VcC-jh-dNz"/>
+                                <exclude reference="giz-t8-AQe"/>
+                                <exclude reference="cf2-Ph-5Gz"/>
+                                <exclude reference="82F-Xl-XBE"/>
+                                <exclude reference="cA1-dj-JIH"/>
+                                <exclude reference="saL-AV-1Ns"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="FAQ" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="762" y="-359"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -117,7 +230,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCV-j4-giL" id="DGV-op-hDN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -127,7 +240,7 @@
                             <outlet property="delegate" destination="UXQ-n9-S3E" id="BMj-fv-5p2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="nvq-B1-o9j"/>
+                    <tabBarItem key="tabBarItem" title="BLP Profiles" image="Profiles" id="nvq-B1-o9j"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfa-2c-wBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,6 +249,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Profiles" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
