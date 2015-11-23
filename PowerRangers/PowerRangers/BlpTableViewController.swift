@@ -26,14 +26,13 @@ class BlpTableViewController: UITableViewController {
         var emails = [String]()
         var housingDict = [String]()
         
-        func buildBlpArray(fullName: [String], location: [String], track: [String]){
+        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String]){
             
             var i = 0
             let inArray = fullName.count
 
             while i < inArray {
-            let newBlp = Blp(name: fullName[i], location: location[i], track: track[i])!
-            
+            let newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i])!
             blpArray += [newBlp]
             
              ++i
@@ -83,8 +82,8 @@ class BlpTableViewController: UITableViewController {
                             housingDict.append(housing)
                         }
                     }
-                    buildBlpArray(names, location: locations, track: tracks)
                     
+                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict)
                     
                 }
             } catch {
@@ -176,6 +175,20 @@ class BlpTableViewController: UITableViewController {
             cell.nameLabel.text = blpProfile.name
             cell.locationLabel.text = blpProfile.location
             cell.trackLabel.text = blpProfile.track
+        
+                let house = UIImage (named: "Housing")!
+            let houseCheck = blpProfile.housing
+           
+            
+            
+            if (houseCheck == "Yes") {
+            cell.housingIcon.image = house
+            } else {
+                cell.housingIcon.hidden = true
+            }
+          //  cell.housingIcon.image = house
+            
+            
             return cell
     }
 
@@ -242,5 +255,6 @@ class BlpTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //for pop up
 }
