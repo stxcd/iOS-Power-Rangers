@@ -13,6 +13,8 @@
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		144C1CE31BFBDC180006D509 /* blpProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE11BFBDC180006D509 /* blpProfiles.swift */; settings = {ASSET_TAGS = (); }; };
+		14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C251C03C00C001A8D5C /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; settings = {ASSET_TAGS = (); }; };
 		14DCAF7B1C0377FF004B77A8 /* BlpProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */; settings = {ASSET_TAGS = (); }; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
@@ -48,6 +50,8 @@
 		141373751BFFBCB900678C5F /* BlpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewController.swift; sourceTree = "<group>"; };
 		144C1CE01BFBDC180006D509 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		144C1CE11BFBDC180006D509 /* blpProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blpProfiles.swift; sourceTree = "<group>"; };
+		14C68C251C03C00C001A8D5C /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
 		14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlpProfiles.json; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				141373711BFFB7DB00678C5F /* Blp.swift */,
 				65CF9B721BF14F4E0085B446 /* AppDelegate.swift */,
 				65CF9B741BF14F4E0085B446 /* FAQViewController.swift */,
+				14C68C251C03C00C001A8D5C /* SurveyViewController.swift */,
+				14C68C271C03C133001A8D5C /* editMyHousing.swift */,
 				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
 				65CF9B781BF14F4E0085B446 /* Main.storyboard */,
 				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
@@ -282,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				144C1CE31BFBDC180006D509 /* blpProfiles.swift in Sources */,
+				14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */,
 				141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */,
 				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
+				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
 				144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */,

@@ -1,14 +1,14 @@
 //
-//  FirstViewController.swift
-//  PowerRangers
+//  ViewController.swift
+//  MyHousing
 //
-//  Created by Tommy on 11/9/15.
-//  Copyright © 2015 Tommy. All rights reserved.
+//  Created by Jason  on 11/23/15.
+//  Copyright © 2015 Jason . All rights reserved.
 //
 
 import UIKit
 
-class FAQViewController: UIViewController {
+class editMyHousing: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
