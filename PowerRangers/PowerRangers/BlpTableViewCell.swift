@@ -11,13 +11,13 @@ import UIKit
 class BlpTableViewCell: UITableViewCell {
 
     
+    //Cell Labels
+    
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var locationLabel: UILabel!
     
     @IBOutlet weak var trackLabel: UILabel!
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
