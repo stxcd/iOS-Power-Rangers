@@ -18,8 +18,7 @@ class func grabNames(success: ((data: NSData) -> Void)) {
         
         var readError:NSError?
         do {
-            let data = try NSData(contentsOfFile:filePath!,
-                options: NSDataReadingOptions.DataReadingUncached)
+            let data = try NSData(contentsOfFile:filePath!, options: NSDataReadingOptions.DataReadingUncached)
             success(data: data)
         } catch let error as NSError {
             readError = error
