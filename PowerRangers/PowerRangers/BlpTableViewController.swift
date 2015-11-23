@@ -29,7 +29,7 @@ class BlpTableViewController: UITableViewController {
         func buildBlpArray(fullName: [String], location: [String], track: [String]){
             
             var i = 0
-            var inArray = fullName.count
+            let inArray = fullName.count
 
             while i < inArray {
             let newBlp = Blp(name: fullName[i], location: location[i], track: track[i])!
