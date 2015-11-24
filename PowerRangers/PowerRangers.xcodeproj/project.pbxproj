@@ -26,6 +26,7 @@
 		65CF9B8A1BF14F4E0085B446 /* PowerRangersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B891BF14F4E0085B446 /* PowerRangersTests.swift */; };
 		65CF9B951BF14F4E0085B446 /* PowerRangersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */; };
 		96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD10F51C04025E009A35FE /* ViewMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerRangersUITests.swift; sourceTree = "<group>"; };
 		65CF9B961BF14F4E0085B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96DD10F51C04025E009A35FE /* ViewMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMyProfile.swift; sourceTree = "<group>"; };
+		DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = editMyProfile.swift; path = PowerRangers/editMyProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		65CF9B661BF14F4E0085B446 = {
 			isa = PBXGroup;
 			children = (
+				DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */,
 				65CF9B711BF14F4E0085B446 /* PowerRangers */,
 				65CF9B881BF14F4E0085B446 /* PowerRangersTests */,
 				65CF9B931BF14F4E0085B446 /* PowerRangersUITests */,
@@ -301,6 +304,7 @@
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
+				DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */,
 				144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */,
 				65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */,
 				96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */,
