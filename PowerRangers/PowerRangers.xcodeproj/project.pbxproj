@@ -24,6 +24,7 @@
 		65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */; };
 		65CF9B8A1BF14F4E0085B446 /* PowerRangersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B891BF14F4E0085B446 /* PowerRangersTests.swift */; };
 		65CF9B951BF14F4E0085B446 /* PowerRangersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */; };
+		96DD10BA1C03E7D2009A35FE /* myHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD10B91C03E7D2009A35FE /* myHousingProfile.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		65CF9B901BF14F4E0085B446 /* PowerRangersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerRangersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerRangersUITests.swift; sourceTree = "<group>"; };
 		65CF9B961BF14F4E0085B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DD10B91C03E7D2009A35FE /* myHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myHousingProfile.swift; path = ../../../Desktop/MyHousingProfile/MyHousingProfile/myHousingProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				14C68C251C03C00C001A8D5C /* SurveyViewController.swift */,
 				14C68C271C03C133001A8D5C /* editMyHousing.swift */,
 				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
+				96DD10B91C03E7D2009A35FE /* myHousingProfile.swift */,
 				65CF9B781BF14F4E0085B446 /* Main.storyboard */,
 				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
 				65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */,
@@ -291,6 +294,7 @@
 				14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */,
 				141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */,
 				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
+				96DD10BA1C03E7D2009A35FE /* myHousingProfile.swift in Sources */,
 				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
