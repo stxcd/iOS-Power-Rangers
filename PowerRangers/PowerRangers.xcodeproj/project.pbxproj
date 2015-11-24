@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1408A8C51BFCC1A2003F9802 /* lastUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 1408A8C41BFCC1A2003F9802 /* lastUpdate.json */; settings = {ASSET_TAGS = (); }; };
 		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; settings = {ASSET_TAGS = (); }; };
 		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -15,7 +14,9 @@
 		14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C251C03C00C001A8D5C /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; settings = {ASSET_TAGS = (); }; };
 		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; settings = {ASSET_TAGS = (); }; };
-		14DCAF7B1C0377FF004B77A8 /* BlpProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */; settings = {ASSET_TAGS = (); }; };
+		14D450571C040521002ECC4A /* BlpProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 14D450561C040521002ECC4A /* BlpProfiles.json */; settings = {ASSET_TAGS = (); }; };
+		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; settings = {ASSET_TAGS = (); }; };
+		14DCAF7B1C0377FF004B77A8 /* previousVersion.json in Resources */ = {isa = PBXBuildFile; fileRef = 14DCAF7A1C0377FF004B77A8 /* previousVersion.json */; settings = {ASSET_TAGS = (); }; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
 		65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */; };
@@ -45,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1408A8C41BFCC1A2003F9802 /* lastUpdate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lastUpdate.json; sourceTree = "<group>"; };
 		141373711BFFB7DB00678C5F /* Blp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blp.swift; sourceTree = "<group>"; };
 		141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewCell.swift; sourceTree = "<group>"; };
 		141373751BFFBCB900678C5F /* BlpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +53,9 @@
 		14C68C251C03C00C001A8D5C /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
 		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
-		14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlpProfiles.json; sourceTree = "<group>"; };
+		14D450561C040521002ECC4A /* BlpProfiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlpProfiles.json; sourceTree = "<group>"; };
+		14D450581C0409DA002ECC4A /* Blp Profile Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Blp Profile Pictures"; sourceTree = "<group>"; };
+		14DCAF7A1C0377FF004B77A8 /* previousVersion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = previousVersion.json; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CF9B741BF14F4E0085B446 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
@@ -119,9 +121,9 @@
 		65CF9B711BF14F4E0085B446 /* PowerRangers */ = {
 			isa = PBXGroup;
 			children = (
-				1408A8C41BFCC1A2003F9802 /* lastUpdate.json */,
+				14D450561C040521002ECC4A /* BlpProfiles.json */,
 				14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */,
-				14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */,
+				14DCAF7A1C0377FF004B77A8 /* previousVersion.json */,
 				144C1CE01BFBDC180006D509 /* DataManager.swift */,
 				141373751BFFBCB900678C5F /* BlpTableViewController.swift */,
 				141373711BFFB7DB00678C5F /* Blp.swift */,
@@ -136,6 +138,7 @@
 				65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */,
 				141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */,
 				65CF9B801BF14F4E0085B446 /* Info.plist */,
+				14D450581C0409DA002ECC4A /* Blp Profile Pictures */,
 			);
 			path = PowerRangers;
 			sourceTree = "<group>";
@@ -261,10 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14DCAF7B1C0377FF004B77A8 /* BlpProfiles.json in Resources */,
-				1408A8C51BFCC1A2003F9802 /* lastUpdate.json in Resources */,
+				14DCAF7B1C0377FF004B77A8 /* previousVersion.json in Resources */,
 				65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */,
+				14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */,
 				65CF9B7C1BF14F4E0085B446 /* Assets.xcassets in Resources */,
+				14D450571C040521002ECC4A /* BlpProfiles.json in Resources */,
 				65CF9B7A1BF14F4E0085B446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

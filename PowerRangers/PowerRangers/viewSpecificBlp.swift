@@ -29,6 +29,7 @@ class viewSpecificBlp: UIViewController {
     
     @IBOutlet weak var interestsLabel: UILabel!
     
+    @IBOutlet weak var photoView: UIImageView!
     
     override func viewDidLoad() {
         
@@ -43,6 +44,16 @@ class viewSpecificBlp: UIViewController {
             classLabel.text = blp.track
             locationLabel.text = blp.location
             interestsLabel.text = blp.interests
+            
+            
+            //image pull
+            
+            let useName = blp.lastName
+            let blpImage = UIImage(named: useName)
+            
+            photoView.image = blpImage
+            
+            
         }
         
         

@@ -9,7 +9,8 @@
          "role":"Analyst",
          "location":"Chicago",
          "interests":"Hip hop dancing",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Bedell.jpg"
       },
       {
          "firstName":"Russell",
@@ -20,7 +21,8 @@
          "role":"Analyst",
          "location":"Chicago",
          "interests":"Piano",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Mendleson.jpg"
       },
       {
          "firstName":"Mussttafa",
@@ -31,7 +33,8 @@
          "role":"Analyst",
          "location":"Chicago",
          "interests":"J. Cole",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Shelo.jpg"
       },
       {
          "firstName":"Laert",
@@ -42,7 +45,8 @@
          "role":"Analyst",
          "location":"Chicago",
          "interests":"Languages",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Skreli.jpg"
       },
       {
          "firstName":"Lily",
@@ -53,7 +57,8 @@
          "role":"Analyst",
          "location":"Chicago",
          "interests":"Remember the Titans",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Xu.jpg"
       },
       {
          "firstName":"Ravone",
@@ -64,7 +69,8 @@
          "role":"Treasury",
          "location":"Alpharetta",
          "interests":"Call of Duty",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Cornish.jpg"
       },
       {
          "firstName":"Wyatt",
@@ -75,7 +81,8 @@
          "role":"Client analysis",
          "location":"Stamford",
          "interests":"Outdoors",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Craig.jpg"
       },
       {
          "firstName":"Patrick",
@@ -86,7 +93,8 @@
          "role":"Pricing",
          "location":"Stamford",
          "interests":"Cartoons",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Johnson.jpg"
       },
       {
          "firstName":"Joe",
@@ -97,7 +105,8 @@
          "role":"Debt Issuance",
          "location":"Stamford",
          "interests":"Music",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Nutter.jpg"
       },
       {
          "firstName":"Colin",
@@ -108,7 +117,8 @@
          "role":"Pricing",
          "location":"Stamford",
          "interests":"Music",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Quinlan.jpg"
       },
       {
          "firstName":"Ryan",
@@ -119,7 +129,8 @@
          "role":"Risk HR",
          "location":"Stamford",
          "interests":"Modelling",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Parker.jpg"
       },
       {
          "firstName":"Dan",
@@ -130,7 +141,8 @@
          "role":"PM - new applications",
          "location":"Stamford",
          "interests":"Baseball",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Bertolino.jpg"
       },
       {
          "firstName":"Ramon",
@@ -141,7 +153,8 @@
          "role":"Agile Process",
          "location":"Stamford",
          "interests":"Android programming",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Cadeaux.jpg"
       },
       {
          "firstName":"Brandon",
@@ -152,7 +165,8 @@
          "role":"PM - orange",
          "location":"Stamford",
          "interests":"FIFA and Wes Anderson",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Cohen.jpg"
       },
       {
          "firstName":"Stephen",
@@ -163,7 +177,8 @@
          "role":"Security",
          "location":"Stamford",
          "interests":"Germans",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Ecsedy.jpg"
       },
       {
          "firstName":"Dan",
@@ -174,7 +189,8 @@
          "role":"Mid-range systems",
          "location":"Stamford",
          "interests":"Cottage Cheese",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Garofalo.jpg"
       },
       {
          "firstName":"Ben",
@@ -185,7 +201,8 @@
          "role":"Migration",
          "location":"Stamford",
          "interests":"Country music, cheese and crackers",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Nader.jpg"
       },
       {
          "firstName":"Patrick",
@@ -196,7 +213,8 @@
          "role":"End User Services - PM",
          "location":"Stamford",
          "interests":"Chicago sports",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"O'Brien.jpg"
       },
       {
          "firstName":"Ravi",
@@ -207,7 +225,8 @@
          "role":"PM- mservice",
          "location":"Stamford",
          "interests":"admiting Georgia Tech is an inferior academic institution",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Patel.jpg"
       },
       {
          "firstName":"Stephen ",
@@ -218,7 +237,8 @@
          "role":"Samsung pay",
          "location":"Stamford",
          "interests":"AAPL call options, impersonating Renly Baratheon",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Ptucha.jpg"
       },
       {
          "firstName":"Katie",
@@ -229,7 +249,8 @@
          "role":"PM-mapply",
          "location":"Stamford",
          "interests":"Adrenaline",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Senk.jpg"
       },
       {
          "firstName":"Joanne",
@@ -240,7 +261,8 @@
          "role":"IS",
          "location":"Stamford",
          "interests":"Being a pilot, Adam Levine",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Swanson.jpg"
       },
       {
          "firstName":"Marshall",
@@ -251,7 +273,8 @@
          "role":"Consumer analysis and trends",
          "location":"Stamford",
          "interests":"Golf, dancing with NKOTB",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Beach.jpg"
       },
       {
          "firstName":"Kiara",
@@ -262,7 +285,8 @@
          "role":"Market segmentation",
          "location":"Alpharetta",
          "interests":"art history",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Burroughs.jpg"
       },
       {
          "firstName":"Brandon",
@@ -273,7 +297,8 @@
          "role":"Amazon",
          "location":"Costa Mesa",
          "interests":"Football",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Kelly.jpg"
       },
       {
          "firstName":"Jeff",
@@ -284,7 +309,8 @@
          "role":"New client growth",
          "location":"Alpharetta",
          "interests":"Dance",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Kim.jpg"
       },
       {
          "firstName":"Kyle",
@@ -295,7 +321,8 @@
          "role":"Gen x client acquisition",
          "location":"Kettering",
          "interests":"Fly-fishing",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Krueger.jpg"
       },
       {
          "firstName":"Kurt",
@@ -306,7 +333,8 @@
          "role":"Advertising and Promotional strategy",
          "location":"Alpharetta",
          "interests":"Biking",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Ostlund.jpg"
       },
       {
          "firstName":"Haykaz",
@@ -317,18 +345,20 @@
          "role":"Strategy",
          "location":"Kettering",
          "interests":"Dogs and Dan Brown",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Sargisov.jpg"
       },
       {
          "firstName":"Molly",
-         "lastName":"Whitlock",
+         "lastName":"Shitlock",
          "phoneNum":"206-849-9277",
          "email":"molly.t.whitlock.3@nd.edu",
          "track":"Marketing",
          "role":"Walmart strategy",
          "location":"Kettering",
          "interests":"Handwriting and dance",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Shitlock.jpg"
       },
       {
          "firstName":"Anthony",
@@ -339,7 +369,8 @@
          "role":"Customer Service operations",
          "location":"Alpharetta",
          "interests":"Cooking",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Donadio.jpg"
       },
       {
          "firstName":"Melvin",
@@ -350,7 +381,8 @@
          "role":"Op. Analyst",
          "location":"Alpharetta",
          "interests":"Fast and Furious",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Owens III.jpg"
       },
       {
          "firstName":"Patrick",
@@ -361,7 +393,8 @@
          "role":"Op. Analyst",
          "location":"North Carolina",
          "interests":"Pirates",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Thibodeaux.jpg"
       },
       {
          "firstName":"Levi",
@@ -372,7 +405,8 @@
          "role":"Deal underwriting - analyst",
          "location":"Kettering",
          "interests":"Guitar",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Hopkins.jpg"
       },
       {
          "firstName":"Frank",
@@ -383,7 +417,8 @@
          "role":"Risk strategy development",
          "location":"Stamford",
          "interests":"Debate",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Zhao.jpg"
       },
       {
          "firstName":"John",
@@ -394,7 +429,8 @@
          "role":"Vendor underwriting - analyst",
          "location":"Kettering",
          "interests":"Golf",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Taylor.jpg"
       },
       {
          "firstName":"Maquet",
@@ -405,7 +441,8 @@
          "role":"Amazon",
          "location":"Kettering",
          "interests":"Running",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Dean.jpg"
       },
       {
          "firstName":"Doug",
@@ -416,7 +453,8 @@
          "role":"Payment Solutions",
          "location":"Kettering",
          "interests":"Northwestern football",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Diedrick.jpg"
       },
       {
          "firstName":"Justin",
@@ -427,7 +465,8 @@
          "role":"Care Credit",
          "location":"Kettering",
          "interests":"Sci-fi TV",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Eberly.jpg"
       },
       {
          "firstName":"Sofia",
@@ -438,7 +477,8 @@
          "role":"Wal-mart",
          "location":"Kettering",
          "interests":"Soccer",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Grossman Pena.jpg"
       },
       {
          "firstName":"Philip",
@@ -449,7 +489,8 @@
          "role":"GAP",
          "location":"Alpharetta",
          "interests":"Mafia movies",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Gyampo.jpg"
       },
       {
          "firstName":"Ryan",
@@ -460,7 +501,8 @@
          "role":"Payment Solutions",
          "location":"North Carolina",
          "interests":"Panini presses",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Hayes.jpg"
       },
       {
          "firstName":"Manuel",
@@ -471,7 +513,8 @@
          "role":"GAP",
          "location":"Kettering",
          "interests":"Outdoors",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Roman.jpg"
       },
       {
          "firstName":"Ellen",
@@ -482,7 +525,8 @@
          "role":"Care Credit",
          "location":"Kettering",
          "interests":"Vegetables",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Schwarm.jpg"
       },
       {
          "firstName":"Amy",
@@ -493,7 +537,8 @@
          "role":"Payment Solutions",
          "location":"Stamford",
          "interests":"Mountain Dew",
-         "housing":"Yes"
+         "housing":"Yes",
+         "photo":"Weaton.jpg"
       },
       {
          "firstName":"Taylor",
@@ -504,7 +549,8 @@
          "role":"Pay me provider",
          "location":"Costa Mesa",
          "interests":"Portraying boys in plays",
-         "housing":"No"
+         "housing":"No",
+         "photo":"Wong.jpg"
       }
    ]
 }

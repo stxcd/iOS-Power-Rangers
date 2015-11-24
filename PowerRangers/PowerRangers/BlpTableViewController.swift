@@ -11,7 +11,7 @@ import UIKit
 class BlpTableViewController: UITableViewController {
     
     var blpArray = [Blp]()
-    
+    var lastNamesOnly = [String]()
     
 
     override func viewDidLoad() {
@@ -25,16 +25,19 @@ class BlpTableViewController: UITableViewController {
         var phoneNumbers = [String]()
         var emails = [String]()
         var housingDict = [String]()
+        var photoDict = [String]()
+        var lastNameDict = [String]()
         
-        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String]){
+        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String], photo: [String],lastNameOnly: [String]){
             
             var i = 0
             let inArray = fullName.count
 
             while i < inArray {
-            let newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i])!
-            blpArray += [newBlp]
             
+            var newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i], photo: photo[i], lastName: lastNameOnly[i])!
+            
+            blpArray += [newBlp]
              ++i
             }
             
@@ -81,9 +84,18 @@ class BlpTableViewController: UITableViewController {
                         if let housing = blps["housing"] as? String {
                             housingDict.append(housing)
                         }
+                        //pull photo dict
+                        if let photos = blps["photo"] as? String {
+                            photoDict.append(photos)
+                        }
+                        //last Name only
+                        if let lastNameOnly = blps["lastName"] as? String {
+                            lastNameDict.append(lastNameOnly)
+                        }
                     }
                     
-                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict)
+                    
+                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict, photo: photoDict, lastNameOnly: lastNameDict)
                     
                 }
             } catch {
@@ -127,23 +139,26 @@ class BlpTableViewController: UITableViewController {
         cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
             let blpProfile = self.blpArray[indexPath.row]
+
             
             let cell = tableView.dequeueReusableCellWithIdentifier("BlpTableViewCell", forIndexPath: indexPath) as! BlpTableViewCell
             cell.nameLabel.text = blpProfile.name
             cell.locationLabel.text = blpProfile.location
             cell.trackLabel.text = blpProfile.track
-        
+            
+            
+            
+            //Housing check
                 let house = UIImage (named: "Housing")!
             let houseCheck = blpProfile.housing
            
-            
             
             if (houseCheck == "Yes") {
             cell.housingIcon.image = house
             } else {
                 cell.housingIcon.hidden = true
             }
-          //  cell.housingIcon.image = house
+         
             
             
             return cell
