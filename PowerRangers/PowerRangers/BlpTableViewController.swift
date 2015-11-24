@@ -106,50 +106,7 @@ class BlpTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     
     
-    //load meals
-
-    /*
-    var blp1 = Blp(name: names[1], location: locations[2], track: tracks[1])!
-    blps += [blp1]
-    */
     
-    
-    //func pullJSONdata(inout names: [String], locations: [String], tracks:[String]){
-        
-  /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //Table view cells are reused and should be dequed using a cell identifier
-        
-        var fakeNames = ["pat", "katie", "dan"]
-      
-        let cellIdentifier = "BlpTableViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! BlpTableViewCell
-        
-        //fetches the appropriate meal for the data source layout
-        let blpProf = blpArray[indexPath.row]
-        
-        let fakeName = fakeNames[indexPath.row]
-        
-        
-        cell.nameLabel.text = fakeName
-        cell.locationLabel.text = "a location"
-        cell.trackLabel.text = "a track"
-        
-        
-        return cell }
-   
-
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return blpArray.count
-    }
-
-    */
     
    
     
@@ -197,7 +154,7 @@ class BlpTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
+    
 
     
 
@@ -246,15 +203,33 @@ class BlpTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // Segue to the individual profiles
     
-    //for pop up
-}
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showProfile" {
+            let blpDetailViewController = segue.destinationViewController as!
+            viewSpecificBlp
+            
+            //get the cell that generates segue
+            
+            if let selectedBlpCell = sender as? BlpTableViewCell {
+                let indexPath = tableView.indexPathForCell(selectedBlpCell)!
+                let selectedBlp = blpArray[indexPath.row]
+                blpDetailViewController.blp = selectedBlp
+            }
+        }
+               }
+    
+    
+    
+    
+    //last bracket
+            }
+
+
+    
+
+   
