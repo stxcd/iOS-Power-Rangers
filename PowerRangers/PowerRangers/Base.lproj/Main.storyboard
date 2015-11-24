@@ -607,7 +607,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tempor purus
         <!--My Housing Profile-->
         <scene sceneID="v0t-mK-epb">
             <objects>
-                <viewController id="Isu-8C-MPI" customClass="MyHousingProfile" customModule="PowerRangers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Isu-8C-MPI" customClass="ViewMyHousingProfile" customModule="PowerRangers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kHa-3u-4kt"/>
                         <viewControllerLayoutGuide type="bottom" id="Jne-zP-1Y6"/>
