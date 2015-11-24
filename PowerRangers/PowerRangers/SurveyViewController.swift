@@ -24,7 +24,7 @@ class SurveyViewController: UIViewController {
     @IBAction func buttonSurvey(sender: AnyObject) {
     
     (AnyObject).self
-        if let url=NSURL(string: "http://images.latintimes.com/sites/latintimes.com/files/styles/pulse_embed_breakpoints_theme_lt_desktop_1x/public/2015/01/21/new-england-patriots-deflategate-memes_1.jpg") {
+        if let url=NSURL(string: "https://www.surveymonkey.com/r/SNVHCZQ") {
             UIApplication.sharedApplication().openURL(url)
         }
     }
