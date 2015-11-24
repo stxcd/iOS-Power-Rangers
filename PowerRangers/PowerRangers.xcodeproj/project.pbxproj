@@ -16,6 +16,7 @@
 		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; settings = {ASSET_TAGS = (); }; };
 		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; settings = {ASSET_TAGS = (); }; };
 		14DCAF7B1C0377FF004B77A8 /* BlpProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */; settings = {ASSET_TAGS = (); }; };
+		652688CF1C03DF6900A7E211 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652688CE1C03DF6900A7E211 /* DummyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
 		65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */; };
@@ -53,6 +54,7 @@
 		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
 		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
 		14DCAF7A1C0377FF004B77A8 /* BlpProfiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlpProfiles.json; sourceTree = "<group>"; };
+		652688CE1C03DF6900A7E211 /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CF9B741BF14F4E0085B446 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		65CF9B661BF14F4E0085B446 = {
 			isa = PBXGroup;
 			children = (
+				652688CE1C03DF6900A7E211 /* DummyViewController.swift */,
 				65CF9B711BF14F4E0085B446 /* PowerRangers */,
 				65CF9B881BF14F4E0085B446 /* PowerRangersTests */,
 				65CF9B931BF14F4E0085B446 /* PowerRangersUITests */,
@@ -287,6 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
+=======
+				144C1CE31BFBDC180006D509 /* blpProfiles.swift in Sources */,
+				652688CF1C03DF6900A7E211 /* DummyViewController.swift in Sources */,
+>>>>>>> Stashed changes
 				14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */,
 				141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */,
 				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
