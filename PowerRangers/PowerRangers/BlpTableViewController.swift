@@ -27,15 +27,16 @@ class BlpTableViewController: UITableViewController {
         var housingDict = [String]()
         var photoDict = [String]()
         var lastNameDict = [String]()
+        var idDict = [String]()
         
-        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String], photo: [String],lastNameOnly: [String]){
+        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String], photo: [String],lastNameOnly: [String], id: [String]){
             
             var i = 0
             let inArray = fullName.count
 
             while i < inArray {
             
-            var newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i], photo: photo[i], lastName: lastNameOnly[i])!
+                var newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i], photo: photo[i], lastName: lastNameOnly[i], identifier: id[i])!
             
             blpArray += [newBlp]
              ++i
@@ -92,10 +93,13 @@ class BlpTableViewController: UITableViewController {
                         if let lastNameOnly = blps["lastName"] as? String {
                             lastNameDict.append(lastNameOnly)
                         }
+                        if let identifier = blps["identifier"] as? String {
+                            idDict.append(identifier)
+                        }
                     }
                     
                     
-                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict, photo: photoDict, lastNameOnly: lastNameDict)
+                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict, photo: photoDict, lastNameOnly: lastNameDict, id: idDict)
                     
                 }
             } catch {
@@ -153,10 +157,10 @@ class BlpTableViewController: UITableViewController {
             let houseCheck = blpProfile.housing
            
             
-            if (houseCheck == "Yes") {
-            cell.housingIcon.image = house
+            if (houseCheck == "No") {
+            cell.housingIcon.hidden = true
             } else {
-                cell.housingIcon.hidden = true
+                cell.housingIcon.image = house
             }
          
             
@@ -225,8 +229,7 @@ class BlpTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showProfile" {
-            let blpDetailViewController = segue.destinationViewController as!
-            viewSpecificBlp
+            let blpDetailViewController = segue.destinationViewController as! viewSpecificBlp
             
             //get the cell that generates segue
             
