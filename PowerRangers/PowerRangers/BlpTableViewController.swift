@@ -28,15 +28,16 @@ class BlpTableViewController: UITableViewController {
         var photoDict = [String]()
         var lastNameDict = [String]()
         var idDict = [String]()
+        var nextLocationArr = [String]()
         
-        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String], photo: [String],lastNameOnly: [String], id: [String]){
+        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String], photo: [String],lastNameOnly: [String], id: [String], nextLoc: [String]){
             
             var i = 0
             let inArray = fullName.count
 
             while i < inArray {
             
-                var newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i], photo: photo[i], lastName: lastNameOnly[i], identifier: id[i])!
+                let newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i], photo: photo[i], lastName: lastNameOnly[i], identifier: id[i], nextLocation: nextLoc[i])!
             
             blpArray += [newBlp]
              ++i
@@ -96,10 +97,14 @@ class BlpTableViewController: UITableViewController {
                         if let identifier = blps["identifier"] as? String {
                             idDict.append(identifier)
                         }
+                        //next location
+                        if let nextLocation = blps["nextLocation"] as? String {
+                            nextLocationArr.append(nextLocation)
+                        }
                     }
                     
                     
-                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict, photo: photoDict, lastNameOnly: lastNameDict, id: idDict)
+                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict, photo: photoDict, lastNameOnly: lastNameDict, id: idDict, nextLoc: nextLocationArr)
                     
                 }
             } catch {

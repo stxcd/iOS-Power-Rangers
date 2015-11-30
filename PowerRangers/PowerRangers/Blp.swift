@@ -23,10 +23,11 @@ class Blp {
     var photo: String
     var lastName: String
     var identifier: String
+    var nextLocation: String
     
     //MARK: Initialization
     
-    init? (name:String, location: String, track: String, phoneNum: String, email: String, role: String, interests: String, housing: String, photo: String, lastName: String, identifier: String) {
+    init? (name:String, location: String, track: String, phoneNum: String, email: String, role: String, interests: String, housing: String, photo: String, lastName: String, identifier: String, nextLocation: String) {
         
         //Initialize stored values
         
@@ -41,6 +42,7 @@ class Blp {
         self.photo = photo
         self.lastName = lastName
         self.identifier = identifier
+        self.nextLocation = nextLocation
         
         
         //initalizer to check if there is no name or rating is negative

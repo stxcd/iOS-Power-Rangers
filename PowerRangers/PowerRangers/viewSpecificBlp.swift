@@ -33,6 +33,10 @@ class viewSpecificBlp: UIViewController {
     
     @IBOutlet weak var photoView: UIImageView!
     
+    @IBOutlet weak var nextLocationLabel: UILabel!
+    
+    @IBOutlet weak var viewHousing: UIButton!
+    
     override func viewDidLoad() {
         
         //load profile from JSON (BlpTableViewController)
@@ -46,6 +50,16 @@ class viewSpecificBlp: UIViewController {
             classLabel.text = blp.track
             locationLabel.text = blp.location
             interestsLabel.text = blp.interests
+            nextLocationLabel.text = blp.nextLocation
+            
+            //set housing button visability
+            var checkHousing = blp.housing
+            
+            if checkHousing == "Yes" {
+                viewHousing.hidden = false
+            } else {
+                viewHousing.hidden = true
+            }
             
             
             //image pull

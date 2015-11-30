@@ -14,7 +14,7 @@ class func grabNames(success: ((data: NSData) -> Void)) {
     //1
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
         //2
-        let filePath = NSBundle.mainBundle().pathForResource("blpProfiles",ofType:"json")
+        let filePath = NSBundle.mainBundle().pathForResource("blpProfilePage",ofType:"json")
         
         var readError:NSError?
         do {
