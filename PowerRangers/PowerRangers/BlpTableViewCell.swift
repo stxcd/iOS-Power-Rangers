@@ -19,6 +19,9 @@ class BlpTableViewCell: UITableViewCell {
     
     @IBOutlet weak var trackLabel: UILabel!
     
+    @IBOutlet weak var housingIcon: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

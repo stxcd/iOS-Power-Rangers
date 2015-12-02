@@ -11,7 +11,7 @@ import UIKit
 class BlpTableViewController: UITableViewController {
     
     var blpArray = [Blp]()
-    
+    var lastNamesOnly = [String]()
     
 
     override func viewDidLoad() {
@@ -25,17 +25,21 @@ class BlpTableViewController: UITableViewController {
         var phoneNumbers = [String]()
         var emails = [String]()
         var housingDict = [String]()
+        var photoDict = [String]()
+        var lastNameDict = [String]()
+        var idDict = [String]()
+        var nextLocationArr = [String]()
         
-        func buildBlpArray(fullName: [String], location: [String], track: [String]){
+        func buildBlpArray(fullName: [String], location: [String], track: [String], phoneNum: [String], email: [String], role:[String], interests: [String], housing: [String], photo: [String],lastNameOnly: [String], id: [String], nextLoc: [String]){
             
             var i = 0
             let inArray = fullName.count
 
             while i < inArray {
-            let newBlp = Blp(name: fullName[i], location: location[i], track: track[i])!
+            
+                let newBlp = Blp(name: fullName[i], location: location[i], track: track[i], phoneNum: phoneNum[i], email: email[i], role: role[i], interests: interests[i], housing: housing[i], photo: photo[i], lastName: lastNameOnly[i], identifier: id[i], nextLocation: nextLoc[i])!
             
             blpArray += [newBlp]
-            
              ++i
             }
             
@@ -82,9 +86,25 @@ class BlpTableViewController: UITableViewController {
                         if let housing = blps["housing"] as? String {
                             housingDict.append(housing)
                         }
+                        //pull photo dict
+                        if let photos = blps["photo"] as? String {
+                            photoDict.append(photos)
+                        }
+                        //last Name only
+                        if let lastNameOnly = blps["lastName"] as? String {
+                            lastNameDict.append(lastNameOnly)
+                        }
+                        if let identifier = blps["identifier"] as? String {
+                            idDict.append(identifier)
+                        }
+                        //next location
+                        if let nextLocation = blps["nextLocation"] as? String {
+                            nextLocationArr.append(nextLocation)
+                        }
                     }
-                    buildBlpArray(names, location: locations, track: tracks)
                     
+                    
+                    buildBlpArray(names, location: locations, track: tracks, phoneNum: phoneNumbers, email: emails, role: roles, interests: interestsDict, housing: housingDict, photo: photoDict, lastNameOnly: lastNameDict, id: idDict, nextLoc: nextLocationArr)
                     
                 }
             } catch {
@@ -107,50 +127,7 @@ class BlpTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     
     
-    //load meals
-
-    /*
-    var blp1 = Blp(name: names[1], location: locations[2], track: tracks[1])!
-    blps += [blp1]
-    */
     
-    
-    //func pullJSONdata(inout names: [String], locations: [String], tracks:[String]){
-        
-  /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //Table view cells are reused and should be dequed using a cell identifier
-        
-        var fakeNames = ["pat", "katie", "dan"]
-      
-        let cellIdentifier = "BlpTableViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! BlpTableViewCell
-        
-        //fetches the appropriate meal for the data source layout
-        let blpProf = blpArray[indexPath.row]
-        
-        let fakeName = fakeNames[indexPath.row]
-        
-        
-        cell.nameLabel.text = fakeName
-        cell.locationLabel.text = "a location"
-        cell.trackLabel.text = "a track"
-        
-        
-        return cell }
-   
-
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return blpArray.count
-    }
-
-    */
     
    
     
@@ -171,11 +148,28 @@ class BlpTableViewController: UITableViewController {
         cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
             let blpProfile = self.blpArray[indexPath.row]
+
             
             let cell = tableView.dequeueReusableCellWithIdentifier("BlpTableViewCell", forIndexPath: indexPath) as! BlpTableViewCell
             cell.nameLabel.text = blpProfile.name
             cell.locationLabel.text = blpProfile.location
             cell.trackLabel.text = blpProfile.track
+            
+            
+            
+            //Housing check
+                let house = UIImage (named: "Housing")!
+            let houseCheck = blpProfile.housing
+           
+            
+            if (houseCheck == "No") {
+            cell.housingIcon.hidden = true
+            } else {
+                cell.housingIcon.image = house
+            }
+         
+            
+            
             return cell
     }
 
@@ -184,7 +178,7 @@ class BlpTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
+    
 
     
 
@@ -233,14 +227,32 @@ class BlpTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Segue to the individual profiles
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if segue.identifier == "showProfile" {
+            let blpDetailViewController = segue.destinationViewController as! viewSpecificBlp
+            
+            //get the cell that generates segue
+            
+            if let selectedBlpCell = sender as? BlpTableViewCell {
+                let indexPath = tableView.indexPathForCell(selectedBlpCell)!
+                let selectedBlp = blpArray[indexPath.row]
+                blpDetailViewController.blp = selectedBlp
+            }
+        }
+               }
+    
+    
+    
+    
+    //last bracket
+            }
 
-}
+
+    
+
+   

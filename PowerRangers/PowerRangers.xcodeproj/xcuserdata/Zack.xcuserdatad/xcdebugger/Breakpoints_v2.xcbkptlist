@@ -26,13 +26,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PowerRangers/BlpTableViewController.swift"
-            timestampString = "469938060.816538"
+            timestampString = "470617639.204977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "buildBlpArray(_:location:track:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "buildBlpArray(_:location:track:phoneNum:email:role:interests:housing:photo:lastNameOnly:id:nextLoc:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PowerRangers/BlpTableViewController.swift"
+            timestampString = "470617639.204977"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PowerRangers/viewSpecificBlp.swift"
+            timestampString = "470618427.917859"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

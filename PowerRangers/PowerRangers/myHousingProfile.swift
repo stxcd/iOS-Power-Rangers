@@ -12,7 +12,7 @@ import UIKit
 
 // BLP JSON pull for the tableviewcontroller
 
-class blpProfiles: UITableViewController {
+class MyHousingProfile: UITableViewController {
     
     
    override func viewDidLoad() {

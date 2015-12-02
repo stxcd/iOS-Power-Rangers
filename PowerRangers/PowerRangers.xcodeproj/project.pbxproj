@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1408A8C51BFCC1A2003F9802 /* BlpProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 1408A8C41BFCC1A2003F9802 /* BlpProfiles.json */; settings = {ASSET_TAGS = (); }; };
 		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; settings = {ASSET_TAGS = (); }; };
 		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		144C1CE31BFBDC180006D509 /* blpProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE11BFBDC180006D509 /* blpProfiles.swift */; settings = {ASSET_TAGS = (); }; };
-		144C1CE51BFBDDE40006D509 /* Outdated_blp.json in Resources */ = {isa = PBXBuildFile; fileRef = 144C1CE41BFBDDE40006D509 /* Outdated_blp.json */; settings = {ASSET_TAGS = (); }; };
+		145FCF861C0D0BCB00C0002E /* blpProfilePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 145FCF851C0D0BCB00C0002E /* blpProfilePage.json */; settings = {ASSET_TAGS = (); }; };
+		1491098B1C0CAB0D00511526 /* housing.json in Resources */ = {isa = PBXBuildFile; fileRef = 1491098A1C0CAB0D00511526 /* housing.json */; settings = {ASSET_TAGS = (); }; };
+		1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098C1C0CAB6F00511526 /* blpHousing.swift */; settings = {ASSET_TAGS = (); }; };
+		1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098E1C0CADD100511526 /* BlpHousingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C251C03C00C001A8D5C /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; settings = {ASSET_TAGS = (); }; };
+		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; settings = {ASSET_TAGS = (); }; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
-		65CF9B771BF14F4E0085B446 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* SecondViewController.swift */; };
+		65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */; };
 		65CF9B7A1BF14F4E0085B446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CF9B781BF14F4E0085B446 /* Main.storyboard */; };
 		65CF9B7C1BF14F4E0085B446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */; };
 		65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */; };
 		65CF9B8A1BF14F4E0085B446 /* PowerRangersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B891BF14F4E0085B446 /* PowerRangersTests.swift */; };
 		65CF9B951BF14F4E0085B446 /* PowerRangersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */; };
+		96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD10F51C04025E009A35FE /* ViewMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1408A8C41BFCC1A2003F9802 /* BlpProfiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlpProfiles.json; sourceTree = "<group>"; };
 		141373711BFFB7DB00678C5F /* Blp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blp.swift; sourceTree = "<group>"; };
 		141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewCell.swift; sourceTree = "<group>"; };
 		141373751BFFBCB900678C5F /* BlpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewController.swift; sourceTree = "<group>"; };
 		144C1CE01BFBDC180006D509 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		144C1CE11BFBDC180006D509 /* blpProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blpProfiles.swift; sourceTree = "<group>"; };
-		144C1CE41BFBDDE40006D509 /* Outdated_blp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Outdated_blp.json; sourceTree = "<group>"; };
+		145FCF851C0D0BCB00C0002E /* blpProfilePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blpProfilePage.json; sourceTree = "<group>"; };
+		1491098A1C0CAB0D00511526 /* housing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = housing.json; sourceTree = "<group>"; };
+		1491098C1C0CAB6F00511526 /* blpHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blpHousing.swift; sourceTree = "<group>"; };
+		1491098E1C0CADD100511526 /* BlpHousingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpHousingViewController.swift; sourceTree = "<group>"; };
+		14C68C251C03C00C001A8D5C /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
+		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
+		14D450581C0409DA002ECC4A /* Blp Profile Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Blp Profile Pictures"; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CF9B741BF14F4E0085B446 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
-		65CF9B761BF14F4E0085B446 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewSpecificBlp.swift; sourceTree = "<group>"; };
 		65CF9B791BF14F4E0085B446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65CF9B7E1BF14F4E0085B446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +75,8 @@
 		65CF9B901BF14F4E0085B446 /* PowerRangersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerRangersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerRangersUITests.swift; sourceTree = "<group>"; };
 		65CF9B961BF14F4E0085B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DD10F51C04025E009A35FE /* ViewMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMyProfile.swift; sourceTree = "<group>"; };
+		DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = editMyProfile.swift; path = PowerRangers/editMyProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 		65CF9B661BF14F4E0085B446 = {
 			isa = PBXGroup;
 			children = (
+				DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */,
 				65CF9B711BF14F4E0085B446 /* PowerRangers */,
 				65CF9B881BF14F4E0085B446 /* PowerRangersTests */,
 				65CF9B931BF14F4E0085B446 /* PowerRangersUITests */,
@@ -113,20 +128,26 @@
 		65CF9B711BF14F4E0085B446 /* PowerRangers */ = {
 			isa = PBXGroup;
 			children = (
-				144C1CE41BFBDDE40006D509 /* Outdated_blp.json */,
-				1408A8C41BFCC1A2003F9802 /* BlpProfiles.json */,
+				145FCF851C0D0BCB00C0002E /* blpProfilePage.json */,
+				14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */,
 				144C1CE01BFBDC180006D509 /* DataManager.swift */,
-				144C1CE11BFBDC180006D509 /* blpProfiles.swift */,
+				1491098C1C0CAB6F00511526 /* blpHousing.swift */,
+				1491098A1C0CAB0D00511526 /* housing.json */,
 				141373751BFFBCB900678C5F /* BlpTableViewController.swift */,
 				141373711BFFB7DB00678C5F /* Blp.swift */,
 				65CF9B721BF14F4E0085B446 /* AppDelegate.swift */,
 				65CF9B741BF14F4E0085B446 /* FAQViewController.swift */,
-				65CF9B761BF14F4E0085B446 /* SecondViewController.swift */,
+				14C68C251C03C00C001A8D5C /* SurveyViewController.swift */,
+				14C68C271C03C133001A8D5C /* editMyHousing.swift */,
+				96DD10F51C04025E009A35FE /* ViewMyProfile.swift */,
+				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
 				65CF9B781BF14F4E0085B446 /* Main.storyboard */,
+				1491098E1C0CADD100511526 /* BlpHousingViewController.swift */,
 				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
 				65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */,
 				141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */,
 				65CF9B801BF14F4E0085B446 /* Info.plist */,
+				14D450581C0409DA002ECC4A /* Blp Profile Pictures */,
 			);
 			path = PowerRangers;
 			sourceTree = "<group>";
@@ -252,10 +273,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1408A8C51BFCC1A2003F9802 /* BlpProfiles.json in Resources */,
 				65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */,
+				14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */,
+				1491098B1C0CAB0D00511526 /* housing.json in Resources */,
+				145FCF861C0D0BCB00C0002E /* blpProfilePage.json in Resources */,
 				65CF9B7C1BF14F4E0085B446 /* Assets.xcassets in Resources */,
-				144C1CE51BFBDDE40006D509 /* Outdated_blp.json in Resources */,
 				65CF9B7A1BF14F4E0085B446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,13 +303,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144C1CE31BFBDC180006D509 /* blpProfiles.swift in Sources */,
+				14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */,
 				141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */,
-				65CF9B771BF14F4E0085B446 /* SecondViewController.swift in Sources */,
+				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
+				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
+				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
+				1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
+				DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */,
+				1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */,
 				144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */,
 				65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */,
+				96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */,
 				65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
