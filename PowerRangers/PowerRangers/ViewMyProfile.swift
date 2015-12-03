@@ -61,14 +61,13 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     //println(newvar2)
     
     //UIImagePickerControllerDelegate
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        
-        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        
-        profPic.image = selectedImage
-        
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
-        
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
+    let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        profPic.image = selectedImage
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,6 +78,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     //Actions
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .PhotoLibrary
         imagePickerController.delegate = self
         presentViewController(imagePickerController, animated: true, completion: nil)
         
