@@ -15,18 +15,25 @@ class ViewMyProfile: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var classLabel: UILabel!
-    @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var aboutLabel: UILabel!
-    @IBOutlet weak var trackLabel: UILabel!
-    @IBOutlet weak var roleLabel: UILabel!
-    @IBOutlet weak var nextLocation: UILabel!
+
+    var dataPassed:String!
+    var secondDataPassed:String!
+    var thirdDataPassed:String!
+    var newvar: String!
+    var newvar2: String!
+    var newvar3: String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = dataPassed
+        locationLabel.text = secondDataPassed
+        classLabel.text = thirdDataPassed
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    //println(newvar)
+    //println(newvar2)
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

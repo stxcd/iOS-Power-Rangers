@@ -28,6 +28,7 @@
 		65CF9B8A1BF14F4E0085B446 /* PowerRangersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B891BF14F4E0085B446 /* PowerRangersTests.swift */; };
 		65CF9B951BF14F4E0085B446 /* PowerRangersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */; };
 		96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD10F51C04025E009A35FE /* ViewMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		96DD11721C0F991D009A35FE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD11711C0F991D009A35FE /* ViewController2.swift */; settings = {ASSET_TAGS = (); }; };
 		DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -76,7 +77,8 @@
 		65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerRangersUITests.swift; sourceTree = "<group>"; };
 		65CF9B961BF14F4E0085B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96DD10F51C04025E009A35FE /* ViewMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMyProfile.swift; sourceTree = "<group>"; };
-		DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = editMyProfile.swift; path = PowerRangers/editMyProfile.swift; sourceTree = "<group>"; };
+		96DD11711C0F991D009A35FE /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,6 @@
 		65CF9B661BF14F4E0085B446 = {
 			isa = PBXGroup;
 			children = (
-				DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */,
 				65CF9B711BF14F4E0085B446 /* PowerRangers */,
 				65CF9B881BF14F4E0085B446 /* PowerRangersTests */,
 				65CF9B931BF14F4E0085B446 /* PowerRangersUITests */,
@@ -140,8 +141,10 @@
 				14C68C251C03C00C001A8D5C /* SurveyViewController.swift */,
 				14C68C271C03C133001A8D5C /* editMyHousing.swift */,
 				96DD10F51C04025E009A35FE /* ViewMyProfile.swift */,
+				DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */,
 				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
 				65CF9B781BF14F4E0085B446 /* Main.storyboard */,
+				96DD11711C0F991D009A35FE /* ViewController2.swift */,
 				1491098E1C0CADD100511526 /* BlpHousingViewController.swift */,
 				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
 				65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */,
@@ -308,6 +311,7 @@
 				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
 				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
+				96DD11721C0F991D009A35FE /* ViewController2.swift in Sources */,
 				1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
