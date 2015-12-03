@@ -8,9 +8,9 @@
 
 import UIKit
 
-class editMyProfile: UIViewController{
+class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
-    //Outlets for textfields. Order is same as on storyboard
+    //Outlets for textfields. Order is same as on storyboard. EXCEPTION--IMAGE VIEW IS LAST
     @IBOutlet weak var fieldA: UITextField!
     @IBOutlet weak var fieldB: UITextField!
     @IBOutlet weak var fieldC: UITextField!
@@ -20,10 +20,12 @@ class editMyProfile: UIViewController{
     @IBOutlet weak var fieldG: UITextField!
     @IBOutlet weak var fieldH: UITextField!
     @IBOutlet weak var fieldI: UITextField!
+    @IBOutlet weak var photoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,7 +35,59 @@ class editMyProfile: UIViewController{
     
     }
     
+    // MARK: UIImagePickerControllerDelegate
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+     
+        // Dismiss the picker if the user canceled.
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPackingMediaWithInfo info: [String : AnyObject]) {
+        
+        // The info dictionary contains multiple representations of the image, and this uses the original.
+        
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Set photoImageView to display the selected image.
+        
+        photoImageView.image = selectedImage
+        
+        //Dismiss the picker.
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    // MARK: Actions
+
+    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+        
+        // Hide the keyboard.
+        
+        fieldA.resignFirstResponder()
+        
+        //UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        
+        let imagePickerController = UIImagePickerController()
+        
+        //Only allow photos to be picked, not taken.
+        
+        imagePickerController.sourceType = .PhotoLibrary
+        
+        // Make sure ViewController is notified when the user picks an image.
+        
+        imagePickerController.delegate = self
+        
+        presentViewController(imagePickerController, animated: true, completion: nil)
+        
+    }
+    
+    
     @IBAction func btnSubmit(sender: AnyObject) {
+        
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "btnSubmitSegue"){
