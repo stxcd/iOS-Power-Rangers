@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ViewMyProfile: UIViewController {
+class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: Properties
-    
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -22,7 +21,8 @@ class ViewMyProfile: UIViewController {
     @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var nxtlocationLabel: UILabel!
-
+    @IBOutlet weak var profPic: UIImageView!
+    
     var dataPassed:String!
     var secondDataPassed:String!
     var thirdDataPassed:String!
@@ -42,6 +42,7 @@ class ViewMyProfile: UIViewController {
     var newvar8: String!
     var newvar9: String!
     
+    //Passing Data Between View Controllers Through Textfields
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = dataPassed
@@ -59,12 +60,31 @@ class ViewMyProfile: UIViewController {
     //println(newvar)
     //println(newvar2)
     
+    //UIImagePickerControllerDelegate
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        profPic.image = selectedImage
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    //Actions
+    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        presentViewController(imagePickerController, animated: true, completion: nil)
+        
+            }
+    }
+
     
-    
-}
+
 

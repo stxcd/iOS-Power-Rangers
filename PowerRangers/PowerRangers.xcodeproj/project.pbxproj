@@ -143,10 +143,10 @@
 				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
 				65CF9B781BF14F4E0085B446 /* Main.storyboard */,
 				1491098E1C0CADD100511526 /* BlpHousingViewController.swift */,
-				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
 				65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */,
 				141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */,
 				65CF9B801BF14F4E0085B446 /* Info.plist */,
+				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
 				14D450581C0409DA002ECC4A /* Blp Profile Pictures */,
 			);
 			path = PowerRangers;

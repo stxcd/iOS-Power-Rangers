@@ -855,9 +855,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="Ttk-jq-zGd">
-                                <rect key="frame" x="20" y="75" width="155" height="154"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSE-NA-Lbq">
                                 <rect key="frame" x="20" y="257" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -951,6 +948,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="No Image Selected" translatesAutoresizingMaskIntoConstraints="NO" id="Ttk-jq-zGd">
+                                <rect key="frame" x="20" y="75" width="155" height="154"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oEl-Lx-JwA" appends="YES" id="d5q-3r-4e5"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -970,11 +974,17 @@
                         <outlet property="nameLabel" destination="eoz-7J-aoA" id="v80-qR-eJj"/>
                         <outlet property="numberLabel" destination="Sav-7a-Thi" id="6gS-DW-8Vq"/>
                         <outlet property="nxtlocationLabel" destination="D1N-0G-Y6n" id="pX5-K9-tLZ"/>
+                        <outlet property="profPic" destination="Ttk-jq-zGd" id="ZCS-gN-528"/>
                         <outlet property="roleLabel" destination="VtS-OV-0Dn" id="htN-lH-3uh"/>
                         <outlet property="trackLabel" destination="eWZ-nW-5dF" id="TKb-NI-51c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MX-Yd-iOX" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oEl-Lx-JwA">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="0Rv-lA-mNb" id="qPc-Jd-ZaH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-908" y="-49"/>
         </scene>
@@ -1138,8 +1148,8 @@
         <image name="House" width="250" height="354"/>
         <image name="Image" width="68" height="68"/>
         <image name="Image-1" width="128" height="128"/>
+        <image name="No Image Selected" width="128" height="128"/>
         <image name="Price" width="104" height="63"/>
-        <image name="ProfilePic" width="200" height="200"/>
         <image name="Profiles" width="30" height="30"/>
         <image name="Smoking" width="112" height="112"/>
         <image name="SurveyButton" width="509" height="151"/>
