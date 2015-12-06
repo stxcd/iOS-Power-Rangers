@@ -20,6 +20,15 @@ class editMyHousing: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
 
+// # IBActions
+
+extension editMyHousing {
+    
+    @IBAction func goToRootVC(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
 

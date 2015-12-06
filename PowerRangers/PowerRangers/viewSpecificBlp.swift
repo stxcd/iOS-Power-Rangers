@@ -92,9 +92,9 @@ class viewSpecificBlp: UIViewController {
         
         func popHousing(fName: [String], lName: [String], price: [String], pet: [String], smoke: [String], pool: [String], gym: [String], park: [String], laundry: [String], roommate: [String], distance: [String], gender: [String], residence: [String]){
             var i = 0
-            var arrCount = fName.count
+            let arrCount = fName.count
             while i < arrCount {
-                var newHousing = BlpHousing(firstName: fName[i], lastName: lName[i], priceRange: price[i], pets: pet[i], smoking: smoke[i], pool: pool[i], gym: gym[i], parking: park[i], laundry: laundry[i], numRoommates: roommate[i], distanceToWork: distance[i], gender: gender[i], residence: residence[i])!
+                let newHousing = BlpHousing(firstName: fName[i], lastName: lName[i], priceRange: price[i], pets: pet[i], smoking: smoke[i], pool: pool[i], gym: gym[i], parking: park[i], laundry: laundry[i], numRoommates: roommate[i], distanceToWork: distance[i], gender: gender[i], residence: residence[i])!
                 housingArray += [newHousing]
                 ++i
                 

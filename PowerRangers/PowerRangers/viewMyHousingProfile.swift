@@ -22,3 +22,15 @@ class ViewMyHousingProfile: UIViewController {
     
     
 }
+
+/*
+    IBActions
+*/
+
+extension ViewMyHousingProfile {
+    
+    @IBAction func dismissHousingProfile(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+}

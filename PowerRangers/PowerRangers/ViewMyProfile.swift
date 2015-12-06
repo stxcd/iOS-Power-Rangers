@@ -74,6 +74,9 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension ViewMyProfile {
     
     //Actions
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
@@ -82,9 +85,6 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         imagePickerController.delegate = self
         presentViewController(imagePickerController, animated: true, completion: nil)
         
-            }
     }
-
     
-
-
+}
