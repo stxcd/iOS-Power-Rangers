@@ -89,6 +89,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBAction func btnSubmit(sender: AnyObject) {
         
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "btnSubmitSegue"){
             let svc = segue.destinationViewController as! ViewMyProfile

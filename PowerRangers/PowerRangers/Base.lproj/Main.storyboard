@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -663,35 +663,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-4T-fby">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-4T-fby">
                                 <rect key="frame" x="20" y="72" width="39" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roommate Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1D-vz-WXe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Roommate Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1D-vz-WXe">
                                 <rect key="frame" x="20" y="138" width="144" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amenities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80s-Ax-IxN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Amenities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80s-Ax-IxN">
                                 <rect key="frame" x="20" y="204" width="76" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpI-7s-qPO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type of Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpI-7s-qPO">
                                 <rect key="frame" x="20" y="303" width="125" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smoker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dG-qU-3kH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Smoker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dG-qU-3kH">
                                 <rect key="frame" x="19" y="369" width="58.5" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -706,85 +706,140 @@
                                     <action selector="goToRootVC:" destination="k4K-qn-n6G" eventType="touchUpInside" id="S6d-5a-OwC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnl-t1-PZf">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnl-t1-PZf">
                                 <rect key="frame" x="19" y="100" width="44" height="30"/>
                                 <animations/>
                                 <state key="normal" title="$1000"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="osn-no-fJD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAL-PO-3EA">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAL-PO-3EA">
                                 <rect key="frame" x="71" y="100" width="44" height="30"/>
                                 <animations/>
                                 <state key="normal" title="$1500"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="ixE-Pa-XpE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-jO-z3N">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-jO-z3N">
                                 <rect key="frame" x="123" y="100" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="$2000"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="hKt-Cf-gnc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-ag-QUu">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-ag-QUu">
                                 <rect key="frame" x="20" y="166" width="33" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Male"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="HhD-PJ-hYo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-Px-hS9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-Px-hS9">
                                 <rect key="frame" x="61" y="166" width="50" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Female"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="R8c-HU-piQ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mI-A7-3TO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mI-A7-3TO">
                                 <rect key="frame" x="119" y="166" width="99" height="30"/>
                                 <animations/>
                                 <state key="normal" title="No Preference"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="pIc-O7-wht"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQG-hZ-OEl">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQG-hZ-OEl">
                                 <rect key="frame" x="20" y="232.5" width="30" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Pet"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="RnB-Ub-cTb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-zh-Xv9">
-                                <rect key="frame" x="58" y="232.5" width="121" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-zh-Xv9">
+                                <rect key="frame" x="58" y="232" width="121" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Washing Machine"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="DCK-pV-7dT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hx-eZ-y69">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hx-eZ-y69">
                                 <rect key="frame" x="187" y="233" width="30" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Pool"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="jlo-Nu-ap2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLF-CP-AHp">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLF-CP-AHp">
                                 <rect key="frame" x="20" y="265" width="32" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Gym"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="HsI-ux-Oky"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoQ-k5-M0U">
-                                <rect key="frame" x="19" y="331.5" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoQ-k5-M0U">
+                                <rect key="frame" x="19" y="331" width="73" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Apartment"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="bAd-xA-JBy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsC-n5-AOU">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsC-n5-AOU">
                                 <rect key="frame" x="99" y="331" width="45" height="30"/>
                                 <animations/>
                                 <state key="normal" title="House"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="CGE-fx-NAD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-es-68u">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-es-68u">
                                 <rect key="frame" x="152" y="331" width="99" height="30"/>
                                 <animations/>
                                 <state key="normal" title="No Preference"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="5um-Ep-7Nx"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAS-LU-LvO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAS-LU-LvO">
                                 <rect key="frame" x="19" y="397.5" width="30" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="IcM-5T-60c"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9V-Bj-ROT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9V-Bj-ROT">
                                 <rect key="frame" x="57" y="397.5" width="30" height="30"/>
                                 <animations/>
                                 <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="4Pz-an-zgV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-ry-zPZ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ror-15-GpD">
+                                <rect key="frame" x="19" y="451" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="k4K-qn-n6G" eventType="touchUpInside" id="QC2-el-3Mf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-ry-zPZ">
                                 <rect key="frame" x="95" y="398" width="99" height="30"/>
                                 <animations/>
                                 <state key="normal" title="No Preference"/>
+                                <connections>
+                                    <action selector="filterSelection:" destination="k4K-qn-n6G" eventType="touchUpInside" id="CC3-rd-y0g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -792,6 +847,7 @@
                         <constraints>
                             <constraint firstItem="5hx-eZ-y69" firstAttribute="leading" secondItem="5xZ-zh-Xv9" secondAttribute="trailing" constant="8" id="1lj-bE-1gm"/>
                             <constraint firstItem="nQG-hZ-OEl" firstAttribute="top" secondItem="80s-Ax-IxN" secondAttribute="bottom" constant="8" id="1zd-44-yDk"/>
+                            <constraint firstItem="Ror-15-GpD" firstAttribute="top" secondItem="FAS-LU-LvO" secondAttribute="bottom" constant="16" id="20z-Mz-0Dv"/>
                             <constraint firstItem="m9V-Bj-ROT" firstAttribute="top" secondItem="FAS-LU-LvO" secondAttribute="top" id="2nT-d8-tDe"/>
                             <constraint firstAttribute="leadingMargin" secondItem="S1D-vz-WXe" secondAttribute="leading" id="2uY-Pe-fTg"/>
                             <constraint firstItem="QoQ-k5-M0U" firstAttribute="leading" secondItem="7U3-J0-16T" secondAttribute="leadingMargin" constant="-1" id="4s1-sD-uzs"/>
@@ -804,6 +860,7 @@
                             <constraint firstItem="5xZ-zh-Xv9" firstAttribute="leading" secondItem="nQG-hZ-OEl" secondAttribute="trailing" constant="8" id="C5F-ee-m1x"/>
                             <constraint firstItem="80s-Ax-IxN" firstAttribute="top" secondItem="xnc-ag-QUu" secondAttribute="bottom" constant="8" id="Eq6-Ly-XhI"/>
                             <constraint firstAttribute="leadingMargin" secondItem="xnc-ag-QUu" secondAttribute="leading" id="Gtv-UI-yys"/>
+                            <constraint firstItem="Ror-15-GpD" firstAttribute="leading" secondItem="7U3-J0-16T" secondAttribute="leadingMargin" constant="-1" id="H5K-1c-Xxl"/>
                             <constraint firstItem="5xZ-zh-Xv9" firstAttribute="top" secondItem="nQG-hZ-OEl" secondAttribute="top" id="I4r-4O-wCZ"/>
                             <constraint firstItem="8mI-A7-3TO" firstAttribute="leading" secondItem="Ide-Px-hS9" secondAttribute="trailing" constant="8" id="Lvp-66-N1g"/>
                             <constraint firstItem="FQu-4T-fby" firstAttribute="top" secondItem="Gg4-IJ-RGI" secondAttribute="bottom" constant="8" id="QKl-Tu-8c6"/>
@@ -837,10 +894,28 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit My Housing Profile" id="ipr-OP-7kC"/>
+                    <connections>
+                        <outlet property="gender1" destination="xnc-ag-QUu" id="tpW-xI-mpL"/>
+                        <outlet property="gender2" destination="Ide-Px-hS9" id="bc2-og-Lxm"/>
+                        <outlet property="gender3" destination="8mI-A7-3TO" id="aIW-xO-QMg"/>
+                        <outlet property="gym" destination="CLF-CP-AHp" id="hQm-wd-Ja6"/>
+                        <outlet property="home1" destination="QoQ-k5-M0U" id="jS7-0A-bk5"/>
+                        <outlet property="home2" destination="BsC-n5-AOU" id="xNs-Ep-mjR"/>
+                        <outlet property="home3" destination="gcW-es-68u" id="dxE-8L-zG0"/>
+                        <outlet property="pet" destination="nQG-hZ-OEl" id="rwa-rZ-QdJ"/>
+                        <outlet property="pool" destination="5hx-eZ-y69" id="hvz-Gt-IBT"/>
+                        <outlet property="price1" destination="Rnl-t1-PZf" id="I3J-tw-77c"/>
+                        <outlet property="price2" destination="eAL-PO-3EA" id="XoC-gb-418"/>
+                        <outlet property="price3" destination="IK8-jO-z3N" id="N17-yK-t9A"/>
+                        <outlet property="smoke1" destination="FAS-LU-LvO" id="MvI-zW-9xH"/>
+                        <outlet property="smoke2" destination="m9V-Bj-ROT" id="Cjl-DT-Dzx"/>
+                        <outlet property="smoke3" destination="Rsi-ry-zPZ" id="Hdm-hR-epL"/>
+                        <outlet property="wm" destination="5xZ-zh-Xv9" id="zEy-hC-h0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTV-JI-ft5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-160" y="-1265"/>
+            <point key="canvasLocation" x="-165" y="-1291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Tl-nM-zeH">
@@ -984,13 +1059,31 @@
                                     <constraint firstAttribute="width" constant="50" id="sbM-cD-pHk"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="d40-Xb-E5X">
-                                <rect key="frame" x="538" y="339" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="d40-Xb-E5X">
+                                <rect key="frame" x="530" y="339" width="50" height="50"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="RQT-t2-9nv"/>
                                     <constraint firstAttribute="height" constant="50" id="mqu-rf-E47"/>
                                 </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amenities " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kX6-pC-0QZ">
+                                <rect key="frame" x="138" y="254" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvC-0d-BH4">
+                                <rect key="frame" x="130" y="283" width="96" height="51"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type of Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4O-LO-2Pg">
+                                <rect key="frame" x="142" y="339" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Do4-QA-DyY">
+                                <rect key="frame" x="130" y="368" width="114" height="76"/>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -1042,6 +1135,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="gender" destination="fBW-Rk-cps" id="4Tr-z8-LCm"/>
+                        <outlet property="housing" destination="Do4-QA-DyY" id="9m1-Xp-PGr"/>
+                        <outlet property="price" destination="ep8-Ug-Tfd" id="btk-jo-azK"/>
+                        <outlet property="smoking" destination="jGe-Ts-sei" id="iQe-qU-WaT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMp-iI-I5C" sceneMemberID="firstResponder"/>
             </objects>
