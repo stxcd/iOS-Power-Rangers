@@ -114,7 +114,6 @@ extension FAQViewController: UITableViewDataSource, UITableViewDelegate {
     func getAnswer(r:Int, cell:UITableViewCell) -> String {
         switch r {
         case 0:
-            print(cell)
             cell.textLabel?.text = answer1
         case 1:
             cell.textLabel?.text = answer2
