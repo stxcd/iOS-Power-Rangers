@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "9.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "DNA-strand-2.png",
       "scale" : "2x"
     },
     {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140E3E121C161B0900B1DDE9 /* BlpHousingArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */; settings = {ASSET_TAGS = (); }; };
 		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; };
 		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; };
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpHousingArrayManager.swift; sourceTree = "<group>"; };
 		141373711BFFB7DB00678C5F /* Blp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blp.swift; sourceTree = "<group>"; };
 		141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewCell.swift; sourceTree = "<group>"; };
 		141373751BFFBCB900678C5F /* BlpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				1491098C1C0CAB6F00511526 /* blpHousing.swift */,
 				141373711BFFB7DB00678C5F /* Blp.swift */,
 				35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */,
+				140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */,
 			);
 			name = Blp;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */,
 				1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */,
 				144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */,
+				140E3E121C161B0900B1DDE9 /* BlpHousingArrayManager.swift in Sources */,
 				65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */,
 				96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */,
 				65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */,

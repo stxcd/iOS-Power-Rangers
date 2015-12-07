@@ -9,8 +9,11 @@
 import UIKit
 
 class BlpHousingViewController: UIViewController {
+
+let blpHousingArrayManager = BlpHousingArrayManager()
     
     var blp: BlpHousing?
+    var ident : Int = 0
     
     @IBOutlet weak var firstNameLabel: UILabel!
     
@@ -22,30 +25,17 @@ class BlpHousingViewController: UIViewController {
     
     @IBOutlet weak var smokingImage: UIImageView!
     
+    @IBOutlet weak var genderImage: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstNameLabel.text = blp?.firstName
-        lastNameLabel.text = blp?.lastName
+        getHousing()
         
-        
-        let useName = blp?.lastName
-        let blpPic = UIImage(named: useName!)
-        blpImage.image = blpPic
-        
-        //pull correct price image
-        let pricePull = blp?.priceRange
-        let priceString = "Price"+pricePull!
-        let pricePic = UIImage(named: priceString)
-        priceImage.image = pricePic
-        
-        //pull correct smoking image
-        let smokingPull = blp?.smoking
-        let smokingString = "smoking"+smokingPull!
-        let smokingPic = UIImage(named: smokingString)
-        smokingImage.image = smokingPic
-        
+       // setLabels()
+        print(self.blpHousingArrayManager.array)
     }
     
         
@@ -57,6 +47,37 @@ class BlpHousingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setLabels (){
+        let housingProf = self.blpHousingArrayManager.array[ident]
+        
+        firstNameLabel.text = housingProf.firstName
+        lastNameLabel.text = housingProf.lastName
+        
+        
+        let useName = housingProf.lastName
+        let blpPic = UIImage(named: useName)
+        blpImage.image = blpPic
+        
+        //pull correct price image
+        let pricePull = housingProf.priceRange
+        let priceString = "price"+pricePull
+        let pricePic = UIImage(named: priceString)
+        priceImage.image = pricePic
+        
+        //pull correct smoking image
+        let smokingPull = housingProf.smoking
+        let smokingString = "smoking"+smokingPull
+        let smokingPic = UIImage(named: smokingString)
+        smokingImage.image = smokingPic
+        
+        //pull correct gender image
+        let genderPull = housingProf.roommateGender
+        let genderString = "gender"+genderPull
+        let genderPic = UIImage(named: genderString)
+        genderImage.image = genderPic
+        
+    
+    }
 
     /*
     // MARK: - Navigation
@@ -68,4 +89,31 @@ class BlpHousingViewController: UIViewController {
     }
     */
 
+}
+
+private extension BlpHousingViewController {
+    
+    func getHousing() {
+        
+        DataManager.getHousing { (data) -> Void in
+            do {
+                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+                
+                if let blps = json["housing"] as? [[String: AnyObject]] {
+                    for blps in blps {
+                        let profile = BlpHousing(d: blps)
+                        self.blpHousingArrayManager.setBlp(profile)
+                    }
+                }
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.setLabels()
+                })
+                
+            } catch {
+                print("error serializing JSON: \(error)")
+            }
+            
+        }
+        
+    }
 }
