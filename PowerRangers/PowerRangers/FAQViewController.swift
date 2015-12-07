@@ -23,7 +23,7 @@ class FAQViewController: UIViewController {
     var question9 = "How long and often after accepting should I expect to hear from Synchrony?"
     var question10 = "What is symposium week?"
     var question11 = "What can I expect during symposium?"
-    var question12 = "Who is Steve Kennedy’s barber?"
+    
     
     
     
@@ -38,7 +38,6 @@ class FAQViewController: UIViewController {
     var answer9 = "After accepting your offer, you should hear from a Synchrony representative about once a month leading up to your start date. You will also be given a Buddy, someone who is currently a Synchrony employee and has gone through the leadership program in the past. You can reach out to any of the Synchrony employees and your buddy at any time with any questions or concerns regarding your upcoming rotation."
     var answer10 = "Symposium week is five days of planned events, team activities, information sessions, and guest speakers. This week will serve as your introduction to everything you need to know about Synchrony Financial and the BLP program, give you the opportunity to get to know the other BLP’s, and introduce you to senior leadership."
     var answer11 = "During symposium week there will be all sorts of events and activities planned for the BLP’s to engage with each other and senior leadership. This week will serve to expose you to how Synchrony Financial operates as an organization as well as what our core values are. Should you have any questions about your rotation or Synchrony Financial this is the perfect time to ask."
-    var answer12 = "We're working on it."
     
     
     
@@ -80,5 +79,39 @@ class FAQViewController: UIViewController {
         answerLabel.text = answer4
     }
     
+    @IBAction func question5Button(sender: UIButton) {
+        questionLabel.text = question5
+        answerLabel.text = answer5
+    }
+    
+    @IBAction func question6Button(sender: UIButton) {
+        questionLabel.text = question6
+        answerLabel.text = answer6
+    }
+    
+    @IBAction func question7Button(sender: UIButton) {
+        questionLabel.text = question7
+        answerLabel.text = answer7
+    }
+    
+    @IBAction func question8Button(sender: UIButton) {
+        questionLabel.text = question8
+        answerLabel.text = answer8
+    }
+    
+    @IBAction func question9Button(sender: UIButton) {
+        questionLabel.text = question9
+        answerLabel.text = answer9
+    }
+    
+    @IBAction func question10Button(sender: UIButton) {
+        questionLabel.text = question10
+        answerLabel.text = answer10
+    }
+    
+    @IBAction func question11Button(sender: UIButton) {
+        questionLabel.text = question11
+        answerLabel.text = answer11
+    }
 }
 

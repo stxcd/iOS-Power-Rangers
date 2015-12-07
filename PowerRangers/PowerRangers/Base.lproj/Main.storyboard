@@ -18,44 +18,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-mD-XVN">
-                                <rect key="frame" x="26" y="90" width="167" height="30"/>
-                                <state key="normal" title="1. What is Lorum Ipsum?">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-mD-XVN">
+                                <rect key="frame" x="26" y="79" width="506" height="30"/>
+                                <state key="normal" title="1. When will I find out where I will be located/what my first rotation will be?">
                                     <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="question1Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ZgD-gi-xb4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdZ-nd-8pO">
-                                <rect key="frame" x="26" y="134" width="142" height="30"/>
-                                <state key="normal" title="2. Why do we use it?">
-                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="question2Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KtL-tc-LBb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLj-uC-ib0">
-                                <rect key="frame" x="26" y="178" width="198" height="30"/>
-                                <state key="normal" title="3. Where does it come from?">
+                                <rect key="frame" x="26" y="147" width="202" height="30"/>
+                                <state key="normal" title="3. How does relocation work?">
                                     <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="question3Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="m2v-JJ-GpA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMk-rn-eJ9">
-                                <rect key="frame" x="26" y="224" width="175" height="30"/>
-                                <state key="normal" title="4. Where can I get some?">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WMk-rn-eJ9">
+                                <rect key="frame" x="25" y="181" width="416" height="30"/>
+                                <state key="normal" title="4. How and when will I receive my reimbursements/bonuses?">
                                     <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zy0-ps-Bmo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-8g-rQZ">
-                                <rect key="frame" x="237" y="289" width="127" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="T14-oM-5tl">
+                                <rect key="frame" x="25" y="215" width="454" height="30"/>
+                                <state key="normal" title="5. How often do we get paid?  When do we get our first paycheck?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="rWV-5n-ozA"/>
+                                    <action selector="question5Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AAi-Ed-MsY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-tV-eT7">
+                                <rect key="frame" x="25" y="249" width="655" height="30"/>
+                                <state key="normal" title="6. When do we find out about our benefits/insurance, and how many weeks vacation do we get?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question6Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="BUC-Tt-9nL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jut-ad-b4K">
+                                <rect key="frame" x="25" y="283" width="347" height="30"/>
+                                <state key="normal" title="7. How do I book travel/hotel for symposium week?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ztM-PZ-xtR"/>
+                                    <action selector="question7Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="SX1-rf-xif"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym7-Lz-LKl">
+                                <rect key="frame" x="25" y="317" width="334" height="30"/>
+                                <state key="normal" title="8. When will I find out about my second rotation?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="pf6-ja-CqC"/>
+                                    <action selector="question8Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="VqX-HL-ObK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-8g-rQZ">
+                                <rect key="frame" x="222" y="457" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-mm-664">
-                                <rect key="frame" x="25" y="342" width="550" height="27"/>
+                                <rect key="frame" x="25" y="481" width="550" height="27"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Answer">
                                         <attributes>
@@ -79,23 +109,91 @@
                                 </attributedString>
                                 <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EHG-pR-1ho">
+                                <rect key="frame" x="25" y="351" width="539" height="30"/>
+                                <state key="normal" title="9. How long and often after accepting should I expect to hear from Synchrony?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="5WL-Y5-Gj8"/>
+                                    <action selector="question9Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xCh-Kk-aAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvB-Fb-GA6">
+                                <rect key="frame" x="25" y="385" width="205" height="30"/>
+                                <state key="normal" title="10. What is symposium week?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question10Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="O4H-L8-Kot"/>
+                                    <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="tBR-Qb-lFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSr-UW-y8m">
+                                <rect key="frame" x="25" y="419" width="283" height="30"/>
+                                <state key="normal" title="11. What can I expect during symposium?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question11Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="VNT-tr-i8k"/>
+                                    <action selector="question4Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="K6m-VB-oC6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qdZ-nd-8pO">
+                                <rect key="frame" x="26" y="113" width="367" height="30"/>
+                                <state key="normal" title="2. When do I need to start looking for an appartment?">
+                                    <color key="titleColor" red="0.0039886513780000004" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="question2Button:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KtL-tc-LBb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WMk-rn-eJ9" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="4K2-6i-jBw"/>
+                            <constraint firstItem="VSr-UW-y8m" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="53M-6f-nzd"/>
                             <constraint firstItem="9Z3-mD-XVN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="6sO-dU-ROI"/>
-                            <constraint firstItem="WMk-rn-eJ9" firstAttribute="top" secondItem="kLj-uC-ib0" secondAttribute="bottom" constant="15" id="83m-fL-kZB"/>
+                            <constraint firstItem="jd9-tV-eT7" firstAttribute="top" secondItem="T14-oM-5tl" secondAttribute="bottom" constant="4" id="7nv-PW-D8z"/>
+                            <constraint firstItem="WMk-rn-eJ9" firstAttribute="top" secondItem="kLj-uC-ib0" secondAttribute="bottom" constant="4" id="83m-fL-kZB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Z3-mD-XVN" secondAttribute="trailing" constant="20" id="9Ms-LP-MY3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qdZ-nd-8pO" secondAttribute="trailing" constant="20" id="A3a-Qp-cMR"/>
                             <constraint firstItem="qdZ-nd-8pO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="Axv-Oo-3n6"/>
+                            <constraint firstItem="EHG-pR-1ho" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="CAn-8p-s3I"/>
+                            <constraint firstItem="pvB-Fb-GA6" firstAttribute="top" secondItem="EHG-pR-1ho" secondAttribute="bottom" constant="4" id="EeV-7g-lyN"/>
                             <constraint firstItem="Tyt-mm-664" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="HMY-yF-neN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tyt-mm-664" secondAttribute="trailing" constant="20" id="IIQ-0j-Fg0"/>
+                            <constraint firstItem="ym7-Lz-LKl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="J42-eV-je9"/>
+                            <constraint firstItem="ym7-Lz-LKl" firstAttribute="top" secondItem="Jut-ad-b4K" secondAttribute="bottom" constant="4" id="JMm-mR-IKc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kLj-uC-ib0" secondAttribute="trailing" constant="20" id="Khy-sF-iM0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vKE-8g-rQZ" secondAttribute="trailing" constant="20" id="OVU-Hm-CiB"/>
+                            <constraint firstItem="Tyt-mm-664" firstAttribute="top" secondItem="vKE-8g-rQZ" secondAttribute="bottom" constant="10" id="SiN-zi-pLt"/>
                             <constraint firstItem="Tyt-mm-664" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="30" id="U7D-Oe-Asd"/>
-                            <constraint firstItem="qdZ-nd-8pO" firstAttribute="top" secondItem="9Z3-mD-XVN" secondAttribute="bottom" constant="15" id="XSk-dz-IW9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jd9-tV-eT7" secondAttribute="trailing" constant="20" id="WlC-Fd-6uF"/>
+                            <constraint firstItem="qdZ-nd-8pO" firstAttribute="top" secondItem="9Z3-mD-XVN" secondAttribute="bottom" constant="4" id="XSk-dz-IW9"/>
+                            <constraint firstItem="pvB-Fb-GA6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="YxM-ao-QYZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHG-pR-1ho" secondAttribute="trailing" constant="20" id="aA6-ir-qtm"/>
+                            <constraint firstItem="T14-oM-5tl" firstAttribute="top" secondItem="WMk-rn-eJ9" secondAttribute="bottom" constant="4" id="bLl-vO-fxF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WMk-rn-eJ9" secondAttribute="trailing" constant="20" id="bS0-Dh-coC"/>
+                            <constraint firstItem="jd9-tV-eT7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="cCB-FW-Jgm"/>
                             <constraint firstItem="9Z3-mD-XVN" firstAttribute="top" secondItem="2r2-AT-01k" secondAttribute="bottom" constant="19" id="cdb-ub-Qzv"/>
                             <constraint firstItem="2r2-AT-01k" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="dYb-h8-gkC"/>
+                            <constraint firstItem="T14-oM-5tl" firstAttribute="top" secondItem="WMk-rn-eJ9" secondAttribute="bottom" constant="4" id="dcX-bO-jLy"/>
+                            <constraint firstItem="jd9-tV-eT7" firstAttribute="top" secondItem="WMk-rn-eJ9" secondAttribute="bottom" constant="4" id="fKi-LM-qcz"/>
+                            <constraint firstItem="vKE-8g-rQZ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="hdJ-Rp-nXR"/>
+                            <constraint firstItem="vKE-8g-rQZ" firstAttribute="top" secondItem="VSr-UW-y8m" secondAttribute="bottom" constant="10" id="hnS-5r-7wd"/>
                             <constraint firstItem="2r2-AT-01k" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="i3e-49-XeK"/>
-                            <constraint firstItem="kLj-uC-ib0" firstAttribute="top" secondItem="qdZ-nd-8pO" secondAttribute="bottom" constant="15" id="jJr-cR-HeR"/>
+                            <constraint firstItem="kLj-uC-ib0" firstAttribute="top" secondItem="qdZ-nd-8pO" secondAttribute="bottom" constant="4" id="jJr-cR-HeR"/>
                             <constraint firstItem="vKE-8g-rQZ" firstAttribute="top" secondItem="WMk-rn-eJ9" secondAttribute="bottom" constant="40" id="kL1-Jt-MQ6"/>
-                            <constraint firstItem="9Z3-mD-XVN" firstAttribute="top" secondItem="2r2-AT-01k" secondAttribute="bottom" constant="20" id="kPf-Gd-t22"/>
+                            <constraint firstItem="9Z3-mD-XVN" firstAttribute="top" secondItem="2r2-AT-01k" secondAttribute="bottom" constant="10" id="kPf-Gd-t22"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T14-oM-5tl" secondAttribute="trailing" constant="20" id="lhV-gx-qKa"/>
+                            <constraint firstItem="VSr-UW-y8m" firstAttribute="top" secondItem="pvB-Fb-GA6" secondAttribute="bottom" constant="4" id="mxg-Bh-v6I"/>
+                            <constraint firstItem="Jut-ad-b4K" firstAttribute="top" secondItem="jd9-tV-eT7" secondAttribute="bottom" constant="4" id="n5I-lZ-IbV"/>
+                            <constraint firstItem="Jut-ad-b4K" firstAttribute="top" secondItem="jd9-tV-eT7" secondAttribute="bottom" constant="4" id="pEW-JW-KIe"/>
+                            <constraint firstItem="EHG-pR-1ho" firstAttribute="top" secondItem="ym7-Lz-LKl" secondAttribute="bottom" constant="4" id="pPG-iJ-YIs"/>
+                            <constraint firstItem="Jut-ad-b4K" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="q5R-PU-Ing"/>
+                            <constraint firstItem="Jut-ad-b4K" firstAttribute="top" secondItem="T14-oM-5tl" secondAttribute="bottom" constant="4" id="qoD-t5-Jhn"/>
+                            <constraint firstItem="T14-oM-5tl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="tQW-52-4Iy"/>
                             <constraint firstItem="Tyt-mm-664" firstAttribute="top" secondItem="vKE-8g-rQZ" secondAttribute="bottom" constant="25" id="wra-Fs-sbU"/>
                             <constraint firstItem="vKE-8g-rQZ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="x3J-Px-60b"/>
                             <constraint firstItem="kLj-uC-ib0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="x4Y-bl-Sfc"/>
@@ -103,7 +201,14 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="cdb-ub-Qzv"/>
+                                <exclude reference="Khy-sF-iM0"/>
+                                <exclude reference="dcX-bO-jLy"/>
+                                <exclude reference="fKi-LM-qcz"/>
+                                <exclude reference="n5I-lZ-IbV"/>
+                                <exclude reference="qoD-t5-Jhn"/>
                                 <exclude reference="U7D-Oe-Asd"/>
+                                <exclude reference="wra-Fs-sbU"/>
+                                <exclude reference="kL1-Jt-MQ6"/>
                             </mask>
                         </variation>
                     </view>
