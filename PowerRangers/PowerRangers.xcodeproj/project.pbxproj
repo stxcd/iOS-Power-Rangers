@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; settings = {ASSET_TAGS = (); }; };
-		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		145FCF861C0D0BCB00C0002E /* blpProfilePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 145FCF851C0D0BCB00C0002E /* blpProfilePage.json */; settings = {ASSET_TAGS = (); }; };
-		1491098B1C0CAB0D00511526 /* housing.json in Resources */ = {isa = PBXBuildFile; fileRef = 1491098A1C0CAB0D00511526 /* housing.json */; settings = {ASSET_TAGS = (); }; };
-		1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098C1C0CAB6F00511526 /* blpHousing.swift */; settings = {ASSET_TAGS = (); }; };
-		1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098E1C0CADD100511526 /* BlpHousingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C251C03C00C001A8D5C /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; settings = {ASSET_TAGS = (); }; };
-		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; settings = {ASSET_TAGS = (); }; };
-		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; settings = {ASSET_TAGS = (); }; };
+		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; };
+		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; };
+		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; };
+		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; };
+		145FCF861C0D0BCB00C0002E /* blpProfilePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 145FCF851C0D0BCB00C0002E /* blpProfilePage.json */; };
+		1491098B1C0CAB0D00511526 /* housing.json in Resources */ = {isa = PBXBuildFile; fileRef = 1491098A1C0CAB0D00511526 /* housing.json */; };
+		1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098C1C0CAB6F00511526 /* blpHousing.swift */; };
+		1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098E1C0CADD100511526 /* BlpHousingViewController.swift */; };
+		14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C251C03C00C001A8D5C /* SurveyViewController.swift */; };
+		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; };
+		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; };
+		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; };
+		35E45A6E1C15E64500B64D50 /* BlpArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
 		65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */; };
@@ -27,8 +28,8 @@
 		65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */; };
 		65CF9B8A1BF14F4E0085B446 /* PowerRangersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B891BF14F4E0085B446 /* PowerRangersTests.swift */; };
 		65CF9B951BF14F4E0085B446 /* PowerRangersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B941BF14F4E0085B446 /* PowerRangersUITests.swift */; };
-		96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD10F51C04025E009A35FE /* ViewMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
-		DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		96DD10F61C04025E009A35FE /* ViewMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD10F51C04025E009A35FE /* ViewMyProfile.swift */; };
+		DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
 		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
 		14D450581C0409DA002ECC4A /* Blp Profile Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Blp Profile Pictures"; sourceTree = "<group>"; };
+		35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpArrayManager.swift; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CF9B741BF14F4E0085B446 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35A8EACB1C15ED9C0082AC17 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				1491098A1C0CAB0D00511526 /* housing.json */,
+				145FCF851C0D0BCB00C0002E /* blpProfilePage.json */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		35A8EACC1C15EDBC0082AC17 /* Blp */ = {
+			isa = PBXGroup;
+			children = (
+				1491098C1C0CAB6F00511526 /* blpHousing.swift */,
+				141373711BFFB7DB00678C5F /* Blp.swift */,
+				35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */,
+			);
+			name = Blp;
+			sourceTree = "<group>";
+		};
+		35A8EACD1C15EE250082AC17 /* Vcs */ = {
+			isa = PBXGroup;
+			children = (
+				14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */,
+				141373751BFFBCB900678C5F /* BlpTableViewController.swift */,
+				65CF9B741BF14F4E0085B446 /* FAQViewController.swift */,
+				14C68C251C03C00C001A8D5C /* SurveyViewController.swift */,
+				1491098E1C0CADD100511526 /* BlpHousingViewController.swift */,
+				14C68C271C03C133001A8D5C /* editMyHousing.swift */,
+				96DD10F51C04025E009A35FE /* ViewMyProfile.swift */,
+				DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */,
+				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
+			);
+			name = Vcs;
+			sourceTree = "<group>";
+		};
+		35A8EACE1C15EE580082AC17 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		65CF9B661BF14F4E0085B446 = {
 			isa = PBXGroup;
 			children = (
@@ -127,24 +172,14 @@
 		65CF9B711BF14F4E0085B446 /* PowerRangers */ = {
 			isa = PBXGroup;
 			children = (
-				145FCF851C0D0BCB00C0002E /* blpProfilePage.json */,
-				14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */,
-				144C1CE01BFBDC180006D509 /* DataManager.swift */,
-				1491098C1C0CAB6F00511526 /* blpHousing.swift */,
-				1491098A1C0CAB0D00511526 /* housing.json */,
-				141373751BFFBCB900678C5F /* BlpTableViewController.swift */,
-				141373711BFFB7DB00678C5F /* Blp.swift */,
 				65CF9B721BF14F4E0085B446 /* AppDelegate.swift */,
-				65CF9B741BF14F4E0085B446 /* FAQViewController.swift */,
-				14C68C251C03C00C001A8D5C /* SurveyViewController.swift */,
-				14C68C271C03C133001A8D5C /* editMyHousing.swift */,
-				96DD10F51C04025E009A35FE /* ViewMyProfile.swift */,
-				DB8A9B8B1C041AA2008E0B66 /* editMyProfile.swift */,
-				65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */,
+				144C1CE01BFBDC180006D509 /* DataManager.swift */,
+				35A8EACE1C15EE580082AC17 /* Cell */,
+				35A8EACB1C15ED9C0082AC17 /* Json */,
+				35A8EACC1C15EDBC0082AC17 /* Blp */,
+				35A8EACD1C15EE250082AC17 /* Vcs */,
 				65CF9B781BF14F4E0085B446 /* Main.storyboard */,
-				1491098E1C0CADD100511526 /* BlpHousingViewController.swift */,
 				65CF9B7D1BF14F4E0085B446 /* LaunchScreen.storyboard */,
-				141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */,
 				65CF9B801BF14F4E0085B446 /* Info.plist */,
 				65CF9B7B1BF14F4E0085B446 /* Assets.xcassets */,
 				14D450581C0409DA002ECC4A /* Blp Profile Pictures */,
@@ -305,6 +340,7 @@
 			files = (
 				14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */,
 				141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */,
+				35E45A6E1C15E64500B64D50 /* BlpArrayManager.swift in Sources */,
 				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
 				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class Blp {
+struct Blp {
     
     //MARK: Properties
     
-    var name: String
-    var location: String
+    let name: String
+    let location: String
     var track: String
     var phoneNum: String
     var email: String
@@ -27,26 +27,19 @@ class Blp {
     
     //MARK: Initialization
     
-    init? (name:String, location: String, track: String, phoneNum: String, email: String, role: String, interests: String, housing: String, photo: String, lastName: String, identifier: String, nextLocation: String) {
-        
-        //Initialize stored values
-        
-        self.name = name
-        self.location = location
-        self.track = track
-        self.phoneNum = phoneNum
-        self.email = email
-        self.role = role
-        self.interests = interests
-        self.housing = housing
-        self.photo = photo
-        self.lastName = lastName
-        self.identifier = identifier
-        self.nextLocation = nextLocation
-        
-        
-        //initalizer to check if there is no name or rating is negative
-        
-        
+    init(d:[String:AnyObject]) {
+        self.name = d["firstName"] as? String ?? ""
+        self.lastName = d["lastName"] as? String ?? ""
+        self.track = d["track"] as? String ?? ""
+        self.role = d["role"] as? String ?? ""
+        self.location = d["locaton"] as? String ?? ""
+        self.interests = d["interests"] as? String ?? ""
+        self.phoneNum = d["phoneNum"] as? String ?? ""
+        self.email = d["email"] as? String ?? ""
+        self.housing = d["housing"] as? String ?? ""
+        self.photo = d["photo"] as? String ?? ""
+        self.lastName = d["lastName"] as? String ?? ""
+        self.identifier = d["identifier"] as? String ?? ""
+        self.nextLocation = d["location"] as? String ?? ""
     }
 }

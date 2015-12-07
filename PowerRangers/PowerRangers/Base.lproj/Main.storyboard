@@ -164,29 +164,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjJ-de-IAS">
-                                            <rect key="frame" x="15" y="8" width="519" height="26.5"/>
+                                            <rect key="frame" x="15" y="8" width="519" height="21.5"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPf-eO-Dn2">
-                                            <rect key="frame" x="15" y="38" width="42" height="20.5"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="QHd-gB-hAD">
-                                            <rect key="frame" x="542" y="8" width="50" height="50"/>
+                                            <rect key="frame" x="542" y="8" width="50" height="53.5"/>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="YJ8-jP-mwd"/>
                                                 <constraint firstAttribute="width" constant="50" id="mLb-Zp-zZy"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rl-oy-Zor">
-                                            <rect key="frame" x="65" y="37.5" width="42" height="20.5"/>
+                                            <rect key="frame" x="15" y="40" width="42" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -199,15 +191,12 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="QHd-gB-hAD" secondAttribute="bottom" id="5zG-NK-qCo"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="5Rl-oy-Zor" secondAttribute="bottom" constant="1" id="Ev4-q9-9XW"/>
                                         <constraint firstItem="5Rl-oy-Zor" firstAttribute="centerY" secondItem="DGV-op-hDN" secondAttribute="centerY" id="Gm7-Tg-m2U"/>
-                                        <constraint firstItem="WPf-eO-Dn2" firstAttribute="leading" secondItem="DGV-op-hDN" secondAttribute="leadingMargin" constant="7" id="HbX-j6-9fi"/>
                                         <constraint firstItem="ZjJ-de-IAS" firstAttribute="leading" secondItem="DGV-op-hDN" secondAttribute="leadingMargin" constant="7" id="Jut-f1-rCh"/>
                                         <constraint firstAttribute="topMargin" secondItem="QHd-gB-hAD" secondAttribute="top" id="M1k-He-Db7"/>
-                                        <constraint firstItem="5Rl-oy-Zor" firstAttribute="leading" secondItem="WPf-eO-Dn2" secondAttribute="trailing" constant="8" id="NVY-Uy-Qp6"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="QHd-gB-hAD" secondAttribute="trailing" id="ecP-0C-hPy"/>
                                         <constraint firstItem="QHd-gB-hAD" firstAttribute="leading" secondItem="ZjJ-de-IAS" secondAttribute="trailing" constant="8" id="ewh-tg-Uct"/>
-                                        <constraint firstItem="WPf-eO-Dn2" firstAttribute="top" secondItem="ZjJ-de-IAS" secondAttribute="bottom" constant="4" id="rEd-nG-NPI"/>
                                         <constraint firstAttribute="topMargin" secondItem="ZjJ-de-IAS" secondAttribute="top" id="tUx-1I-tU8"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="WPf-eO-Dn2" secondAttribute="bottom" id="wV5-Lr-TAV"/>
+                                        <constraint firstItem="5Rl-oy-Zor" firstAttribute="leading" secondItem="DGV-op-hDN" secondAttribute="leadingMargin" constant="7" id="wl3-Uz-KOI"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
@@ -219,7 +208,6 @@
                                 <animations/>
                                 <connections>
                                     <outlet property="housingIcon" destination="QHd-gB-hAD" id="So6-T0-gkQ"/>
-                                    <outlet property="locationLabel" destination="WPf-eO-Dn2" id="Qyf-r5-lZw"/>
                                     <outlet property="nameLabel" destination="ZjJ-de-IAS" id="6cn-Ng-xXS"/>
                                     <outlet property="trackLabel" destination="5Rl-oy-Zor" id="7Gl-kX-0Hb"/>
                                     <segue destination="tUe-RS-Eof" kind="show" identifier="showProfile" id="Aky-6V-1rS"/>
@@ -368,7 +356,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7u-Pe-q4Z">
-                                <rect key="frame" x="229" y="554" width="142" height="30"/>
+                                <rect key="frame" x="229" y="505" width="142" height="30"/>
                                 <animations/>
                                 <state key="normal" title="View Housing Profile"/>
                                 <connections>
@@ -1566,8 +1554,8 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Aky-6V-1rS"/>
         <segue reference="OTR-n9-T45"/>
         <segue reference="aym-Vm-1bG"/>
-        <segue reference="Oam-bJ-xMB"/>
     </inferredMetricsTieBreakers>
 </document>
