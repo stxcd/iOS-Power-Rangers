@@ -42,6 +42,9 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var newvar8: String!
     var newvar9: String!
     
+    var filterlabels = [String]()
+    var profileValues = [String:String]()
+    
     //Passing Data Between View Controllers Through Textfields
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +58,21 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         aboutLabel.text = eighthDataPassed
         nxtlocationLabel.text = nighthnDataPassed
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        getProfileValues()
+    }
+    
+    func getProfileValues() {
+        if let name = nameLabel.text, email = emailLabel.text, number = numberLabel.text, location = locationLabel.text, c = classLabel.text {
+            profileValues["name"] = name
+            profileValues["email"] = email
+            profileValues["number"] = number
+            profileValues["location"] = location
+            profileValues["class"] = c
+        }
     }
     
     //println(newvar)
@@ -92,7 +110,12 @@ extension ViewMyProfile {
             if let edit = nav.topViewController as? editMyProfile {
                 edit.parent = self
             }
+        }else if let nav = segue.destinationViewController as? UINavigationController {
+            if let viewMyHousing = nav.topViewController as? ViewMyHousingProfile {
+                viewMyHousing.profileValues = profileValues
+            }
         }
     }
     
+
 }
