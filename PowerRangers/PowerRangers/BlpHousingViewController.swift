@@ -15,6 +15,10 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     var blp: BlpHousing?
     var ident : Int = 0
     
+    @IBOutlet weak var amenityRight: UILabel!
+    
+    @IBOutlet weak var amenityLeft: UILabel!
+    
     @IBOutlet weak var firstNameLabel: UILabel!
     
     @IBOutlet weak var lastNameLabel: UILabel!
@@ -27,7 +31,15 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     
     @IBOutlet weak var genderImage: UIImageView!
     
+    @IBOutlet weak var gymImage: UIImageView!
     
+    @IBOutlet weak var poolImage: UIImageView!
+    
+    @IBOutlet weak var parkingImage: UIImageView!
+    
+    @IBOutlet weak var laundryImage: UIImageView!
+    
+    @IBOutlet weak var genderLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,13 +82,67 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         let smokingPic = UIImage(named: smokingString)
         smokingImage.image = smokingPic
         
-        //pull correct gender image
+        var gymCheck : Bool = false
+        //pull correct gym image
+        let gymPull = housingProf.gym
+        if gymPull == "1" {
+            let gymPic = UIImage(named: "gym")
+            gymImage.image = gymPic
+            gymCheck = true
+        } else {
+            gymImage.hidden = true
+        }
+        
+        var poolCheck : Bool = false
+    
+        //pull correct pool image
+        let poolPull = housingProf.pool
+        if poolPull == "1" {
+            let poolPic = UIImage(named: "pool")
+            poolImage.image = poolPic
+            poolCheck = true
+        } else {
+            poolImage.hidden = true
+        }
+        
+        //pull gender
         let genderPull = housingProf.roommateGender
         let genderString = "gender"+genderPull
         let genderPic = UIImage(named: genderString)
         genderImage.image = genderPic
         
+        
+        var laundryCheck : Bool = false
+        //pull correct laundry image
+        let laundryPull = housingProf.laundry
+        if laundryPull == "1" {
+            let laundryPic = UIImage(named: "laundry")
+            laundryImage.image = laundryPic
+            laundryCheck = true
+        } else {
+            laundryImage.hidden = true
+        }
+        
+        var parkingCheck : Bool = false
+
+        //pull correct parking image
+        let parkingPull = housingProf.parking
+        if parkingPull == "1" {
+            let parkingPic = UIImage(named: "parking")
+            parkingImage.image = parkingPic
+            parkingCheck = true
+        } else {
+            parkingImage.hidden = true
+        }
     
+        if gymCheck && parkingCheck {
+            amenityRight.hidden = true
+        } else if laundryCheck && poolCheck {
+            amenityRight.hidden = true
+        } else {
+            amenityLeft.hidden = true
+        }
+        
     }
 
     /*
