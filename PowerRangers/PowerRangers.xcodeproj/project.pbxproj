@@ -19,6 +19,7 @@
 		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; };
 		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; };
 		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; };
+		35A8EAD11C16542B0082AC17 /* PickerViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */; };
 		35E45A6E1C15E64500B64D50 /* BlpArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
@@ -62,6 +63,7 @@
 		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
 		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
 		14D450581C0409DA002ECC4A /* Blp Profile Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Blp Profile Pictures"; sourceTree = "<group>"; };
+		35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewContainer.swift; sourceTree = "<group>"; };
 		35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpArrayManager.swift; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		35A8EACF1C1654110082AC17 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		65CF9B661BF14F4E0085B446 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 			children = (
 				65CF9B721BF14F4E0085B446 /* AppDelegate.swift */,
 				144C1CE01BFBDC180006D509 /* DataManager.swift */,
+				35A8EACF1C1654110082AC17 /* view */,
 				35A8EACE1C15EE580082AC17 /* Cell */,
 				35A8EACB1C15ED9C0082AC17 /* Json */,
 				35A8EACC1C15EDBC0082AC17 /* Blp */,
@@ -338,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A8EAD11C16542B0082AC17 /* PickerViewContainer.swift in Sources */,
 				14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */,
 				141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */,
 				35E45A6E1C15E64500B64D50 /* BlpArrayManager.swift in Sources */,
