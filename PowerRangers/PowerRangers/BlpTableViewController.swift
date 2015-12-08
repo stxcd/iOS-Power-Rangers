@@ -36,20 +36,20 @@ class BlpTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("BlpTableViewCell", forIndexPath: indexPath) as! BlpTableViewCell
         
             let blpProfile = self.blpArrayManager.array[indexPath.row]
-            cell.nameLabel.text = blpProfile.name
+            cell.nameLabel.text = "\(blpProfile.name) \(blpProfile.lastName)"
 //          blpProfile.location
             cell.trackLabel.text = "\(blpProfile.track), \(blpProfile.location)"
             
             //Housing check
             let house = UIImage (named: "Housing")!
             cell.housingIcon.image = house
-//            let houseCheck = blpProfile.housing
         
-//            if (houseCheck == "No") {
-//            cell.housingIcon.hidden = true
-//            } else {
-//                cell.housingIcon.image = house
-//            }
+            if blpProfile.housing == "No" {
+            cell.housingIcon.hidden = true
+            } else {
+                cell.housingIcon.hidden = false
+                cell.housingIcon.image = house
+            }
         
             return cell
     }

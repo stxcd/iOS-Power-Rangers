@@ -23,43 +23,13 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var nxtlocationLabel: UILabel!
     @IBOutlet weak var profPic: UIImageView!
     
-    var dataPassed:String!
-    var secondDataPassed:String!
-    var thirdDataPassed:String!
-    var fourthDataPassed:String!
-    var fifthDataPassed:String!
-    var sixthDataPassed:String!
-    var seventhDataPassed:String!
-    var eighthDataPassed:String!
-    var nighthnDataPassed:String!
-    var tenthDataPassed: UIImage!
-    var newvar: String!
-    var newvar2: String!
-    var newvar3: String!
-    var newvar4: String!
-    var newvar5: String!
-    var newvar6: String!
-    var newvar7: String!
-    var newvar8: String!
-    var newvar9: String!
-    var newvar10: UIImage!
-    
     var filterlabels = [String]()
     var profileValues = [String:String]()
     
     //Passing Data Between View Controllers Through Textfields
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = dataPassed
-        locationLabel.text = secondDataPassed
-        classLabel.text = thirdDataPassed
-        numberLabel.text = fourthDataPassed
-        emailLabel.text = fifthDataPassed
-        trackLabel.text = sixthDataPassed
-        roleLabel.text = seventhDataPassed
-        aboutLabel.text = eighthDataPassed
-        nxtlocationLabel.text = nighthnDataPassed
-        profPic.image = tenthDataPassed
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -69,6 +39,13 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func getProfileValues() {
+        
+        let saveProfile = SaveProfile()
+        if let dict = saveProfile.getProfile() {
+            let profile = Blp(d: dict)
+            setProfileValues(profile)
+        }
+        
         if let name = nameLabel.text, email = emailLabel.text, number = numberLabel.text, location = locationLabel.text, c = classLabel.text {
             profileValues["name"] = name
             profileValues["email"] = email
@@ -76,6 +53,18 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
             profileValues["location"] = location
             profileValues["classlabel"] = c
         }
+    }
+    
+    func setProfileValues(profile:Blp) {
+        nameLabel.text = profile.name
+        locationLabel.text = profile.location
+        classLabel.text = profile.identifier
+        numberLabel.text = profile.phoneNum
+        emailLabel.text = profile.email
+        trackLabel.text = profile.track
+        roleLabel.text = profile.role
+        aboutLabel.text = profile.interests
+        nxtlocationLabel.text = profile.nextLocation
     }
     
     //println(newvar)

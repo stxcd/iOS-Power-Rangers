@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Blp {
+class Blp {
     
     //MARK: Properties
     
