@@ -615,24 +615,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Survey Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3S-ik-H0V">
-                                <rect key="frame" x="141" y="36" width="319" height="30"/>
+                                <rect key="frame" x="172" y="36" width="257" height="24"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KPj-b4-44m">
-                                <rect key="frame" x="41" y="90" width="518" height="56"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="cBA-5j-AX7"/>
-                                </constraints>
-                                <string key="text">Please follow the link below to take surveys designed for BLPs. Please check periodically to ensure that all necessary surveys have been completed.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLICK ABOVE TO VIEW SURVEYS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dt-XQ-NgC">
-                                <rect key="frame" x="168.5" y="395" width="264" height="20.5"/>
+                                <rect key="frame" x="168" y="395" width="264" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -650,21 +640,28 @@
                                     <action selector="surveyButton:" destination="EOc-hW-VuS" eventType="touchUpInside" id="8DH-A3-7wZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3t-b0-IZC">
+                                <rect key="frame" x="20" y="84" width="560" height="33.5"/>
+                                <animations/>
+                                <string key="text">Please follow the link below to take surveys designed for BLPs. Please check periodically to ensure that all necessary surveys have been completed.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UrF-Qz-VTi" firstAttribute="centerX" secondItem="4cq-4X-7xJ" secondAttribute="centerX" id="7P3-Db-kV8"/>
-                            <constraint firstItem="KPj-b4-44m" firstAttribute="leading" secondItem="4cq-4X-7xJ" secondAttribute="leadingMargin" constant="21" id="CLT-4l-CRu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KPj-b4-44m" secondAttribute="trailing" constant="21" id="FRy-Eq-cmj"/>
+                            <constraint firstItem="m3t-b0-IZC" firstAttribute="top" secondItem="k3S-ik-H0V" secondAttribute="bottom" constant="24" id="IlV-ir-NdQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="m3t-b0-IZC" secondAttribute="leading" id="Oax-ch-FID"/>
                             <constraint firstItem="UrF-Qz-VTi" firstAttribute="centerY" secondItem="4cq-4X-7xJ" secondAttribute="centerY" id="UeX-cE-w2j"/>
                             <constraint firstItem="k3S-ik-H0V" firstAttribute="centerX" secondItem="4cq-4X-7xJ" secondAttribute="centerX" id="VSx-qe-U5R"/>
                             <constraint firstItem="3dt-XQ-NgC" firstAttribute="centerX" secondItem="4cq-4X-7xJ" secondAttribute="centerX" id="YPd-rr-M8G"/>
-                            <constraint firstItem="KPj-b4-44m" firstAttribute="top" secondItem="k3S-ik-H0V" secondAttribute="bottom" constant="24" id="efg-8Q-h3A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m3t-b0-IZC" secondAttribute="trailing" id="mzc-sn-8Qy"/>
                             <constraint firstItem="k3S-ik-H0V" firstAttribute="top" secondItem="e27-xo-8W2" secondAttribute="bottom" constant="16" id="oeD-rg-RV7"/>
                             <constraint firstItem="3dt-XQ-NgC" firstAttribute="top" secondItem="UrF-Qz-VTi" secondAttribute="bottom" constant="24" id="rZH-Oc-1kD"/>
                             <constraint firstItem="k3S-ik-H0V" firstAttribute="centerY" secondItem="4cq-4X-7xJ" secondAttribute="centerY" id="tT2-yG-ENQ"/>
-                            <constraint firstItem="KPj-b4-44m" firstAttribute="centerX" secondItem="4cq-4X-7xJ" secondAttribute="centerX" id="wQI-RH-lyv"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
