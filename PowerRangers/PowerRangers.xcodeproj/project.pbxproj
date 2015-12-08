@@ -24,6 +24,7 @@
 		35A8EAD31C168D900082AC17 /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD21C168D900082AC17 /* FAQCell.swift */; };
 		35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD41C1693280082AC17 /* AnswerView.swift */; };
 		35E45A6E1C15E64500B64D50 /* BlpArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */; };
+		35F7587B1C173BE3006701DE /* UIColor+Synchrony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7587A1C173BE3006701DE /* UIColor+Synchrony.swift */; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
 		65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B761BF14F4E0085B446 /* viewSpecificBlp.swift */; };
@@ -71,6 +72,7 @@
 		35A8EAD21C168D900082AC17 /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
 		35A8EAD41C1693280082AC17 /* AnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpArrayManager.swift; sourceTree = "<group>"; };
+		35F7587A1C173BE3006701DE /* UIColor+Synchrony.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Synchrony.swift"; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CF9B741BF14F4E0085B446 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				65CF9B721BF14F4E0085B446 /* AppDelegate.swift */,
 				144C1CE01BFBDC180006D509 /* DataManager.swift */,
+				35F7587A1C173BE3006701DE /* UIColor+Synchrony.swift */,
 				35A8EACF1C1654110082AC17 /* view */,
 				35A8EACE1C15EE580082AC17 /* Cell */,
 				35A8EACB1C15ED9C0082AC17 /* Json */,
@@ -365,6 +368,7 @@
 				65CF9B771BF14F4E0085B446 /* viewSpecificBlp.swift in Sources */,
 				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
+				35F7587B1C173BE3006701DE /* UIColor+Synchrony.swift in Sources */,
 				1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
 				35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */,
