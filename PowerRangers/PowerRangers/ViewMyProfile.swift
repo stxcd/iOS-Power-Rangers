@@ -71,7 +71,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
             profileValues["email"] = email
             profileValues["number"] = number
             profileValues["location"] = location
-            profileValues["class"] = c
+            profileValues["classlabel"] = c
         }
     }
     

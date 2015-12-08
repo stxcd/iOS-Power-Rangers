@@ -22,7 +22,7 @@ class ViewMyHousingProfile: UIViewController {
     @IBOutlet weak var amen4: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var location: UILabel!
-    @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var classlabel: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var email: UILabel!
     
@@ -54,8 +54,10 @@ class ViewMyHousingProfile: UIViewController {
                     email.text = v
                     case "location":
                     location.text  = v
-                    case "year":
-                    year.text = v
+                    case "classlabel":
+                    classlabel.text = v
+                    case "number":
+                    number.text = v
                 default:
                     break
                 }
