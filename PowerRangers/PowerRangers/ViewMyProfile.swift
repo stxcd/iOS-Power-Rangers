@@ -23,15 +23,6 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var nxtlocationLabel: UILabel!
     @IBOutlet weak var profPic: UIImageView!
     
-    var dataPassed:String!
-    var secondDataPassed:String!
-    var thirdDataPassed:String!
-    var fourthDataPassed:String!
-    var fifthDataPassed:String!
-    var sixthDataPassed:String!
-    var seventhDataPassed:String!
-    var eighthDataPassed:String!
-    var nighthnDataPassed:String!
     var newvar: String!
     var newvar2: String!
     var newvar3: String!
@@ -48,15 +39,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     //Passing Data Between View Controllers Through Textfields
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = dataPassed
-        locationLabel.text = secondDataPassed
-        classLabel.text = thirdDataPassed
-        numberLabel.text = fourthDataPassed
-        emailLabel.text = fifthDataPassed
-        trackLabel.text = sixthDataPassed
-        roleLabel.text = seventhDataPassed
-        aboutLabel.text = eighthDataPassed
-        nxtlocationLabel.text = nighthnDataPassed
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -66,6 +49,13 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func getProfileValues() {
+        
+        let saveProfile = SaveProfile()
+        if let dict = saveProfile.getProfile() {
+            let profile = Blp(d: dict)
+            setProfileValues(profile)
+        }
+        
         if let name = nameLabel.text, email = emailLabel.text, number = numberLabel.text, location = locationLabel.text, c = classLabel.text {
             profileValues["name"] = name
             profileValues["email"] = email
@@ -73,6 +63,18 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
             profileValues["location"] = location
             profileValues["class"] = c
         }
+    }
+    
+    func setProfileValues(profile:Blp) {
+        nameLabel.text = profile.name
+        locationLabel.text = profile.location
+        classLabel.text = profile.identifier
+        numberLabel.text = profile.phoneNum
+        emailLabel.text = profile.email
+        trackLabel.text = profile.track
+        roleLabel.text = profile.role
+        aboutLabel.text = profile.interests
+        nxtlocationLabel.text = profile.nextLocation
     }
     
     //println(newvar)

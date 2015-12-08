@@ -11,6 +11,18 @@ import UIKit
 class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     //Outlets for textfields. Order is same as on storyboard. EXCEPTION--IMAGE VIEW IS LAST
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var locTextField: UITextField!
+    @IBOutlet weak var classTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var tTextField: UITextField!
+    @IBOutlet weak var rotationTitleTextField: UITextField!
+    @IBOutlet weak var aboutMeTextField: UITextField!
+    @IBOutlet weak var nextLocTextField: UITextField!
+    
+    
     @IBOutlet weak var fieldA: UITextField!
     @IBOutlet weak var fieldB: UITextField!
     @IBOutlet weak var fieldC: UITextField!
@@ -140,24 +152,62 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     
     @IBAction func btnSubmit(sender: AnyObject) {
-        viewMyProfile()
-        navigationController?.popToRootViewControllerAnimated(true)
+        if validForm() {
+            navigationController?.popToRootViewControllerAnimated(true)
+        }else {
+            presentViewController(presentErrorMessage(), animated: true, completion: nil)
+        }
     }
     
-    func viewMyProfile() {
-        if let vmp = parent {
-            vmp.nameLabel.text = fieldA.text
-            vmp.locationLabel.text = fieldB.text
-            vmp.classLabel.text = fieldC.text
-            vmp.numberLabel.text = fieldD.text
-            vmp.emailLabel.text = fieldE.text
-            vmp.trackLabel.text = fieldF.text
-            vmp.roleLabel.text = fieldG.text
-            vmp.aboutLabel.text = fieldH.text
-            vmp.nxtlocationLabel.text = fieldI.text
-            
-            
+    func presentErrorMessage() -> UIAlertController {
+        let alert = UIAlertController(title: "Invalid Form", message: "One of your profile fields is empty, please completely fill out your profile before saving", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .Cancel, handler: nil))
+        return alert
+    }
+    
+    /*
+    let name: String
+    let location: String
+    var track: String
+    var phoneNum: String
+    var email: String
+    var role: String
+    var interests: String
+    var housing: String
+    var photo: String
+    var lastName: String
+    var identifier: String
+    var nextLocation: String
+    */
+    
+    func validForm() -> Bool {
+        if let name = nameTextField.text, track = tTextField.text, phone = phoneNumberTextField.text, email = emailTextField.text, rotation = rotationTitleTextField.text, aboutme = aboutMeTextField.text {
+            if name == "" || track == "" || phone == "" || email == "" || rotation == "" || aboutme == "" {
+                
+            }else {
+                let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"housing":"NO", "photo":"TODO"]
+                saveProfile(profileDict)
+                return true
+            }
         }
+        return false
+    }
+    
+    func saveProfile(d:[String:String]) {
+//        if let vmp = parent {
+            let saveProfile = SaveProfile()
+            saveProfile.saveProfile(d)
+            
+//            vmp.nameLabel.text = nameTextField.text
+//            vmp.locationLabel.text = fieldB.text
+//            vmp.classLabel.text = fieldC.text
+//            vmp.numberLabel.text = fieldD.text
+//            vmp.emailLabel.text = fieldE.text
+//            vmp.trackLabel.text = tTextField.text
+//            vmp.roleLabel.text = fieldG.text
+//            vmp.aboutLabel.text = fieldH.text
+//            vmp.nxtlocationLabel.text = fieldI.text
+//        }
     }
 }
 
