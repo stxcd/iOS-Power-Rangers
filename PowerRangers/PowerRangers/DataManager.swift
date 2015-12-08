@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class DataManager {
 
 class func grabNames(success: ((data: NSData) -> Void)) {
@@ -28,21 +29,23 @@ class func grabNames(success: ((data: NSData) -> Void)) {
     })
     }
 
-class func grabHousing(success: ((data: NSData) -> Void)) {
-    //1
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-        //2
-        let filePath = NSBundle.mainBundle().pathForResource("housing",ofType:"json")
+    class func getHousing(success: ((data: NSData!) -> Void)) {
         
-        var readError:NSError?
-        do {
-            let data = try NSData(contentsOfFile:filePath!, options: NSDataReadingOptions.DataReadingUncached)
-            success(data: data)
-        } catch let error as NSError {
-            readError = error
-        } catch {
-            fatalError()
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                //2
+                let filePath = NSBundle.mainBundle().pathForResource("housing",ofType:"json")
+                
+                var readError:NSError?
+                do {
+                    let data = try NSData(contentsOfFile:filePath!, options: NSDataReadingOptions.DataReadingUncached)
+                    success(data: data)
+                } catch let error as NSError {
+                    readError = error
+                } catch {
+                    fatalError()
+                }
+            })
         }
-    })
-}
+    
+    
 }

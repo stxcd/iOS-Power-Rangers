@@ -32,7 +32,7 @@ struct Blp {
         self.lastName = d["lastName"] as? String ?? ""
         self.track = d["track"] as? String ?? ""
         self.role = d["role"] as? String ?? ""
-        self.location = d["locaton"] as? String ?? ""
+        self.location = d["location"] as? String ?? ""
         self.interests = d["interests"] as? String ?? ""
         self.phoneNum = d["phoneNum"] as? String ?? ""
         self.email = d["email"] as? String ?? ""

@@ -23,32 +23,26 @@ class BlpHousing {
     var laundry: String
     var numRoommates: String
     var distanceToWork: String
-    var gender: String
-    var residence: String
+    var roommateGender: String
+    var typeOfResidence: String
     
     //MARK: Initialization
     
-    init? (firstName: String, lastName: String, priceRange: String, pets: String, smoking: String, pool: String, gym: String, parking: String, laundry: String, numRoommates: String, distanceToWork: String, gender: String, residence: String) {
+    init(d:[String: AnyObject]) {
         
-        //Initialize stored values
-        
-        self.firstName = firstName
-        self.lastName = lastName
-        self.priceRange = priceRange
-        self.pets = pets
-        self.smoking = smoking
-        self.pool = pool
-        self.gym = gym
-        self.parking = parking
-        self.laundry = laundry
-        self.numRoommates = numRoommates
-        self.distanceToWork = distanceToWork
-        self.gender = gender
-        self.residence = residence
-        
-        
-        //initalizer to check if there is no name or rating is negative
-        
+        self.firstName = d["firstName"] as? String ?? ""
+        self.lastName = d["lastName"] as? String ?? ""
+        self.priceRange = d["priceRange"] as? String ?? ""
+        self.pets = d["pets"] as? String ?? ""
+        self.smoking = d["smoking"] as? String ?? ""
+        self.pool = d["pool"] as? String ?? ""
+        self.gym = d["gym"] as? String ?? ""
+        self.parking = d["parking"] as? String ?? ""
+        self.laundry = d["laundry"] as? String ?? ""
+        self.numRoommates = d["numRoommates"] as? String ?? ""
+        self.distanceToWork = d["distanceToWork"] as? String ?? ""
+        self.roommateGender = d["roommateGender"] as? String ?? ""
+        self.typeOfResidence = d["typeOfResidence"] as? String ?? ""
         
     }
 }

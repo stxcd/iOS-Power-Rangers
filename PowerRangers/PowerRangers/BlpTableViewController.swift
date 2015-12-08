@@ -11,7 +11,7 @@ import UIKit
 class BlpTableViewController: UITableViewController {
     
     var blpArray = [Blp]()
-    var lastNamesOnly = [String]()
+    
     let blpArrayManager = BlpArrayManager()
     
     override func viewDidLoad() {
@@ -103,13 +103,12 @@ class BlpTableViewController: UITableViewController {
             
             if let selectedBlpCell = sender as? BlpTableViewCell {
                 let indexPath = tableView.indexPathForCell(selectedBlpCell)!
-                let selectedBlp = blpArray[indexPath.row]
+                let selectedBlp = self.blpArrayManager.array[indexPath.row]
                 blpDetailViewController.blp = selectedBlp
             }
         }
     }
     
-    //last bracket
 }
 
 private extension BlpTableViewController {
