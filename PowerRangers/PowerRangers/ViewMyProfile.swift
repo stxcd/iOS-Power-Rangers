@@ -106,16 +106,14 @@ extension ViewMyProfile {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let nav = segue.destinationViewController as? UINavigationController {
-            if let edit = nav.topViewController as? editMyProfile {
+        if let edit = segue.destinationViewController as? editMyProfile {
                 edit.parent = self
             }
-        }else if let nav = segue.destinationViewController as? UINavigationController {
+        if let nav = segue.destinationViewController as? UINavigationController {
             if let viewMyHousing = nav.topViewController as? ViewMyHousingProfile {
                 viewMyHousing.profileValues = profileValues
             }
         }
     }
-    
-
 }
+

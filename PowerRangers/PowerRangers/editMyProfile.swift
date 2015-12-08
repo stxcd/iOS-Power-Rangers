@@ -146,15 +146,17 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     func viewMyProfile() {
         if let vmp = parent {
-            vmp.dataPassed = fieldA.text
-            vmp.secondDataPassed = fieldB.text
-            vmp.thirdDataPassed = fieldC.text
-            vmp.fourthDataPassed = fieldD.text
-            vmp.fifthDataPassed = fieldE.text
-            vmp.sixthDataPassed = fieldF.text
-            vmp.seventhDataPassed = fieldG.text
-            vmp.eighthDataPassed = fieldH.text
-            vmp.nighthnDataPassed = fieldI.text
+            vmp.nameLabel.text = fieldA.text
+            vmp.locationLabel.text = fieldB.text
+            vmp.classLabel.text = fieldC.text
+            vmp.numberLabel.text = fieldD.text
+            vmp.emailLabel.text = fieldE.text
+            vmp.trackLabel.text = fieldF.text
+            vmp.roleLabel.text = fieldG.text
+            vmp.aboutLabel.text = fieldH.text
+            vmp.nxtlocationLabel.text = fieldI.text
+            
+            
         }
     }
 }
@@ -166,4 +168,12 @@ extension editMyProfile:DismissPickerView {
         }
         hidePickerViewContainer()
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    
 }
