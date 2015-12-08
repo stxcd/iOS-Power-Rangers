@@ -21,7 +21,11 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var fieldH: UITextField!
     @IBOutlet weak var fieldI: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
+    
+    let imagePickerController = UIImagePickerController()
 
+
+    
     @IBOutlet var pickerViewContainer: PickerViewContainer!
     private var selectedTextField:UITextField?
     weak var parent:ViewMyProfile?
@@ -43,6 +47,10 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     func setup() {
         pickerViewContainer.setup()
         pickerViewContainer.delegate = self
+        
+        let tap = UITapGestureRecognizer(target: self, action: "didTapPhotoImageView")
+        tap.numberOfTapsRequired = 1
+        photoImageView.addGestureRecognizer(tap)
     }
     
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
@@ -94,13 +102,13 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     // MARK: UIImagePickerControllerDelegate
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        // Dismiss the picker if the user canceled.
+         //Dismiss the picker if the user canceled.
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPackingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
-        // The info dictionary contains multiple representations of the image, and this uses the original.
+         //The info dictionary contains multiple representations of the image, and this uses the original.
         
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
@@ -114,30 +122,24 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
     }
     
-    // MARK: Actions
-
-    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+    func didTapPhotoImageView() {
         
-        // Hide the keyboard.
+        //Hide the keyboard.
         
         fieldA.resignFirstResponder()
         
-        //UIImagePickerController is a view controller that lets a user pick media from their photo library.
-        
-        let imagePickerController = UIImagePickerController()
-        
         //Only allow photos to be picked, not taken.
         
-        imagePickerController.sourceType = .PhotoLibrary
+        self.imagePickerController.sourceType = .PhotoLibrary
         
-        // Make sure ViewController is notified when the user picks an image.
+        //Make sure ViewController is notified when the user picks an image.
         
-        imagePickerController.delegate = self
+        self.imagePickerController.delegate = self
         
-        presentViewController(imagePickerController, animated: true, completion: nil)
-        
+        presentViewController(self.imagePickerController, animated: true, completion: nil)
     }
     
+     //MARK: Actions
     
     @IBAction func btnSubmit(sender: AnyObject) {
         viewMyProfile()
@@ -155,6 +157,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
             vmp.roleLabel.text = fieldG.text
             vmp.aboutLabel.text = fieldH.text
             vmp.nxtlocationLabel.text = fieldI.text
+            vmp.profPic.image = photoImageView.image
             
             
         }

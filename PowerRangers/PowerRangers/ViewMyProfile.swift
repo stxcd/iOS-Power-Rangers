@@ -32,6 +32,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var seventhDataPassed:String!
     var eighthDataPassed:String!
     var nighthnDataPassed:String!
+    var tenthDataPassed: UIImage!
     var newvar: String!
     var newvar2: String!
     var newvar3: String!
@@ -41,6 +42,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var newvar7: String!
     var newvar8: String!
     var newvar9: String!
+    var newvar10: UIImage!
     
     var filterlabels = [String]()
     var profileValues = [String:String]()
@@ -57,6 +59,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         roleLabel.text = seventhDataPassed
         aboutLabel.text = eighthDataPassed
         nxtlocationLabel.text = nighthnDataPassed
+        profPic.image = tenthDataPassed
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -77,16 +80,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     //println(newvar)
     //println(newvar2)
-    
-    //UIImagePickerControllerDelegate
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
-    let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        profPic.image = selectedImage
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -97,13 +91,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
 extension ViewMyProfile {
     
     //Actions
-    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.sourceType = .PhotoLibrary
-        imagePickerController.delegate = self
-        presentViewController(imagePickerController, animated: true, completion: nil)
-        
-    }
+   
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let edit = segue.destinationViewController as? editMyProfile {
