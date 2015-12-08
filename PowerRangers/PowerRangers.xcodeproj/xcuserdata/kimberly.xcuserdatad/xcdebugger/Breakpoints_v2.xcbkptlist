@@ -10,28 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PowerRangers/editMyProfile.swift"
-            timestampString = "471220973.007524"
+            timestampString = "471289066.087981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "textFieldShouldBeginEditing(_:)"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "viewMyProfile()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PowerRangers/editMyProfile.swift"
-            timestampString = "471221025.658693"
+            timestampString = "471289066.087981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "pickerView(_:numberOfRowsInComponent:)"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "didTapPhotoImageView()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

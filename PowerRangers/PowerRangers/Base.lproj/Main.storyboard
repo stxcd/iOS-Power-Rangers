@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1129,7 +1130,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sav-7a-Thi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sav-7a-Thi">
                                 <rect key="frame" x="156" y="145" width="42" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1186,7 +1187,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-Tt-Xcu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-Tt-Xcu">
                                 <rect key="frame" x="156" y="121" width="42" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1200,14 +1201,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoz-7J-aoA">
-                                <rect key="frame" x="156" y="72" width="42" height="20.5"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m52-fg-b7K">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m52-fg-b7K">
                                 <rect key="frame" x="156" y="170" width="42" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1218,9 +1212,12 @@
                                 <rect key="frame" x="20" y="72" width="128" height="128"/>
                                 <animations/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="oEl-Lx-JwA" appends="YES" id="d5q-3r-4e5"/>
-                                </connections>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="LXY-DS-uy4"/>
+                                    <constraint firstAttribute="width" secondItem="Ttk-jq-zGd" secondAttribute="height" multiplier="1:1" id="NJ9-8X-rzK"/>
+                                    <constraint firstAttribute="width" secondItem="Ttk-jq-zGd" secondAttribute="height" multiplier="1:1" id="YNA-GX-rwp"/>
+                                    <constraint firstAttribute="width" constant="128" id="pqG-P3-FcF"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="231-Xu-izX">
                                 <rect key="frame" x="20" y="370" width="105" height="30"/>
@@ -1235,6 +1232,13 @@
                                 <rect key="frame" x="94" y="235" width="246.5" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoz-7J-aoA">
+                                <rect key="frame" x="156" y="72" width="128" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1302,11 +1306,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MX-Yd-iOX" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="oEl-Lx-JwA">
-                    <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="0Rv-lA-mNb" id="qPc-Jd-ZaH"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-865" y="85"/>
         </scene>
@@ -1431,18 +1430,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ecc-CW-19n">
-                                <rect key="frame" x="78" y="126" width="40" height="40"/>
-                                <animations/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="EPF-SG-D83"/>
-                                    <constraint firstAttribute="height" constant="40" id="pN8-TZ-8XN"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="3X2-c3-Syh" appends="YES" id="2Y2-vz-hO8"/>
-                                </connections>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-bs-e2o">
                                 <rect key="frame" x="78" y="88" width="150" height="30"/>
                                 <animations/>
@@ -1629,6 +1616,15 @@
                                     <outlet property="delegate" destination="yrX-v4-u5M" id="hq3-Ji-tUS"/>
                                 </connections>
                             </textField>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ecc-CW-19n">
+                                <rect key="frame" x="78" y="126" width="40" height="40"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="EPF-SG-D83"/>
+                                    <constraint firstAttribute="height" constant="40" id="pN8-TZ-8XN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1687,7 +1683,7 @@
                         <outlet property="fieldG" destination="0cr-56-Azh" id="eSM-rb-2Xd"/>
                         <outlet property="fieldH" destination="Ztb-6q-bBJ" id="sOl-5D-kId"/>
                         <outlet property="fieldI" destination="dFJ-sh-Lh6" id="qRV-dR-Zh2"/>
-                        <outlet property="photoImageView" destination="Ecc-CW-19n" id="cBY-2Y-YFc"/>
+                        <outlet property="photoImageView" destination="Ecc-CW-19n" id="nLM-ki-NoL"/>
                         <outlet property="pickerViewContainer" destination="aK4-KD-XkJ" id="kF8-Bd-d8u"/>
                     </connections>
                 </viewController>
@@ -1713,11 +1709,6 @@
                         <outlet property="pickerView" destination="A8X-Pk-6Jf" id="INM-ap-Jj0"/>
                     </connections>
                 </view>
-                <tapGestureRecognizer id="3X2-c3-Syh">
-                    <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="yrX-v4-u5M" id="8lx-ak-525"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-2315" y="79"/>
         </scene>
