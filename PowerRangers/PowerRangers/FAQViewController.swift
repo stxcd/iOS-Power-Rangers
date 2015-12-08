@@ -13,6 +13,9 @@ class FAQViewController: UIViewController {
     //MARK: Properties
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var answerView: AnswerView!
+    
+    private var answerCell:FAQCell?
     
     var question1 = "1. When will I find out where I will be located/what my first rotation will be?"
     var question2 = "2. When do I need to start looking for an apartment?"
@@ -25,9 +28,6 @@ class FAQViewController: UIViewController {
     var question9 = "9. How long and often after accepting should I expect to hear from Synchrony?"
     var question10 = "10. What is symposium week?"
     var question11 = "11. What can I expect during symposium?"
- 
-    
-    private var answerCell:UITableViewCell?
     
     var answer1 = "This information is usually sent out to the incoming BLPs sometime in May.  This way, BLPs have around 2 months to find housing, which is plenty of time."
     var answer2 = "Once you know your location, you should start looking for an apartment around 2 months before you start.  This will give you enough time for some online searching and to go visit some of the places that you have picked out"
@@ -44,101 +44,127 @@ class FAQViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    func setup() {
+        tableView.estimatedRowHeight = 44
+        answerView.delegate = self
+    }
+    
+    func showAnswerViewWithAnswer(a:String) {
+        answerView.alpha = 0
+        answerView.setLablWithAnswer(a)
+        UIView.animateWithDuration(0.5) {
+            self.answerView.frame = CGRectMake(0, 64, self.view.bounds.width, self.answerView.frame.size.height)
+            self.answerView.alpha = 1
+            self.view.addSubview(self.answerView)
+        }
+    }
+    
+    func hideAnswerView() {
+        UIView.animateWithDuration(0.5, animations: {
+            self.answerView.alpha = 0
+            self.answerView.frame = CGRectMake(0, 0, self.view.bounds.width, self.answerView.bounds.height)
+            }) { (success) -> Void in
+                self.answerView.removeFromSuperview()
+        }
+    }
+    
+    func getAnswer(r:Int) -> String {
+        switch r {
+        case 0:
+            showAnswerViewWithAnswer(answer1)
+        case 1:
+            showAnswerViewWithAnswer(answer2)
+        case 2:
+            showAnswerViewWithAnswer(answer3)
+        case 3:
+            showAnswerViewWithAnswer(answer4)
+        case 4:
+            showAnswerViewWithAnswer(answer5)
+        case 5:
+            showAnswerViewWithAnswer(answer6)
+        case 6:
+            showAnswerViewWithAnswer(answer7)
+        case 7:
+            showAnswerViewWithAnswer(answer8)
+        case 8:
+            showAnswerViewWithAnswer(answer9)
+        case 9:
+            showAnswerViewWithAnswer(answer10)
+        case 10:
+            showAnswerViewWithAnswer(answer11)
+        default:
+            showAnswerViewWithAnswer("No Question Selected")
+        }
+        return ""
     }
     
 }
 
 extension FAQViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
             return 11
-        }else {
-            return 1
-        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("question", forIndexPath: indexPath)
-            cell.textLabel?.numberOfLines = 0
+            let cell = tableView.dequeueReusableCellWithIdentifier("question", forIndexPath: indexPath) as! FAQCell
             switch indexPath.row {
             case 0:
-                cell.textLabel?.text = question1
+                cell.label.text = question1
             case 1:
-                cell.textLabel?.text = question2
+                cell.label.text = question2
             case 2:
-                cell.textLabel?.text = question3
+                cell.label.text = question3
             case 3:
-                cell.textLabel?.text = question4
+                cell.label.text = question4
             case 4:
-                cell.textLabel?.text = question5
+                cell.label.text = question5
             case 5:
-                cell.textLabel?.text = question6
+                cell.label.text = question6
             case 6:
-                cell.textLabel?.text = question7
+                cell.label.text = question7
             case 7:
-                cell.textLabel?.text = question8
+                cell.label.text = question8
             case 8:
-                cell.textLabel?.text = question9
+                cell.label.text = question9
             case 9:
-                cell.textLabel?.text = question10
+                cell.label.text = question10
             case 10:
-                cell.textLabel?.text = question11
+                cell.label.text = question11
             default:
                 return UITableViewCell()
             }
             return cell
-        }else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("answer", forIndexPath: indexPath)
-            cell.textLabel?.text = "No Question Selected"
-            cell.textLabel?.numberOfLines = 0
-            answerCell = cell
-            return cell
         }
+        return UITableViewCell()
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if indexPath.section == 0 {
-            if let a = answerCell {
-                getAnswer(indexPath.row, cell: a)
-            }
+            getAnswer(indexPath.row)
         }
         
     }
     
-    func getAnswer(r:Int, cell:UITableViewCell) -> String {
-        switch r {
-        case 0:
-            cell.textLabel?.text = answer1
-        case 1:
-            cell.textLabel?.text = answer2
-        case 2:
-            cell.textLabel?.text = answer3
-        case 3:
-            cell.textLabel?.text = answer4
-        case 4:
-            cell.textLabel?.text = answer5
-        case 5:
-            cell.textLabel?.text = answer6
-        case 6:
-            cell.textLabel?.text = answer7
-        case 7:
-            cell.textLabel?.text = answer8
-        case 8:
-            cell.textLabel?.text = answer9
-        case 9:
-            cell.textLabel?.text = answer10
-        case 10:
-            cell.textLabel?.text = answer11
-        default:
-            cell.textLabel?.text = "No Question Selected"
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 1 {
+            return 100
+        }else {
+            return 44
         }
-        return ""
+        
     }
     
+}
+
+extension FAQViewController:DismissAnswerView {
+    
+    func dismissAnswerView() {
+        hideAnswerView()
+    }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140E3E121C161B0900B1DDE9 /* BlpHousingArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */; settings = {ASSET_TAGS = (); }; };
+		140E3E121C161B0900B1DDE9 /* BlpHousingArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */; };
 		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; };
 		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; };
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; };
@@ -21,6 +21,8 @@
 		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; };
 		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; };
 		35A8EAD11C16542B0082AC17 /* PickerViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */; };
+		35A8EAD31C168D900082AC17 /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD21C168D900082AC17 /* FAQCell.swift */; };
+		35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD41C1693280082AC17 /* AnswerView.swift */; };
 		35E45A6E1C15E64500B64D50 /* BlpArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */; };
 		65CF9B731BF14F4E0085B446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B721BF14F4E0085B446 /* AppDelegate.swift */; };
 		65CF9B751BF14F4E0085B446 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF9B741BF14F4E0085B446 /* FAQViewController.swift */; };
@@ -66,6 +68,8 @@
 		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
 		14D450581C0409DA002ECC4A /* Blp Profile Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Blp Profile Pictures"; sourceTree = "<group>"; };
 		35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewContainer.swift; sourceTree = "<group>"; };
+		35A8EAD21C168D900082AC17 /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
+		35A8EAD41C1693280082AC17 /* AnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpArrayManager.swift; sourceTree = "<group>"; };
 		65CF9B6F1BF14F4E0085B446 /* PowerRangers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerRangers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CF9B721BF14F4E0085B446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */,
+				35A8EAD21C168D900082AC17 /* FAQCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */,
+				35A8EAD41C1693280082AC17 /* AnswerView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -361,7 +367,9 @@
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
 				1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */,
 				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
+				35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
+				35A8EAD31C168D900082AC17 /* FAQCell.swift in Sources */,
 				DB8A9B8C1C041AA2008E0B66 /* editMyProfile.swift in Sources */,
 				1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */,
 				144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */,
