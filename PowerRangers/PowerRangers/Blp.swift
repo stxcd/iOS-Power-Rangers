@@ -40,6 +40,6 @@ class Blp {
         self.photo = d["photo"] as? String ?? ""
         self.lastName = d["lastName"] as? String ?? ""
         self.identifier = d["identifier"] as? String ?? ""
-        self.nextLocation = d["location"] as? String ?? ""
+        self.nextLocation = d["nextLocation"] as? String ?? ""
     }
 }

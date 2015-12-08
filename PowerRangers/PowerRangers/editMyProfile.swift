@@ -183,11 +183,11 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     */
     
     func validForm() -> Bool {
-        if let name = nameTextField.text, track = tTextField.text, phone = phoneNumberTextField.text, email = emailTextField.text, rotation = rotationTitleTextField.text, aboutme = aboutMeTextField.text {
+        if let name = nameTextField.text, track = tTextField.text, phone = phoneNumberTextField.text, email = emailTextField.text, rotation = rotationTitleTextField.text, aboutme = aboutMeTextField.text, loc = locTextField.text, next = nextLocTextField.text {
             if name == "" || track == "" || phone == "" || email == "" || rotation == "" || aboutme == "" {
                 
             }else {
-                let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"housing":"NO", "photo":"TODO"]
+                let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":"TODO"]
                 saveProfile(profileDict)
                 return true
             }
