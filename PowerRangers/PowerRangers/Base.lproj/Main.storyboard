@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L6l-FK-L4O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="dN1-aP-0QX" kind="relationship" relationship="viewControllers" id="53c-9E-9D0"/>
-                        <segue destination="VlL-bo-iEQ" kind="relationship" relationship="viewControllers" id="5Ov-za-LtX"/>
-                        <segue destination="K3A-JV-G60" kind="relationship" relationship="viewControllers" id="jo5-Pl-HgX"/>
-                        <segue destination="EOc-hW-VuS" kind="relationship" relationship="viewControllers" id="iCV-3J-x0O"/>
-                    </connections>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="-2315" y="759"/>
-        </scene>
         <!--BLP Profiles View-->
         <scene sceneID="4M9-Ff-jxU">
             <objects>
@@ -104,11 +82,11 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="View All Blps" id="n7k-VA-hkF"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfa-2c-wBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-878" y="1491"/>
+            <point key="canvasLocation" x="-870" y="1491"/>
         </scene>
         <!--specifcBlpPage-->
         <scene sceneID="tmh-md-aKu">
@@ -119,7 +97,7 @@
                         <viewControllerLayoutGuide type="bottom" id="o5m-iz-6Mq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WP7-sv-Q8z">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-cm-6sA">
@@ -191,7 +169,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7u-Pe-q4Z">
-                                <rect key="frame" x="187" y="546" width="225" height="30"/>
+                                <rect key="frame" x="187" y="497" width="225" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2901960784" green="0.61568627450000002" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -326,7 +304,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Scy-ur-LRb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="swe-OS-NdX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CT-Ga-pC6">
@@ -553,11 +531,11 @@
             </objects>
             <point key="canvasLocation" x="1201" y="1491"/>
         </scene>
-        <!--BLProfile-->
+        <!--Contacts-->
         <scene sceneID="xwL-Yc-w3s">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VlL-bo-iEQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BLProfile" id="nvq-B1-o9j"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="Stack of Photos" id="nvq-B1-o9j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rTf-SM-Tni">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -659,7 +637,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Surveys" id="3H3-gI-X7E"/>
+                    <tabBarItem key="tabBarItem" title="Surveys" image="Stock Survey" id="3H3-gI-X7E"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9j-VR-0jV" sceneMemberID="firstResponder"/>
@@ -921,7 +899,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTV-JI-ft5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165" y="-1291"/>
+            <point key="canvasLocation" x="-221" y="-1290"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Tl-nM-zeH">
@@ -1512,7 +1490,7 @@
                             <constraint firstItem="o9B-UV-3jb" firstAttribute="bottom" secondItem="4ky-x1-KMa" secondAttribute="top" id="MtZ-tk-9Au"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="yg4-fU-kxO"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Stock FAQ" selectedImage="Stock FAQ" id="yg4-fU-kxO"/>
                     <navigationItem key="navigationItem" title="Frequently Asked Questions" id="fCy-wh-b4m"/>
                     <connections>
                         <outlet property="answerView" destination="1Pk-JP-RlW" id="oV5-Sh-0cs"/>
@@ -1858,7 +1836,7 @@
         <scene sceneID="0b0-vQ-6go">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dN1-aP-0QX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Profile" id="wv5-uV-99Y"/>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="Male Profile" id="wv5-uV-99Y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nbg-MM-equ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1898,7 +1876,7 @@
         <scene sceneID="231-8z-Vp9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K3A-JV-G60" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FAQs" image="FAQ Icon 1" selectedImage="first" id="Cjr-xW-0VZ"/>
+                    <tabBarItem key="tabBarItem" title="FAQs" image="Stock FAQ" selectedImage="Stock FAQ" id="Cjr-xW-0VZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RiB-tm-coT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1912,17 +1890,39 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJL-Z9-Bc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1560" y="753"/>
+            <point key="canvasLocation" x="-1560" y="770"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sfE-JL-bGL">
+            <objects>
+                <tabBarController id="L6l-FK-L4O" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="YqM-AM-eUm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dN1-aP-0QX" kind="relationship" relationship="viewControllers" id="S4P-vY-DfG"/>
+                        <segue destination="VlL-bo-iEQ" kind="relationship" relationship="viewControllers" id="Q1v-EC-W28"/>
+                        <segue destination="K3A-JV-G60" kind="relationship" relationship="viewControllers" id="YO3-Bb-o2O"/>
+                        <segue destination="EOc-hW-VuS" kind="relationship" relationship="viewControllers" id="397-xT-a7H"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4W9-f5-eBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2309" y="770"/>
         </scene>
     </scenes>
     <resources>
         <image name="Clipboard" width="187" height="250"/>
         <image name="DNA-1" width="640" height="34"/>
-        <image name="FAQ Icon 1" width="30" height="30"/>
         <image name="Housing" width="149" height="141"/>
+        <image name="Male Profile" width="25" height="25"/>
         <image name="No Image Selected" width="128" height="128"/>
+        <image name="Stack of Photos" width="25" height="25"/>
+        <image name="Stock FAQ" width="25" height="25"/>
+        <image name="Stock Survey" width="25" height="25"/>
         <image name="defaultPhoto" width="320" height="240"/>
-        <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aym-Vm-1bG"/>

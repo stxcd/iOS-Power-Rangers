@@ -22,16 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setup() {
         if let tabBarController = self.window?.rootViewController as? UITabBarController {
-            let tabBarItem = UITabBarItem(title: "TITLE", image: UIImage(named: "My Profile Icon"), selectedImage: UIImage(named: "My Profile Icon"))
-            tabBarController.tabBarItem = tabBarItem
-            tabBarController.tabBar.tintColor = UIColor.clearColor()
-//            var i = 0
-//            for vc in tabBarController.viewControllers! {
-//                setTabBarItemImage(vc)
-//            }
-            
-//            tabBarController.tabBar.barTintColor = UIColor.whiteColor()
-//            tabBarController.tabBar.tintColor = UIColor.synchronyDarkGrey()
+
+            tabBarController.tabBar.barTintColor = UIColor.whiteColor()
+            tabBarController.tabBar.tintColor = UIColor.synchronyDarkGrey()
         }
     }
     
