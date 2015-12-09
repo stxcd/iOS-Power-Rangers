@@ -1759,15 +1759,6 @@
                         <outlet property="aboutMeTextField" destination="Ztb-6q-bBJ" id="kqH-RV-v9C"/>
                         <outlet property="classTextField" destination="GqT-1c-DvU" id="RAl-GW-mUH"/>
                         <outlet property="emailTextField" destination="gbD-lr-YcO" id="lRU-iZ-K74"/>
-                        <outlet property="fieldA" destination="4h3-bs-e2o" id="LaI-Sq-TOb"/>
-                        <outlet property="fieldB" destination="tz3-22-y28" id="ITn-gZ-DPh"/>
-                        <outlet property="fieldC" destination="GqT-1c-DvU" id="gpJ-Pi-Dig"/>
-                        <outlet property="fieldD" destination="ZMO-gH-K9E" id="Cb5-bs-HZt"/>
-                        <outlet property="fieldE" destination="gbD-lr-YcO" id="NTE-l8-FWl"/>
-                        <outlet property="fieldF" destination="uzp-LA-dBK" id="3HC-DL-ecL"/>
-                        <outlet property="fieldG" destination="0cr-56-Azh" id="eSM-rb-2Xd"/>
-                        <outlet property="fieldH" destination="Ztb-6q-bBJ" id="sOl-5D-kId"/>
-                        <outlet property="fieldI" destination="dFJ-sh-Lh6" id="qRV-dR-Zh2"/>
                         <outlet property="locTextField" destination="tz3-22-y28" id="uR0-Ld-c1N"/>
                         <outlet property="nameTextField" destination="4h3-bs-e2o" id="ytB-hS-FfF"/>
                         <outlet property="nextLocTextField" destination="dFJ-sh-Lh6" id="6M2-jt-RiC"/>

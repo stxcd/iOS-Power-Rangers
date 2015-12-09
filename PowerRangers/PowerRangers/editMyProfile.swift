@@ -8,6 +8,22 @@
 
 import UIKit
 
+let profileImageKeyForDocumentsDirectory = "profileImage.png"
+
+func getDocumentsURL() -> NSURL? {
+    if let url = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).last {
+        return url
+    }
+    return nil
+}
+
+func fileInDocumentsDirectory(fn:String) -> NSURL? {
+    if let url = getDocumentsURL() {
+        return url.URLByAppendingPathComponent(fn)
+    }
+    return nil
+}
+
 class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     //Outlets for textfields. Order is same as on storyboard. EXCEPTION--IMAGE VIEW IS LAST
@@ -21,21 +37,11 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var rotationTitleTextField: UITextField!
     @IBOutlet weak var aboutMeTextField: UITextField!
     @IBOutlet weak var nextLocTextField: UITextField!
-    
-    
-    @IBOutlet weak var fieldA: UITextField!
-    @IBOutlet weak var fieldB: UITextField!
-    @IBOutlet weak var fieldC: UITextField!
-    @IBOutlet weak var fieldD: UITextField!
-    @IBOutlet weak var fieldE: UITextField!
-    @IBOutlet weak var fieldF: UITextField!
-    @IBOutlet weak var fieldG: UITextField!
-    @IBOutlet weak var fieldH: UITextField!
-    @IBOutlet weak var fieldI: UITextField!
+
     @IBOutlet weak var photoImageView: UIImageView!
     
     let imagePickerController = UIImagePickerController()
-
+    var selectedImage:UIImage?
 
     
     @IBOutlet var pickerViewContainer: PickerViewContainer!
@@ -127,6 +133,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         // Set photoImageView to display the selected image.
         
         photoImageView.image = selectedImage
+        self.selectedImage = selectedImage
         
         //Dismiss the picker.
         
@@ -138,7 +145,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         //Hide the keyboard.
         
-        fieldA.resignFirstResponder()
+        nameTextField.resignFirstResponder()
         
         //Only allow photos to be picked, not taken.
         
@@ -166,38 +173,49 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         alert.addAction(UIAlertAction(title: "Okay", style: .Cancel, handler: nil))
         return alert
     }
-    
-    /*
-    let name: String
-    let location: String
-    var track: String
-    var phoneNum: String
-    var email: String
-    var role: String
-    var interests: String
-    var housing: String
-    var photo: String
-    var lastName: String
-    var identifier: String
-    var nextLocation: String
-    */
-    
+
     func validForm() -> Bool {
         if let name = nameTextField.text, track = tTextField.text, phone = phoneNumberTextField.text, email = emailTextField.text, rotation = rotationTitleTextField.text, aboutme = aboutMeTextField.text, loc = locTextField.text, next = nextLocTextField.text {
             if name == "" || track == "" || phone == "" || email == "" || rotation == "" || aboutme == "" {
                 
             }else {
-                let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":"TODO"]
-                saveProfile(profileDict)
-                return true
+                if let photoLocation = fileInDocumentsDirectory(profileImageKeyForDocumentsDirectory) {
+                    print(photoLocation)
+                    let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":photoLocation.path!]
+                    if saveImage(photoLocation) {
+                        saveProfile(profileDict)
+                        return true
+                    }
+                }
             }
         }
         return false
     }
+
+    func saveImage(path:NSURL) -> Bool {
+        
+        var result = false
+        
+        if let image = selectedImage {
+            let imageData = UIImagePNGRepresentation(image)
+            if imageData!.writeToURL(path, atomically: true) {
+                result = true
+            }
+        }
+        
+        return result
+    }
+    
+    func loadImageFromPath(path:String) -> UIImage? {
+        if let image = UIImage(contentsOfFile: path) {
+            return image
+        }
+        return nil
+    }
     
     func saveProfile(d:[String:String]) {
-            let saveProfile = SaveProfile()
-            saveProfile.saveProfile(d)
+        let saveProfile = SaveProfile()
+        saveProfile.saveProfile(d)
     }
 }
 

@@ -39,7 +39,7 @@ class ViewMyHousingProfile: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         if let fs = filterselctions {
-            sortFilters(fs)
+            handleFilters(fs)
         }
         setProfileValues()
     }
@@ -77,7 +77,7 @@ class ViewMyHousingProfile: UIViewController {
         }
     }
     
-    func sortFilters(filters:[String]) {
+    func handleFilters(filters:[String]) {
         for filters in filters {
             switch filters {
             case "$1000":

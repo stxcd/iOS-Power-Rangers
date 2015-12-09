@@ -65,15 +65,21 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         roleLabel.text = profile.role
         aboutLabel.text = profile.interests
         nxtlocationLabel.text = profile.nextLocation
+        if let data = getDataForFile(profile.photo) {
+            profPic.image = UIImage(data: data)
+        }
     }
     
-    //println(newvar)
-    //println(newvar2)
-
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getDataForFile(f:String) -> NSData? {
+        if let photoLocation = fileInDocumentsDirectory(profileImageKeyForDocumentsDirectory) {
+            do {
+                let d = try NSData(contentsOfURL: photoLocation, options: .DataReadingMappedAlways)
+                profPic.image = UIImage(data: d)
+            } catch {
+                print("\(error)")
+            }
+        }
+        return nil
     }
 }
 

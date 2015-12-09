@@ -65,17 +65,13 @@ extension PickerViewContainer:UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch selectedIndex {
         case locationTextField:
-            print(row)
             let row = pickerArrays[0]![row]
-            print(row)
             return row
         case trackTextField:
             let row = pickerArrays[1]![row]
-            print(row)
             return row
         case nextLocationTextField:
             let row = pickerArrays[0]![row]
-            print(row)
             return row
         default:
             break
