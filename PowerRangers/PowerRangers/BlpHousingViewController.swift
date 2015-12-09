@@ -12,14 +12,15 @@ class BlpHousingViewController: UIViewController {
 
 let blpHousingArrayManager = BlpHousingArrayManager()
     
-    var blp: BlpHousing?
+//    var blp: BlpHousing?
+    var blp:Blp?
     var ident : Int = 0
     
     @IBOutlet weak var amenityRight: UILabel!
     
     @IBOutlet weak var amenityLeft: UILabel!
     
-    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var fullNameLabel: UILabel!
     
     @IBOutlet weak var lastNameLabel: UILabel!
     
@@ -41,13 +42,32 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     
     @IBOutlet weak var genderLabel: UILabel!
     
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    @IBOutlet weak var classLabel: UILabel!
+    
+    @IBOutlet weak var phoneLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getHousing()
-        
+        setupProfile()
        // setLabels()
-        print(self.blpHousingArrayManager.array)
+//        print(self.blpHousingArrayManager.array)
+    }
+    
+    func setupProfile() {
+        if let profile = blp {
+            fullNameLabel.text = profile.name
+            locationLabel.text = profile.location
+            classLabel.text = profile.role
+            phoneLabel.text = profile.phoneNum
+            emailLabel.text = profile.email
+            
+            
+        }
     }
     
         
@@ -62,9 +82,8 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     func setLabels (){
         let housingProf = self.blpHousingArrayManager.array[ident]
         
-        firstNameLabel.text = housingProf.firstName
-        lastNameLabel.text = housingProf.lastName
-        
+        fullNameLabel.text = "\(housingProf.firstName), \(housingProf.lastName)"
+    
         
         let useName = housingProf.lastName
         let blpPic = UIImage(named: useName)

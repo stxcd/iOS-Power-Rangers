@@ -14,6 +14,7 @@ class viewSpecificBlp: UIViewController {
     var blp: Blp?
     
     var housingArray = [BlpHousing]()
+    var filterlabel = [String]()
     
     
     @IBOutlet weak var fullNameLabel: UILabel!
@@ -90,6 +91,10 @@ class viewSpecificBlp: UIViewController {
             let destination = segue.destinationViewController as! BlpHousingViewController
             let path = Int((blp?.identifier)!)
                 destination.ident = path!
+        
+            if let blpHousing = segue.destinationViewController as? BlpHousingViewController {
+                blpHousing.blp = blp
+            }
             
         } 
     }
