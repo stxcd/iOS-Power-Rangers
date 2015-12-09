@@ -56,7 +56,7 @@ class FAQViewController: UIViewController {
         answerView.alpha = 0
         answerView.setLablWithAnswer(a)
         UIView.animateWithDuration(0.5) {
-            self.answerView.frame = CGRectMake(0, (self.view.bounds.height - 29 - 245), self.view.bounds.width, self.answerView.frame.size.height)
+            self.answerView.frame = CGRectMake(0, (self.view.bounds.height - 29 - 200), self.view.bounds.width, self.answerView.frame.size.height)
             self.answerView.alpha = 1
             self.view.addSubview(self.answerView)
         }
