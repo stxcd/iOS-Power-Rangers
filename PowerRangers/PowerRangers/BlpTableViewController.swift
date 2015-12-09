@@ -8,11 +8,19 @@
 
 import UIKit
 
-class BlpTableViewController: UITableViewController {
+class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISearchDisplayDelegate {
+    
+    @IBOutlet var filterContainerView: UIView!
+    
     
     var blpArray = [Blp]()
     
     let blpArrayManager = BlpArrayManager()
+    var filteredBlpArray = [String: String]()
+    // master array which contains all blp instances on first load
+    private var masterArray = [Blp]()
+    
+    let filterDictionary = [0:["Alpharetta", "Atlanta", "Canton", "Charlotte", "Chicago", "Costa Mesa", "Kettering", "St. Paul", "Stamford"], 1:["Audit", "Data Analytics", "Finance", "HR", "IT", "Marketing", "Operations", "Risk", "Sales"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +28,6 @@ class BlpTableViewController: UITableViewController {
         grabNames()
         
     }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return self.blpArrayManager.array.count
@@ -53,43 +55,6 @@ class BlpTableViewController: UITableViewController {
         
             return cell
     }
-
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     
     // MARK: - Navigation
 
@@ -109,6 +74,135 @@ class BlpTableViewController: UITableViewController {
         }
     }
     
+    func filterBy(filter:String) {
+        
+        var filteredArray = [Blp]()
+        
+        if filter == "Location" {
+            for blp in self.blpArrayManager.array {
+                if blp.location == filter {
+                    filteredArray.append(blp)
+                }
+            }
+        }else if filter == "Track" {
+            for blp in self.blpArrayManager.array {
+                if blp.location == filter {
+                    filteredArray.append(blp)
+                }
+            }
+        }
+    }
+    
+    func presentErrorMessage() -> UIAlertController {
+        let alert = UIAlertController(title: "Invalid Search", message: "Please enter a valid search", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .Cancel, handler: nil))
+        return alert
+    }
+    
+    func checkIfSearchIsValid(text:String?, tag:Int) -> Bool {
+        
+        var valid = false
+        
+        if let t = text {
+            if t == "" {
+                presentViewController(presentErrorMessage(), animated: true, completion: nil)
+                valid = false
+            }else {
+                if tag == 0 {
+                    let array = filterDictionary[0]!
+                    for filterOption in array {
+                        if filterOption == text! {
+                            filterBySearchText(filterOption, key:"location")
+                            return true
+                        }
+                    }
+                }else {
+                    let array = filterDictionary[1]!
+                    for filterOption in array {
+                        if filterOption == text! {
+                            filterBySearchText(filterOption, key:"track")
+                            return true
+                        }
+                    }
+                }
+            }
+        }else {
+            presentViewController(presentErrorMessage(), animated: true, completion: nil)
+            valid = false
+        }
+        return valid
+    }
+    
+    func filterBySearchText(filterOption:String, key:String) {
+        var filteredArray = [Blp]()
+        
+        switch key {
+        case "location":
+            for blp in masterArray {
+                if blp.location == filterOption {
+                    filteredArray.append(blp)
+                }
+            }
+        case "track":
+            for blp in masterArray {
+                if blp.track == filterOption {
+                    filteredArray.append(blp)
+                }
+            }
+        default:
+            break
+        }
+        
+        self.blpArrayManager.array = filteredArray
+        self.tableView.reloadData()
+    }
+    
+    func dismissFilterContainer() {
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.filterContainerView.frame = CGRectMake(0, -self.filterContainerView.frame.height, self.view.frame.width, self.filterContainerView.frame.height)
+            self.filterContainerView.alpha = 0
+            }) { (success) -> Void in
+                self.filterContainerView.removeFromSuperview()
+        }
+    }
+}
+
+// UITextFieldDelegate
+
+extension BlpTableViewController:UITextFieldDelegate {
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        if textField.tag == 0 {
+            return checkIfSearchIsValid(textField.text, tag: 0)
+        }else {
+            return checkIfSearchIsValid(textField.text, tag: 1)
+        }
+    }
+
+}
+
+extension BlpTableViewController {
+    
+    @IBAction func clearFilters(sender: AnyObject) {
+        self.blpArrayManager.array = masterArray
+        self.tableView.reloadData()
+    }
+    
+    @IBAction func dismissView(sender: AnyObject) {
+        dismissFilterContainer()
+    }
+    
+    @IBAction func FilterByLocationOrTrack(sender: UIBarButtonItem) {
+        self.filterContainerView.alpha = 0
+        self.view.addSubview(self.filterContainerView)
+        UIView.animateWithDuration(1) { () -> Void in
+            self.filterContainerView.alpha = 1
+            self.filterContainerView.frame = CGRectMake(0, 0, self.view.frame.width, self.filterContainerView.frame.height)
+    
+        }
+        
+    }
 }
 
 private extension BlpTableViewController {
@@ -126,6 +220,7 @@ private extension BlpTableViewController {
                     }
                 }
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.masterArray = self.blpArrayManager.array
                     self.tableView.reloadData()
                 })
             } catch {
