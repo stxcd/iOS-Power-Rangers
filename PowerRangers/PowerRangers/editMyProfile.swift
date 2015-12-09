@@ -167,6 +167,8 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
             presentViewController(presentErrorMessage(), animated: true, completion: nil)
         }
     }
+    
+    
 
     func presentErrorMessage() -> UIAlertController {
         let alert = UIAlertController(title: "Invalid Form", message: "One of your profile fields is empty, please completely fill out your profile before saving", preferredStyle: .Alert)

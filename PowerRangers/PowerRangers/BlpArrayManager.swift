@@ -11,13 +11,13 @@ import Foundation
 
 class BlpArrayManager {
     
-    private var a = [Blp]()
-    var array:[Blp] {
-        return a
-    }
+    var array = [Blp]()
+//    var array:[Blp] {
+//        return a
+//    }
     
     func setBlp(blp:Blp) {
-        a.append(blp)
+        array.append(blp)
     }
     
 }
