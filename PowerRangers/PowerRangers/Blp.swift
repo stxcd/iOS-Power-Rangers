@@ -24,6 +24,7 @@ class Blp {
     var lastName: String
     var identifier: String
     var nextLocation: String
+    let c:String
     
     //MARK: Initialization
     
@@ -41,5 +42,6 @@ class Blp {
         self.lastName = d["lastName"] as? String ?? ""
         self.identifier = d["identifier"] as? String ?? ""
         self.nextLocation = d["nextLocation"] as? String ?? ""
+        self.c = d["class"] as? String ?? ""
     }
 }

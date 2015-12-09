@@ -29,8 +29,12 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     //Passing Data Between View Controllers Through Textfields
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setup()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func setup() {
+     
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,7 +62,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     func setProfileValues(profile:Blp) {
         nameLabel.text = profile.name
         locationLabel.text = profile.location
-        classLabel.text = profile.identifier
+        classLabel.text = profile.c
         numberLabel.text = profile.phoneNum
         emailLabel.text = profile.email
         trackLabel.text = profile.track

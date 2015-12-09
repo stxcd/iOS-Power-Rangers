@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "SYF Clipboard.png",
+      "filename" : "75 clipboard.png",
       "scale" : "1x"
     },
     {
@@ -11,6 +11,7 @@
     },
     {
       "idiom" : "universal",
+      "filename" : "SYF Clipboard.png",
       "scale" : "3x"
     }
   ],

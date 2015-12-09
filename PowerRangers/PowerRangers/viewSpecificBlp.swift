@@ -30,7 +30,7 @@ class viewSpecificBlp: UIViewController {
     
     @IBOutlet weak var locationLabel: UILabel!
     
-    @IBOutlet weak var interestsText: UITextView!
+    @IBOutlet weak var interestsText: UILabel!
     
     @IBOutlet weak var photoView: UIImageView!
     

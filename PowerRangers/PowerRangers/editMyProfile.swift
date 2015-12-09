@@ -175,13 +175,13 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
 
     func validForm() -> Bool {
-        if let name = nameTextField.text, track = tTextField.text, phone = phoneNumberTextField.text, email = emailTextField.text, rotation = rotationTitleTextField.text, aboutme = aboutMeTextField.text, loc = locTextField.text, next = nextLocTextField.text {
-            if name == "" || track == "" || phone == "" || email == "" || rotation == "" || aboutme == "" {
+        if let name = nameTextField.text, track = tTextField.text, phone = phoneNumberTextField.text, email = emailTextField.text, rotation = rotationTitleTextField.text, aboutme = aboutMeTextField.text, loc = locTextField.text, next = nextLocTextField.text, c = classTextField.text {
+            if name == "" || track == "" || phone == "" || email == "" || rotation == "" || aboutme == "" || c == ""{
                 
             }else {
                 if let photoLocation = fileInDocumentsDirectory(profileImageKeyForDocumentsDirectory) {
                     print(photoLocation)
-                    let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":photoLocation.path!]
+                    let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":photoLocation.path!, "class":c]
                     if saveImage(photoLocation) {
                         saveProfile(profileDict)
                         return true
