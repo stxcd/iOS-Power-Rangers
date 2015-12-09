@@ -25,6 +25,7 @@ class ViewMyHousingProfile: UIViewController {
     @IBOutlet weak var classlabel: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
     
     var filterselctions:[String]?
     var filterlabels:[String]?
@@ -33,12 +34,30 @@ class ViewMyHousingProfile: UIViewController {
     
     var housingProfileDictionary = [String:String]()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
     }
+    
+    private func createEntry() -> UIView {
+        
+        let stack = UIStackView()
+        stack.axis = .Horizontal
+        stack.alignment = .FirstBaseline
+        stack.distribution = .FillProportionally
+        stack.addArrangedSubview(amen1)
+        stack.addArrangedSubview(amen2)
+        stack.addArrangedSubview(amen3)
+        stack.addArrangedSubview(amen4)
+        
+        return stack
+        
+    }
+    
     
     func validForm() {
         if let name = name.text, email = email.text, location = location.text, classLabel = classlabel.text,  phone = number.text {

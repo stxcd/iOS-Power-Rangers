@@ -16,7 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        setup()
         return true
+    }
+    
+    func setup() {
+        if let tabBarController = self.window?.rootViewController as? UITabBarController {
+
+            tabBarController.tabBar.barTintColor = UIColor.whiteColor()
+            tabBarController.tabBar.tintColor = UIColor.synchronyDarkGrey()
+        }
+    }
+    
+    func setTabBarItemImage(vc:UIViewController) {
+//        vc.tabBarItem.
+//        vc.tabBarItem = UITabBarItem(title: "TITLE", image: UIImage(named: "My Profile Icon"), selectedImage: UIImage(named: "My Profile Icon"))
+//        vc.tabBarItem.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        
+//        vc.tabBarItem.image?.imageWithRenderingMode(.AlwaysOriginal)
     }
 
     func applicationWillResignActive(application: UIApplication) {

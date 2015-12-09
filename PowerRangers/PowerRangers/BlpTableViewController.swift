@@ -54,7 +54,9 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
             }
         
             return cell
-    }
+    }    
+
+
     
     // MARK: - Navigation
 
