@@ -40,7 +40,7 @@ class editMyHousing: UIViewController {
     }
     
     func buildButtonDictionary() -> [Int:[UIButton]] {
-        let buttonDictionary:[Int:[UIButton]] = [1:[price1, price2, price3], 2:[gender1, gender2, gender3], 3: [home1,home2,home3], 4: [smoke1, smoke2, smoke3]]
+        let buttonDictionary:[Int:[UIButton]] = [1:[price1, price2, price3], 2:[gender1, gender2, gender3], 3: [pet, wm, pool, gym], 4: [home1, home2, home3], 5: [smoke1, smoke2, smoke3]]
         return buttonDictionary
     }
 
@@ -66,6 +66,8 @@ class editMyHousing: UIViewController {
         case 3:
             return checkButtonDictionaryForSelectionOfRow(i)
         case 4:
+            return checkButtonDictionaryForSelectionOfRow(i)
+        case 5:
             return checkButtonDictionaryForSelectionOfRow(i)
         default:
             return true
@@ -104,15 +106,21 @@ extension editMyHousing {
     
     @IBAction func filterSelection(sender: UIButton) {
         
-        if ifRowIsNotSelected(sender.tag) {
+        if sender.tag == 3 {
             sender.selected = true
-            
-            if let title = sender.titleLabel?.text {
-                addFilter(title)
-            }
+            // do nothing for amenties to allow for multiple selection
         }else {
-            sender.selected = false
-            print("another button in row is selected")
+            
+            if ifRowIsNotSelected(sender.tag) {
+                sender.selected = true
+                
+                if let title = sender.titleLabel?.text {
+                    addFilter(title)
+                }
+            }else {
+                sender.selected = false
+                print("another button in row is selected")
+            }
         }
         
     }
