@@ -9,7 +9,7 @@
 import UIKit
 
 class editMyHousing: UIViewController {
-    //Fuck this page- Dan     
+    
     
     @IBOutlet weak var price1: UIButton!
     @IBOutlet weak var price2: UIButton!
@@ -29,14 +29,19 @@ class editMyHousing: UIViewController {
     @IBOutlet weak var smoke3: UIButton!
     
     weak var parent:ViewMyHousingProfile?
-    
-
 
     var filterselctions = [String] ()
     
     override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+        buildButtonDictionary()
+        
+    }
+    
+    func buildButtonDictionary() -> [Int:[UIButton]] {
+        let buttonDictionary:[Int:[UIButton]] = [1:[price1, price2, price3], 2:[gender1, gender2, gender3], 3: [home1,home2,home3], 4: [smoke1, smoke2, smoke3]]
+        return buttonDictionary
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +55,38 @@ class editMyHousing: UIViewController {
             vmp.filterselctions = filterselctions
         }
         navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    func ifRowIsNotSelected(i:Int) -> Bool {
+        switch i {
+        case 1:
+            return checkButtonDictionaryForSelectionOfRow(i)
+        case 2:
+            return checkButtonDictionaryForSelectionOfRow(i)
+        case 3:
+            return checkButtonDictionaryForSelectionOfRow(i)
+        case 4:
+            return checkButtonDictionaryForSelectionOfRow(i)
+        default:
+            return true
+        }
+    }
+    
+    func checkButtonDictionaryForSelectionOfRow(r:Int) -> Bool {
+        
+        var noSelectionInRow = false
+        
+        let buttonArray = buildButtonDictionary()[r]!
+        for button in buttonArray {
+            if button.selected {
+                noSelectionInRow = false
+                break
+            }else {
+                noSelectionInRow = true
+            }
+        }
+        
+        return noSelectionInRow
     }
 
 }
@@ -66,9 +103,18 @@ extension editMyHousing {
     }
     
     @IBAction func filterSelection(sender: UIButton) {
-        if let title = sender.titleLabel?.text {
-            addFilter(title)
+        
+        if ifRowIsNotSelected(sender.tag) {
+            sender.selected = true
+            
+            if let title = sender.titleLabel?.text {
+                addFilter(title)
+            }
+        }else {
+            sender.selected = false
+            print("another button in row is selected")
         }
+        
     }
     
     func addFilter(t:String) {

@@ -40,7 +40,7 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     func getProfileValues() {
         
-        let saveProfile = SaveProfile()
+        let saveProfile = SaveInformation()
         if let dict = saveProfile.getProfile() {
             let profile = Blp(d: dict)
             setProfileValues(profile)

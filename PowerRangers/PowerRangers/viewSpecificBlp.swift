@@ -43,12 +43,12 @@ class viewSpecificBlp: UIViewController {
         //load profile from JSON (BlpTableViewController)
         
         if let blp = blp {
-            fullNameLabel.text = blp.name
+            fullNameLabel.text = blp.name + " " + blp.lastName
             emailLabel.text = blp.email
             phoneLabel.text = blp.phoneNum
             trackLabel.text = blp.track
             roleLabel.text = blp.role
-            classLabel.text = blp.track
+            classLabel.text = "2017"
             locationLabel.text = blp.location
             interestsText.text = blp.interests
             nextLocationLabel.text = blp.nextLocation

@@ -11,7 +11,7 @@ import Foundation
 let ProfileKey = "Profile"
 let HousingKey = "Housing"
 
-class SaveProfile {
+class SaveInformation {
     
     var profileDictionary:[String:NSObject]?
     var housingDicitonary:[String:NSObject]?
@@ -24,7 +24,7 @@ class SaveProfile {
         defaults.synchronize()
     }
     
-    func saveHousing(housing:BlpHousing) {
+    func saveHousing(housing:[String:String]) {
         defaults.setObject(housing, forKey: HousingKey)
         defaults.synchronize()        
     }
@@ -36,8 +36,8 @@ class SaveProfile {
         return nil
     }
     
-    func getHousing() -> BlpHousing? {
-        if let housing = defaults.objectForKey(HousingKey) as? BlpHousing {
+    func getHousing() -> [String:String]? {
+        if let housing = defaults.objectForKey(HousingKey) as? [String:String] {
             return housing
         }
         return nil

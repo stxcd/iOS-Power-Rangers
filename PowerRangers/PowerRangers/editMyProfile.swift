@@ -214,7 +214,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func saveProfile(d:[String:String]) {
-        let saveProfile = SaveProfile()
+        let saveProfile = SaveInformation()
         saveProfile.saveProfile(d)
     }
 }
