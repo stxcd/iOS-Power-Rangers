@@ -25,6 +25,7 @@ class ViewMyHousingProfile: UIViewController {
     @IBOutlet weak var classlabel: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
     
     var filterselctions:[String]?
     var filterlabels:[String]?
@@ -33,12 +34,30 @@ class ViewMyHousingProfile: UIViewController {
     
     var housingProfileDictionary = [String:String]()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
     }
+    
+    private func createEntry() -> UIView {
+        
+        let stack = UIStackView()
+        stack.axis = .Horizontal
+        stack.alignment = .FirstBaseline
+        stack.distribution = .FillProportionally
+        stack.addArrangedSubview(amen1)
+        stack.addArrangedSubview(amen2)
+        stack.addArrangedSubview(amen3)
+        stack.addArrangedSubview(amen4)
+        
+        return stack
+        
+    }
+    
     
     func validForm() {
         if let name = name.text, email = email.text, location = location.text, classLabel = classlabel.text,  phone = number.text {
@@ -135,13 +154,13 @@ class ViewMyHousingProfile: UIViewController {
             switch filters {
             case "$1000":
                 buildHousingDictionary("$1000", v: "price1")
-                price.image = UIImage(named: "price1")
+                price.image = UIImage(named: "Price1")
             case "$1500":
                 buildHousingDictionary("$1500", v: "price2")
-                price.image = UIImage(named: "price2")
+                price.image = UIImage(named: "Price2")
             case "$2000":
                 buildHousingDictionary("2000", v: "price3")
-                price.image = UIImage(named: "price3")
+                price.image = UIImage(named: "Price3")
             case "Male":
                 buildHousingDictionary("Male", v: "gender0")
                 gender.image = UIImage(named: "gender0")

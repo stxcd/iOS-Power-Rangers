@@ -53,6 +53,7 @@ class BlpTableViewController: UITableViewController {
         
             return cell
     }
+    
 
 
     /*

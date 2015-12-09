@@ -34,7 +34,8 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func setup() {
-     
+        self.tabBarItem = UITabBarItem(title: "TITLE", image: UIImage(named: "My Profile Icon"), selectedImage: UIImage(named: "My Profile Icon"))
+        self.tabBarItem.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
     }
     
     override func viewDidAppear(animated: Bool) {
