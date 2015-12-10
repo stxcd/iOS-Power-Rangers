@@ -19,6 +19,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
     var filteredBlpArray = [String: String]()
     // master array which contains all blp instances on first load
     private var masterArray = [Blp]()
+    private var selectedTextField:UITextField?
     
     let filterDictionary = [0:["Alpharetta", "Atlanta", "Canton", "Charlotte", "Chicago", "Costa Mesa", "Kettering", "St. Paul", "Stamford"], 1:["Audit", "Data Analytics", "Finance", "HR", "IT", "Marketing", "Operations", "Risk", "Sales"]]
     
@@ -113,7 +114,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
                 if tag == 0 {
                     let array = filterDictionary[0]!
                     for filterOption in array {
-                        if filterOption == text! {
+                        if filterOption.lowercaseString == text!.lowercaseString {
                             filterBySearchText(filterOption, key:"location")
                             return true
                         }
@@ -121,7 +122,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
                 }else {
                     let array = filterDictionary[1]!
                     for filterOption in array {
-                        if filterOption == text! {
+                        if filterOption.lowercaseString == text!.lowercaseString {
                             filterBySearchText(filterOption, key:"track")
                             return true
                         }
@@ -174,7 +175,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
 extension BlpTableViewController:UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
+        selectedTextField = textField
         if textField.tag == 0 {
             return checkIfSearchIsValid(textField.text, tag: 0)
         }else {
@@ -187,6 +188,9 @@ extension BlpTableViewController:UITextFieldDelegate {
 extension BlpTableViewController {
     
     @IBAction func clearFilters(sender: AnyObject) {
+        if let selected = selectedTextField {
+            selected.text = ""
+        }
         self.blpArrayManager.array = masterArray
         self.tableView.reloadData()
     }

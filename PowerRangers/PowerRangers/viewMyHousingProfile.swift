@@ -154,13 +154,13 @@ class ViewMyHousingProfile: UIViewController {
             switch filters {
             case "$1000":
                 buildHousingDictionary("$1000", v: "price1")
-                price.image = UIImage(named: "Price1")
+                price.image = UIImage(named: "price1")
             case "$1500":
                 buildHousingDictionary("$1500", v: "price2")
-                price.image = UIImage(named: "Price2")
+                price.image = UIImage(named: "price2")
             case "$2000":
                 buildHousingDictionary("2000", v: "price3")
-                price.image = UIImage(named: "Price3")
+                price.image = UIImage(named: "price3")
             case "Male":
                 buildHousingDictionary("Male", v: "gender0")
                 gender.image = UIImage(named: "gender0")
