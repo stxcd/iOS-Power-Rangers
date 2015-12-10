@@ -107,6 +107,7 @@ extension editMyHousing {
     @IBAction func filterSelection(sender: UIButton) {
         
         if sender.tag == 3 {
+            addFilter(sender.titleLabel!.text!)
             sender.selected = true
             // do nothing for amenties to allow for multiple selection
         }else {
@@ -123,7 +124,7 @@ extension editMyHousing {
             }
         }
         
-    }
+    } 
     
     func addFilter(t:String) {
         filterselctions.append(t)

@@ -10,6 +10,7 @@ import UIKit
 
 class BlpHousingViewController: UIViewController {
 
+    @IBOutlet var helpView: UIView!
 let blpHousingArrayManager = BlpHousingArrayManager()
     
 //    var blp: BlpHousing?
@@ -49,6 +50,9 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     @IBOutlet weak var phoneLabel: UILabel!
     
     @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var typeImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,6 +63,12 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     }
     
     func setupProfile() {
+        
+        let infoButton = UIButton(type: .InfoDark)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+        
+        infoButton.addTarget(self, action: "showHousingHelp", forControlEvents: .TouchUpInside)
+        
         if let profile = blp {
             fullNameLabel.text = profile.name
             locationLabel.text = profile.location
@@ -70,7 +80,25 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         }
     }
     
-        
+    func showHousingHelp () {
+        self.helpView.alpha = 0
+        self.view.addSubview(self.helpView)
+        UIView.animateWithDuration(1) { () -> Void in
+            self.helpView.alpha = 1
+            self.helpView.frame = CGRectMake(0, 75, self.view.frame.width, self.helpView.frame.height)
+            
+        }
+    }
+    
+    @IBAction func dismissHousing(sender: AnyObject) {
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.helpView.frame = CGRectMake(0, -self.helpView.frame.height, self.view.frame.width, self.helpView.frame.height)
+            self.helpView.alpha = 0
+            }) { (success) -> Void in
+                self.helpView.removeFromSuperview()
+        }
+    }
+    
         // Do any additional setup after loading the view.
     
 
@@ -129,6 +157,13 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         let genderString = "gender"+genderPull
         let genderPic = UIImage(named: genderString)
         genderImage.image = genderPic
+        
+        let typePull = housingProf.typeOfResidence
+        if typePull == "1" {
+            typeImage.image = UIImage(named: "Apartment")
+        } else {
+            typeImage.image = UIImage(named: "Housing")
+        }
         
         
         var laundryCheck : Bool = false
@@ -202,3 +237,5 @@ private extension BlpHousingViewController {
         
     }
 }
+
+
