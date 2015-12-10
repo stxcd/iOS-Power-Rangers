@@ -35,7 +35,7 @@ class FAQViewController: UIViewController {
     var answer4 = "Relocation reimbursements and bonuses will most likely be paid out in your first or second paycheck. In order to be reimbursed you must save and submit receipts. If you are driving your own vehicle to your new location you will be reimbursed for gas based on miles traveled."
     var answer5 = "Pay cycles last two weeks and paychecks are received every other Friday. You will receive your first check at the end of the first pay cycle from your start date. Direct Deposit can be set up through the Synchrony HR Portal, instructions for Direct Deposit will be covered during Symposium Week."
     var answer6 = "Benefits, insurance information, vacation days, and similar information will be passed along to you during onboarding, and will also be explained in depth during Symposium Week."
-    var answer7 = "You will book your travel (airfare, rental cars, etc) however you choose and will be reimbursed for all arrangements you make. Be sure to save all receipts from booked travel and any expenses during symposium week. If you are driving to Stamford in your personal car, you will be reimbursed for gas roundtrip based on the total miles driven between your start point and Stamford. Hotel accommodations will be booked for you under your name at the Marriot in Stamford, all you will need to do is check in."
+    var answer7 = "You will book your travel (airfare, rental cars, etc) however you choose and will be reimbursed for all arrangements made. Be sure to save all receipts from booked travel and any expenses during symposium week. If you are driving to Stamford in your personal car, you will be reimbursed for gas roundtrip based on the total miles driven between your start point and Stamford. Hotel accommodations will be booked for you under your name at the Marriot in Stamford, all you'll need to do is check in."
     var answer8 = "Depending on your track you may find out about your next rotations sooner than other tracks. You should have details about your next rotation no later than 6 months into your current rotation."
     var answer9 = "After accepting your offer, you should hear from a Synchrony representative about once a month leading up to your start date. You will also be given a Buddy, someone who is currently a Synchrony employee and has gone through the leadership program in the past. You can reach out to any of the Synchrony employees and your buddy at any time with any questions or concerns regarding your upcoming rotation."
     var answer10 = "Symposium week is five days of planned events, team activities, information sessions, and guest speakers. This week will serve as your introduction to everything you need to know about Synchrony Financial and the BLP program, give you the opportunity to get to know the other BLP’s, and introduce you to senior leadership."
@@ -44,11 +44,13 @@ class FAQViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.tableView.backgroundColor = UIColor.synchronyLightGrey()
         setup()
     }
     
     func setup() {
         tableView.estimatedRowHeight = 44
+        tableView.separatorColor = UIColor.whiteColor()
         answerView.delegate = self
     }
     
@@ -56,7 +58,7 @@ class FAQViewController: UIViewController {
         answerView.alpha = 0
         answerView.setLablWithAnswer(a)
         UIView.animateWithDuration(0.5) {
-            self.answerView.frame = CGRectMake(0, (self.view.bounds.height - 29 - 200), self.view.bounds.width, self.answerView.frame.size.height)
+            self.answerView.frame = CGRectMake(0, (self.view.bounds.height - 49 - self.answerView.bounds.height), self.view.bounds.width, self.answerView.frame.size.height)
             self.answerView.alpha = 1
             self.view.addSubview(self.answerView)
         }
@@ -139,6 +141,15 @@ extension FAQViewController: UITableViewDataSource, UITableViewDelegate {
             default:
                 return UITableViewCell()
             }
+            
+//            let backgroundview = UIView()
+//            backgroundview.backgroundColor = UIColor.synchronyLightGrey()
+//            cell.selectedBackgroundView = backgroundview
+//            cell.backgroundColor = UIColor.synchronyLightGrey()
+//            cell.contentView.backgroundColor = UIColor.synchronyLightGrey()
+            
+            
+            
             return cell
         }
         return UITableViewCell()

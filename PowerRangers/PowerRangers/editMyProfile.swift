@@ -48,12 +48,14 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     private var selectedTextField:UITextField?
     weak var parent:ViewMyProfile?
     
+    @IBOutlet weak var containerForEditForm: UIView!
+    @IBOutlet weak var topLayoutConstraintForContainerForEditForm: NSLayoutConstraint!
+    
     // Text field dictionary
     
     let locationTextField = 1
     let trackTextField = 5
     let nextLocationTextField = 8
-
     
     var itemSelected: String = " "
     
@@ -69,6 +71,42 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         let tap = UITapGestureRecognizer(target: self, action: "didTapPhotoImageView")
         tap.numberOfTapsRequired = 1
         photoImageView.addGestureRecognizer(tap)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "sizeOfKeyboard:", name: "UIKeyboardWillShowNotification", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "sizeOfKeyboard:", name: "UIKeyboardWillHideNotification", object: nil)
+    }
+    
+    func sizeOfKeyboard(notification:NSNotification) {
+        if let dictionaryOfKeyboardValues = notification.userInfo {
+            let frameOfKeyboard = dictionaryOfKeyboardValues[UIKeyboardFrameBeginUserInfoKey]
+            if let frame = frameOfKeyboard as? NSValue {
+                let sizeOfKeyboard = frame.CGRectValue()
+                adjustContainerForEditForm(sizeOfKeyboard)
+            }
+        }
+    }
+    
+    func adjustContainerForEditForm(keyboardSize:CGRect) {
+        if let currentTextField = selectedTextField {
+            if currentTextField.frame.origin.y > keyboardSize.height {
+                let difference = abs(currentTextField.frame.origin.y - keyboardSize.height)
+                moveContainerForEditFormUp(difference)
+            }
+        }
+    }
+    
+    func moveContainerForEditFormUp(origin:CGFloat) {
+        self.topLayoutConstraintForContainerForEditForm.constant = -origin
+        UIView.animateWithDuration(1) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func moveContainerForEditFormToOriginalPosition() {
+        self.topLayoutConstraintForContainerForEditForm.constant = 0
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.view.layoutIfNeeded()
+        }
     }
     
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
@@ -229,9 +267,13 @@ extension editMyProfile:DismissPickerView {
         hidePickerViewContainer()
     }
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        selectedTextField = textField
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        
+        moveContainerForEditFormToOriginalPosition()
         return true
     }
     

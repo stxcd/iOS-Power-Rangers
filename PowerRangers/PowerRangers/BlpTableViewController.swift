@@ -29,6 +29,11 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
         grabNames()
         
     }
+    
+    func setup() {
+        tableView.separatorColor = UIColor.whiteColor()
+    }
+
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return self.blpArrayManager.array.count
