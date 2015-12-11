@@ -14,7 +14,7 @@ class BlpHousingViewController: UIViewController {
 let blpHousingArrayManager = BlpHousingArrayManager()
     
 //    var blp: BlpHousing?
-    var blp:Blp?
+    var blp:BlpUser?
     var ident : Int = 0
     
     @IBOutlet weak var amenityRight: UILabel!
@@ -56,7 +56,6 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getHousing()
         setupProfile()
        // setLabels()
 //        print(self.blpHousingArrayManager.array)
@@ -70,13 +69,12 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         infoButton.addTarget(self, action: "showHousingHelp", forControlEvents: .TouchUpInside)
         
         if let profile = blp {
-            fullNameLabel.text = profile.name
+            getHousing(profile.firstName)
+            fullNameLabel.text = profile.firstName
             locationLabel.text = profile.location
             classLabel.text = profile.role
             phoneLabel.text = profile.phoneNum
             emailLabel.text = profile.email
-            
-            
         }
     }
     
@@ -107,8 +105,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         // Dispose of any resources that can be recreated.
     }
     
-    func setLabels (){
-        let housingProf = self.blpHousingArrayManager.array[ident]
+    func setLabels (housingProf:HousingUser) {
         
         fullNameLabel.text = "\(housingProf.firstName), \(housingProf.lastName)"
     
@@ -198,6 +195,12 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         }
         
     }
+    
+    func reloadDataOnTheMainThread() {
+        dispatch_async(dispatch_get_main_queue()) {
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -213,27 +216,41 @@ let blpHousingArrayManager = BlpHousingArrayManager()
 
 private extension BlpHousingViewController {
     
-    func getHousing() {
+    func getHousing(firstName:String) {
         
-        DataManager.getHousing { (data) -> Void in
-            do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
-                
-                if let blps = json["housing"] as? [[String: AnyObject]] {
-                    for blps in blps {
-                        let profile = BlpHousing(d: blps)
-                        self.blpHousingArrayManager.setBlp(profile)
+        DataManager.getBlpHousingUserFromParse(firstName) { (profiles) -> Void in
+            if profiles != nil {
+                for profile in profiles! {
+                    if let housingUser = profile as? HousingUser {
+                        self.setLabels(housingUser)
                     }
                 }
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.setLabels()
-                })
                 
-            } catch {
-                print("error serializing JSON: \(error)")
+                self.reloadDataOnTheMainThread()
+            }else {
+                // nil profiles
             }
-            
         }
+        
+//        DataManager.getHousing { (data) -> Void in
+//            do {
+//                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+//                
+//                if let blps = json["housing"] as? [[String: AnyObject]] {
+//                    for blps in blps {
+//                        let profile = BlpHousing(d: blps)
+//                        self.blpHousingArrayManager.setBlp(profile)
+//                    }
+//                }
+//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                    self.setLabels()
+//                })
+//                
+//            } catch {
+//                print("error serializing JSON: \(error)")
+//            }
+//            
+//        }
         
     }
 }

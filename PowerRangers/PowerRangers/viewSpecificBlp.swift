@@ -11,9 +11,9 @@ import UIKit
 class viewSpecificBlp: UIViewController {
     
     
-    var blp: Blp?
+    var blp: BlpUser?
     
-    var housingArray = [BlpHousing]()
+    var housingArray = [HousingUser]()
     var filterlabel = [String]()
     
     
@@ -44,7 +44,7 @@ class viewSpecificBlp: UIViewController {
         //load profile from JSON (BlpTableViewController)
         
         if let blp = blp {
-            fullNameLabel.text = blp.name + " " + blp.lastName
+            fullNameLabel.text = blp.firstName + " " + blp.lastName
             emailLabel.text = blp.email
             phoneLabel.text = blp.phoneNum
             trackLabel.text = blp.track

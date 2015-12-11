@@ -7,16 +7,16 @@
 //
 
 import Foundation
-
+import Parse
 
 class BlpArrayManager {
     
-    var array = [Blp]()
+    var array = [BlpUser]()
 //    var array:[Blp] {
 //        return a
 //    }
     
-    func setBlp(blp:Blp) {
+    func setBlp(blp:BlpUser) {
         array.append(blp)
     }
     

@@ -13,12 +13,12 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
     @IBOutlet var filterContainerView: UIView!
     
     
-    var blpArray = [Blp]()
+    var blpArray = [BlpUser]()
     
     let blpArrayManager = BlpArrayManager()
     var filteredBlpArray = [String: String]()
     // master array which contains all blp instances on first load
-    private var masterArray = [Blp]()
+    private var masterArray = [BlpUser]()
     private var selectedTextField:UITextField?
     
     let filterDictionary = [0:["Alpharetta", "Atlanta", "Canton", "Charlotte", "Chicago", "Costa Mesa", "Kettering", "St. Paul", "Stamford"], 1:["Audit", "Data Analytics", "Finance", "HR", "IT", "Marketing", "Operations", "Risk", "Sales"]]
@@ -44,7 +44,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
         let cell = tableView.dequeueReusableCellWithIdentifier("BlpTableViewCell", forIndexPath: indexPath) as! BlpTableViewCell
         
             let blpProfile = self.blpArrayManager.array[indexPath.row]
-            cell.nameLabel.text = "\(blpProfile.name) \(blpProfile.lastName)"
+            cell.nameLabel.text = "\(blpProfile.firstName) \(blpProfile.lastName)"
 //          blpProfile.location
             cell.trackLabel.text = "\(blpProfile.track), \(blpProfile.location)"
             
@@ -84,7 +84,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
     
     func filterBy(filter:String) {
         
-        var filteredArray = [Blp]()
+        var filteredArray = [BlpUser]()
         
         if filter == "Location" {
             for blp in self.blpArrayManager.array {
@@ -142,7 +142,7 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
     }
     
     func filterBySearchText(filterOption:String, key:String) {
-        var filteredArray = [Blp]()
+        var filteredArray = [BlpUser]()
         
         switch key {
         case "location":
@@ -214,30 +214,30 @@ extension BlpTableViewController {
         }
         
     }
+    
+    func reloadDataOnMainThread() {
+        dispatch_async(dispatch_get_main_queue()) {
+            self.tableView.reloadData()
+        }
+    }
 }
 
 private extension BlpTableViewController {
     
     func grabNames() {
         
-        DataManager.grabNames { (data) -> Void in
-            do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
-                
-                if let blps = json["blps"] as? [[String: AnyObject]] {
-                    for blps in blps {
-                        let profile = Blp(d: blps)
-                        self.blpArrayManager.setBlp(profile)
+        DataManager.getBlpProfileFromParse { (profiles) -> Void in
+            if profiles != nil {
+                for profile in profiles! {
+                    if let blpProfile = profile as? BlpUser {
+                        self.blpArrayManager.setBlp(blpProfile)
                     }
                 }
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.masterArray = self.blpArrayManager.array
-                    self.tableView.reloadData()
-                })
-            } catch {
-                print("error serializing JSON: \(error)")
+                
+                self.reloadDataOnMainThread()
+            }else {
+                // nil profiles
             }
-            
         }
         
     }

@@ -11,12 +11,12 @@ import Foundation
 
 class BlpHousingArrayManager {
     
-    private var a = [BlpHousing]()
-    var array:[BlpHousing] {
+    private var a = [HousingUser]()
+    var array:[HousingUser] {
         return a
     }
     
-    func setBlp(blp:BlpHousing) {
+    func setBlp(blp:HousingUser) {
         a.append(blp)
     }
     

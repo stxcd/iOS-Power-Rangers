@@ -8,19 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		140E3E121C161B0900B1DDE9 /* BlpHousingArrayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */; };
-		141373721BFFB7DB00678C5F /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* Blp.swift */; };
+		141373721BFFB7DB00678C5F /* BlpUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* BlpUser.swift */; };
 		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; };
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; };
 		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; };
-		145FCF861C0D0BCB00C0002E /* blpProfilePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 145FCF851C0D0BCB00C0002E /* blpProfilePage.json */; };
-		1491098B1C0CAB0D00511526 /* housing.json in Resources */ = {isa = PBXBuildFile; fileRef = 1491098A1C0CAB0D00511526 /* housing.json */; };
-		1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098C1C0CAB6F00511526 /* blpHousing.swift */; };
+		1491098D1C0CAB6F00511526 /* HousingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098C1C0CAB6F00511526 /* HousingUser.swift */; };
 		1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098E1C0CADD100511526 /* BlpHousingViewController.swift */; };
 		14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C251C03C00C001A8D5C /* SurveyViewController.swift */; };
 		14C68C281C03C133001A8D5C /* editMyHousing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C68C271C03C133001A8D5C /* editMyHousing.swift */; };
 		14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */; };
 		14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */ = {isa = PBXBuildFile; fileRef = 14D450581C0409DA002ECC4A /* Blp Profile Pictures */; };
 		14EC53161C1750FC00473ADE /* SaveInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC53151C1750FC00473ADE /* SaveInformation.swift */; settings = {ASSET_TAGS = (); }; };
+		14EFA5EF1C1B17F60067B483 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5EE1C1B17F60067B483 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		14EFA5F11C1B17FD0067B483 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5F01C1B17FD0067B483 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		14EFA5F31C1B18250067B483 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5F21C1B18250067B483 /* AudioToolbox.framework */; };
+		14EFA5F51C1B182D0067B483 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5F41C1B182D0067B483 /* CFNetwork.framework */; };
+		14EFA5F71C1B18360067B483 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5F61C1B18360067B483 /* CoreGraphics.framework */; };
+		14EFA5F91C1B18400067B483 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5F81C1B18400067B483 /* CoreLocation.framework */; };
+		14EFA5FB1C1B18490067B483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5FA1C1B18490067B483 /* QuartzCore.framework */; };
+		14EFA5FD1C1B18520067B483 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5FC1C1B18520067B483 /* Security.framework */; };
+		14EFA5FF1C1B185A0067B483 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA5FE1C1B185A0067B483 /* StoreKit.framework */; };
+		14EFA6011C1B18650067B483 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA6001C1B18650067B483 /* SystemConfiguration.framework */; };
+		14EFA6031C1B18700067B483 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA6021C1B18700067B483 /* libz.tbd */; };
+		14EFA6051C1B187E0067B483 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFA6041C1B187E0067B483 /* libsqlite3.tbd */; };
 		35A8EAD11C16542B0082AC17 /* PickerViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */; };
 		35A8EAD31C168D900082AC17 /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD21C168D900082AC17 /* FAQCell.swift */; };
 		35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A8EAD41C1693280082AC17 /* AnswerView.swift */; };
@@ -57,19 +67,29 @@
 
 /* Begin PBXFileReference section */
 		140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpHousingArrayManager.swift; sourceTree = "<group>"; };
-		141373711BFFB7DB00678C5F /* Blp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blp.swift; sourceTree = "<group>"; };
+		141373711BFFB7DB00678C5F /* BlpUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpUser.swift; sourceTree = "<group>"; };
 		141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewCell.swift; sourceTree = "<group>"; };
 		141373751BFFBCB900678C5F /* BlpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewController.swift; sourceTree = "<group>"; };
 		144C1CE01BFBDC180006D509 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		145FCF851C0D0BCB00C0002E /* blpProfilePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blpProfilePage.json; sourceTree = "<group>"; };
-		1491098A1C0CAB0D00511526 /* housing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = housing.json; sourceTree = "<group>"; };
-		1491098C1C0CAB6F00511526 /* blpHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blpHousing.swift; sourceTree = "<group>"; };
+		1491098C1C0CAB6F00511526 /* HousingUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingUser.swift; sourceTree = "<group>"; };
 		1491098E1C0CADD100511526 /* BlpHousingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpHousingViewController.swift; sourceTree = "<group>"; };
 		14C68C251C03C00C001A8D5C /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		14C68C271C03C133001A8D5C /* editMyHousing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editMyHousing.swift; sourceTree = "<group>"; };
 		14D450521C03EE0D002ECC4A /* viewMyHousingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewMyHousingProfile.swift; sourceTree = "<group>"; };
 		14D450581C0409DA002ECC4A /* Blp Profile Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Blp Profile Pictures"; sourceTree = "<group>"; };
 		14EC53151C1750FC00473ADE /* SaveInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveInformation.swift; sourceTree = "<group>"; };
+		14EFA5EE1C1B17F60067B483 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		14EFA5F01C1B17FD0067B483 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		14EFA5F21C1B18250067B483 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		14EFA5F41C1B182D0067B483 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		14EFA5F61C1B18360067B483 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14EFA5F81C1B18400067B483 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		14EFA5FA1C1B18490067B483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14EFA5FC1C1B18520067B483 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		14EFA5FE1C1B185A0067B483 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		14EFA6001C1B18650067B483 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14EFA6021C1B18700067B483 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		14EFA6041C1B187E0067B483 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		35A8EAD01C16542B0082AC17 /* PickerViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewContainer.swift; sourceTree = "<group>"; };
 		35A8EAD21C168D900082AC17 /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
 		35A8EAD41C1693280082AC17 /* AnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
@@ -98,6 +118,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EFA6051C1B187E0067B483 /* libsqlite3.tbd in Frameworks */,
+				14EFA6031C1B18700067B483 /* libz.tbd in Frameworks */,
+				14EFA6011C1B18650067B483 /* SystemConfiguration.framework in Frameworks */,
+				14EFA5FF1C1B185A0067B483 /* StoreKit.framework in Frameworks */,
+				14EFA5FD1C1B18520067B483 /* Security.framework in Frameworks */,
+				14EFA5FB1C1B18490067B483 /* QuartzCore.framework in Frameworks */,
+				14EFA5F91C1B18400067B483 /* CoreLocation.framework in Frameworks */,
+				14EFA5F71C1B18360067B483 /* CoreGraphics.framework in Frameworks */,
+				14EFA5F51C1B182D0067B483 /* CFNetwork.framework in Frameworks */,
+				14EFA5F31C1B18250067B483 /* AudioToolbox.framework in Frameworks */,
+				14EFA5F11C1B17FD0067B483 /* Parse.framework in Frameworks */,
+				14EFA5EF1C1B17F60067B483 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +150,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14EFA5ED1C1B17E00067B483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14EFA6041C1B187E0067B483 /* libsqlite3.tbd */,
+				14EFA6021C1B18700067B483 /* libz.tbd */,
+				14EFA6001C1B18650067B483 /* SystemConfiguration.framework */,
+				14EFA5FE1C1B185A0067B483 /* StoreKit.framework */,
+				14EFA5FC1C1B18520067B483 /* Security.framework */,
+				14EFA5FA1C1B18490067B483 /* QuartzCore.framework */,
+				14EFA5F81C1B18400067B483 /* CoreLocation.framework */,
+				14EFA5F61C1B18360067B483 /* CoreGraphics.framework */,
+				14EFA5F41C1B182D0067B483 /* CFNetwork.framework */,
+				14EFA5F21C1B18250067B483 /* AudioToolbox.framework */,
+				14EFA5F01C1B17FD0067B483 /* Parse.framework */,
+				14EFA5EE1C1B17F60067B483 /* Bolts.framework */,
+			);
+			name = Frameworks;
+			path = PowerRangersTests;
+			sourceTree = "<group>";
+		};
 		35A8EACB1C15ED9C0082AC17 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				1491098A1C0CAB0D00511526 /* housing.json */,
-				145FCF851C0D0BCB00C0002E /* blpProfilePage.json */,
 			);
 			name = Json;
 			sourceTree = "<group>";
@@ -130,8 +180,8 @@
 		35A8EACC1C15EDBC0082AC17 /* Blp */ = {
 			isa = PBXGroup;
 			children = (
-				1491098C1C0CAB6F00511526 /* blpHousing.swift */,
-				141373711BFFB7DB00678C5F /* Blp.swift */,
+				1491098C1C0CAB6F00511526 /* HousingUser.swift */,
+				141373711BFFB7DB00678C5F /* BlpUser.swift */,
 				35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */,
 				140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */,
 			);
@@ -176,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				65CF9B711BF14F4E0085B446 /* PowerRangers */,
+				14EFA5ED1C1B17E00067B483 /* Frameworks */,
 				65CF9B881BF14F4E0085B446 /* PowerRangersTests */,
 				65CF9B931BF14F4E0085B446 /* PowerRangersUITests */,
 				65CF9B701BF14F4E0085B446 /* Products */,
@@ -336,8 +387,6 @@
 			files = (
 				65CF9B7F1BF14F4E0085B446 /* LaunchScreen.storyboard in Resources */,
 				14D450591C0409DA002ECC4A /* Blp Profile Pictures in Resources */,
-				1491098B1C0CAB0D00511526 /* housing.json in Resources */,
-				145FCF861C0D0BCB00C0002E /* blpProfilePage.json in Resources */,
 				65CF9B7C1BF14F4E0085B446 /* Assets.xcassets in Resources */,
 				65CF9B7A1BF14F4E0085B446 /* Main.storyboard in Resources */,
 			);
@@ -372,8 +421,8 @@
 				14C68C261C03C00C001A8D5C /* SurveyViewController.swift in Sources */,
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
 				35F7587B1C173BE3006701DE /* UIColor+Synchrony.swift in Sources */,
-				1491098D1C0CAB6F00511526 /* blpHousing.swift in Sources */,
-				141373721BFFB7DB00678C5F /* Blp.swift in Sources */,
+				1491098D1C0CAB6F00511526 /* HousingUser.swift in Sources */,
+				141373721BFFB7DB00678C5F /* BlpUser.swift in Sources */,
 				35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,
 				35A8EAD31C168D900082AC17 /* FAQCell.swift in Sources */,
@@ -526,6 +575,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PowerRangersTests",
+				);
 				INFOPLIST_FILE = PowerRangers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephen.PowerRangers;
@@ -537,6 +590,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PowerRangersTests",
+				);
 				INFOPLIST_FILE = PowerRangers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephen.PowerRangers;

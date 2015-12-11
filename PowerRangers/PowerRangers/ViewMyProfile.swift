@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -34,8 +35,8 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func setup() {
-        self.tabBarItem = UITabBarItem(title: "TITLE", image: UIImage(named: "My Profile Icon"), selectedImage: UIImage(named: "My Profile Icon"))
-        self.tabBarItem.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+//        self.tabBarItem = UITabBarItem(title: "TITLE", image: UIImage(named: "My Profile Icon"), selectedImage: UIImage(named: "My Profile Icon"))
+//        self.tabBarItem.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -45,11 +46,11 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     func getProfileValues() {
         
-        let saveProfile = SaveInformation()
-        if let dict = saveProfile.getProfile() {
-            let profile = Blp(d: dict)
-            setProfileValues(profile)
-        }
+//        let saveProfile = SaveInformation()
+//        if let dict = saveProfile.getProfile() {
+//            let profile = Blp(d: dict)
+//            setProfileValues(profile)
+//        }
         
         if let name = nameLabel.text, email = emailLabel.text, number = numberLabel.text, location = locationLabel.text, c = classLabel.text {
             profileValues["name"] = name
@@ -60,8 +61,8 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
     }
     
-    func setProfileValues(profile:Blp) {
-        nameLabel.text = profile.name
+    func assignProfileValues(profile:BlpUser) {
+        nameLabel.text = profile.firstName
         locationLabel.text = profile.location
         classLabel.text = profile.c
         numberLabel.text = profile.phoneNum

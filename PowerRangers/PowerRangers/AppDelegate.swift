@@ -6,6 +6,8 @@
 //  Copyright © 2015 Tommy. All rights reserved.
 //
 
+import Parse
+import Bolts
 import UIKit
 
 @UIApplicationMain
@@ -21,6 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setup() {
+        
+        // Initialize Parse.
+        Parse.setApplicationId("BaAClbkpQgDAJGl2IeQO05Q4TIwn6U0U0vc5RqGJ",
+            clientKey: "a2uKJeSpHHxXqC0pOEI1qx4litY4TgUndXAdzCdS")
+        BlpUser.registerSubclass()
+        HousingUser.registerSubclass()
+        
         if let tabBarController = self.window?.rootViewController as? UITabBarController {
 
             tabBarController.tabBar.barTintColor = UIColor.whiteColor()

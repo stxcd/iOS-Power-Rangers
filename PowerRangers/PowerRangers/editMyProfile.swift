@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 let profileImageKeyForDocumentsDirectory = "profileImage.png"
 
@@ -223,7 +224,6 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
                     print(photoLocation)
                     let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":photoLocation.path!, "class":c]
                     if saveImage(photoLocation) {
-                        saveProfile(profileDict)
                         return true
                     }
                 }
@@ -231,6 +231,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
         return false
     }
+    
 
     func saveImage(path:NSURL) -> Bool {
         
@@ -254,8 +255,8 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func saveProfile(d:[String:String]) {
-        let saveProfile = SaveInformation()
-        saveProfile.saveProfile(d)
+//        let saveProfile = SaveInformation()
+//        saveProfile.saveProfile(d)
     }
 }
 
