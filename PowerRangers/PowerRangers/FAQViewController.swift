@@ -44,13 +44,11 @@ class FAQViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tableView.backgroundColor = UIColor.synchronyLightGrey()
         setup()
     }
     
     func setup() {
         tableView.estimatedRowHeight = 44
-        tableView.separatorColor = UIColor.whiteColor()
         answerView.delegate = self
     }
     
@@ -141,14 +139,6 @@ extension FAQViewController: UITableViewDataSource, UITableViewDelegate {
             default:
                 return UITableViewCell()
             }
-            
-//            let backgroundview = UIView()
-//            backgroundview.backgroundColor = UIColor.synchronyLightGrey()
-//            cell.selectedBackgroundView = backgroundview
-//            cell.backgroundColor = UIColor.synchronyLightGrey()
-//            cell.contentView.backgroundColor = UIColor.synchronyLightGrey()
-            
-            
             
             return cell
         }

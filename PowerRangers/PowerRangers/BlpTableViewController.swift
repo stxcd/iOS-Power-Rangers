@@ -12,7 +12,6 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
     
     @IBOutlet var filterContainerView: UIView!
     
-    
     var blpArray = [Blp]()
     
     let blpArrayManager = BlpArrayManager()
@@ -180,6 +179,9 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
 extension BlpTableViewController:UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        dismissFilterContainer()
+        
         selectedTextField = textField
         if textField.tag == 0 {
             return checkIfSearchIsValid(textField.text, tag: 0)
@@ -189,6 +191,9 @@ extension BlpTableViewController:UITextFieldDelegate {
     }
 
 }
+
+
+
 
 extension BlpTableViewController {
     

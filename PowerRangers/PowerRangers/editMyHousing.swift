@@ -37,6 +37,8 @@ class editMyHousing: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
         buildButtonDictionary()
         
+
+        
     }
     
     func buildButtonDictionary() -> [Int:[UIButton]] {

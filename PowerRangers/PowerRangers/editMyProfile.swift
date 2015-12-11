@@ -62,7 +62,9 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
     }
+    
     
     func setup() {
         pickerViewContainer.setup()

@@ -110,7 +110,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
     func setLabels (){
         let housingProf = self.blpHousingArrayManager.array[ident]
         
-        fullNameLabel.text = "\(housingProf.firstName), \(housingProf.lastName)"
+        fullNameLabel.text = "\(housingProf.firstName) \(housingProf.lastName)"
     
         
         let useName = housingProf.lastName
@@ -119,7 +119,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         
         //pull correct price image
         let pricePull = housingProf.priceRange
-        let priceString = "price"+pricePull
+        let priceString = "Price"+pricePull
         let pricePic = UIImage(named: priceString)
         priceImage.image = pricePic
         
@@ -137,7 +137,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
             gymImage.image = gymPic
             gymCheck = true
         } else {
-            gymImage.hidden = true
+            gymImage.image = UIImage(named:"No Image Selected")
         }
         
         var poolCheck : Bool = false
@@ -149,7 +149,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
             poolImage.image = poolPic
             poolCheck = true
         } else {
-            poolImage.hidden = true
+            poolImage.image = UIImage(named:"No Image Selected")
         }
         
         //pull gender
@@ -174,7 +174,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
             laundryImage.image = laundryPic
             laundryCheck = true
         } else {
-            laundryImage.hidden = true
+            laundryImage.image = UIImage(named:"No Image Selected")
         }
         
         var parkingCheck : Bool = false
@@ -186,7 +186,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
             parkingImage.image = parkingPic
             parkingCheck = true
         } else {
-            parkingImage.hidden = true
+            parkingImage.image = UIImage(named:"No Image Selected")
         }
     
         if gymCheck && parkingCheck {
@@ -194,7 +194,7 @@ let blpHousingArrayManager = BlpHousingArrayManager()
         } else if laundryCheck && poolCheck {
             amenityRight.hidden = true
         } else {
-            amenityLeft.hidden = true
+
         }
         
     }
