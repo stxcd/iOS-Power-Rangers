@@ -40,7 +40,7 @@ class ViewMyHousingProfile: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        checkForHousingProfile()
     }
     
 //    private func createEntry() -> UIView {
@@ -84,7 +84,7 @@ class ViewMyHousingProfile: UIViewController {
             handleFilters(fs)
         }
         setProfileValues()
-        checkForHousingProfile()
+        
     }
     
     func checkForHousingProfile() {
@@ -143,17 +143,27 @@ class ViewMyHousingProfile: UIViewController {
         save.saveHousing(housingProfileDictionary)
     }
     
+    func setNoSelectionForAmenities() {
+        amen1.image = UIImage(named: "No Image Selected")
+        amen2.image = UIImage(named: "No Image Selected")
+        amen3.image = UIImage(named: "No Image Selected")
+        amen4.image = UIImage(named: "No Image Selected")
+    }
+    
     func handleFilters(filters:[String]) {
+        
+        setNoSelectionForAmenities()
+        
         for filters in filters {
             switch filters {
-            case "$1000":
-                buildHousingDictionary("$1000", v: "price1")
+            case "$0-$700":
+                buildHousingDictionary("$0-$700", v: "price1")
                 price.image = UIImage(named: "price1")
-            case "$1500":
-                buildHousingDictionary("$1500", v: "price2")
+            case "$700-$1200":
+                buildHousingDictionary("$700-$1200", v: "price2")
                 price.image = UIImage(named: "price2")
-            case "$2000":
-                buildHousingDictionary("2000", v: "price3")
+            case "1200+":
+                buildHousingDictionary("$1200+", v: "price3")
                 price.image = UIImage(named: "price3")
             case "Male":
                 buildHousingDictionary("Male", v: "gender0")
