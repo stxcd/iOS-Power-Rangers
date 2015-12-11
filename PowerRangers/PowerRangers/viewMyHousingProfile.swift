@@ -43,20 +43,20 @@ class ViewMyHousingProfile: UIViewController {
         
     }
     
-    private func createEntry() -> UIView {
-        
-        let stack = UIStackView()
-        stack.axis = .Horizontal
-        stack.alignment = .FirstBaseline
-        stack.distribution = .FillProportionally
-        stack.addArrangedSubview(amen1)
-        stack.addArrangedSubview(amen2)
-        stack.addArrangedSubview(amen3)
-        stack.addArrangedSubview(amen4)
-        
-        return stack
-        
-    }
+//    private func createEntry() -> UIView {
+//        
+//        let stack = UIStackView()
+//        stack.axis = .Horizontal
+//        stack.alignment = .FirstBaseline
+//        stack.distribution = .FillProportionally
+//        stack.addArrangedSubview(amen1)
+//        stack.addArrangedSubview(amen2)
+//        stack.addArrangedSubview(amen3)
+//        stack.addArrangedSubview(amen4)
+//        
+//        return stack
+//        
+//    }
     
     
     func validForm() {
@@ -128,11 +128,6 @@ class ViewMyHousingProfile: UIViewController {
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? editMyHousing {
             destination.parent = self
@@ -141,7 +136,6 @@ class ViewMyHousingProfile: UIViewController {
     
     func buildHousingDictionary(k:String, v:String) {
         housingProfileDictionary[k] = v
-        
     }
     
     func saveHousingProfile() {
