@@ -11,6 +11,7 @@
 		141373721BFFB7DB00678C5F /* BlpUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373711BFFB7DB00678C5F /* BlpUser.swift */; };
 		141373741BFFBA9A00678C5F /* BlpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */; };
 		141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141373751BFFBCB900678C5F /* BlpTableViewController.swift */; };
+		1421E4C61C233B92002A05CA /* Blp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421E4C51C233B92002A05CA /* Blp.swift */; settings = {ASSET_TAGS = (); }; };
 		144C1CE21BFBDC180006D509 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C1CE01BFBDC180006D509 /* DataManager.swift */; };
 		1491098D1C0CAB6F00511526 /* HousingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098C1C0CAB6F00511526 /* HousingUser.swift */; };
 		1491098F1C0CADD100511526 /* BlpHousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491098E1C0CADD100511526 /* BlpHousingViewController.swift */; };
@@ -70,6 +71,7 @@
 		141373711BFFB7DB00678C5F /* BlpUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpUser.swift; sourceTree = "<group>"; };
 		141373731BFFBA9A00678C5F /* BlpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewCell.swift; sourceTree = "<group>"; };
 		141373751BFFBCB900678C5F /* BlpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpTableViewController.swift; sourceTree = "<group>"; };
+		1421E4C51C233B92002A05CA /* Blp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blp.swift; sourceTree = "<group>"; };
 		144C1CE01BFBDC180006D509 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1491098C1C0CAB6F00511526 /* HousingUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingUser.swift; sourceTree = "<group>"; };
 		1491098E1C0CADD100511526 /* BlpHousingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlpHousingViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				1491098C1C0CAB6F00511526 /* HousingUser.swift */,
 				141373711BFFB7DB00678C5F /* BlpUser.swift */,
+				1421E4C51C233B92002A05CA /* Blp.swift */,
 				35E45A6D1C15E64500B64D50 /* BlpArrayManager.swift */,
 				140E3E111C161B0900B1DDE9 /* BlpHousingArrayManager.swift */,
 			);
@@ -422,6 +425,7 @@
 				14D450531C03EE0D002ECC4A /* viewMyHousingProfile.swift in Sources */,
 				35F7587B1C173BE3006701DE /* UIColor+Synchrony.swift in Sources */,
 				1491098D1C0CAB6F00511526 /* HousingUser.swift in Sources */,
+				1421E4C61C233B92002A05CA /* Blp.swift in Sources */,
 				141373721BFFB7DB00678C5F /* BlpUser.swift in Sources */,
 				35A8EAD51C1693280082AC17 /* AnswerView.swift in Sources */,
 				141373761BFFBCB900678C5F /* BlpTableViewController.swift in Sources */,

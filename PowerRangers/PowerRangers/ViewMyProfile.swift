@@ -46,11 +46,11 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     func getProfileValues() {
         
-//        let saveProfile = SaveInformation()
-//        if let dict = saveProfile.getProfile() {
-//            let profile = Blp(d: dict)
-//            setProfileValues(profile)
-//        }
+        let saveProfile = SaveInformation()
+        if let dict = saveProfile.getProfile() {
+            let profile = Blp(d: dict)
+            assignProfileValues(profile)
+        }
         
         if let name = nameLabel.text, email = emailLabel.text, number = numberLabel.text, location = locationLabel.text, c = classLabel.text {
             profileValues["name"] = name
@@ -61,8 +61,8 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
     }
     
-    func assignProfileValues(profile:BlpUser) {
-        nameLabel.text = profile.firstName
+    func assignProfileValues(profile:Blp) {
+        nameLabel.text = profile.name
         locationLabel.text = profile.location
         classLabel.text = profile.c
         numberLabel.text = profile.phoneNum
@@ -71,9 +71,9 @@ class ViewMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         roleLabel.text = profile.role
         aboutLabel.text = profile.interests
         nxtlocationLabel.text = profile.nextLocation
-        if let data = getDataForFile(profile.photo) {
-            profPic.image = UIImage(data: data)
-        }
+//        if let data = getDataForFile(profile.photo) {
+//            profPic.image = UIImage(data: data)
+//        }
     }
     
     func getDataForFile(f:String) -> NSData? {

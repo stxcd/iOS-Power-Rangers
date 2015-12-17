@@ -21,7 +21,7 @@ class BlpUser:PFObject, PFSubclassing {
     @NSManaged var role: String
     @NSManaged var interests: String
     @NSManaged var housing: String
-    @NSManaged var photo: String
+    //@NSManaged var photo: String
     @NSManaged var lastName: String
     @NSManaged var identifier: String
     @NSManaged var nextLocation: String
@@ -34,20 +34,22 @@ class BlpUser:PFObject, PFSubclassing {
     
     //MARK: Initialization
     
-//    init(d:[String:AnyObject]) {
-//        self.name = d["firstName"] as? String ?? ""
-//        self.lastName = d["lastName"] as? String ?? ""
-//        self.track = d["track"] as? String ?? ""
-//        self.role = d["role"] as? String ?? ""
-//        self.location = d["location"] as? String ?? ""
-//        self.interests = d["interests"] as? String ?? ""
-//        self.phoneNum = d["phoneNum"] as? String ?? ""
-//        self.email = d["email"] as? String ?? ""
-//        self.housing = d["housing"] as? String ?? ""
-//        self.photo = d["photo"] as? String ?? ""
-//        self.lastName = d["lastName"] as? String ?? ""
-//        self.identifier = d["identifier"] as? String ?? ""
-//        self.nextLocation = d["nextLocation"] as? String ?? ""
-//        self.c = d["class"] as? String ?? ""
-//    }
+    func create(d:[String:AnyObject]) {
+        self.firstName = d["firstName"] as? String ?? ""
+        self.lastName = d["lastName"] as? String ?? ""
+        self.track = d["track"] as? String ?? ""
+        self.role = d["role"] as? String ?? ""
+        self.location = d["location"] as? String ?? ""
+        self.interests = d["interests"] as? String ?? ""
+        self.phoneNum = d["phoneNum"] as? String ?? ""
+        self.email = d["email"] as? String ?? ""
+        self.housing = d["housing"] as? String ?? ""
+//        if let photo = d["photo"] as? PFFile {
+//            self.photo = photo
+//        }
+        self.lastName = d["lastName"] as? String ?? ""
+        self.identifier = d["identifier"] as? String ?? ""
+        self.nextLocation = d["nextLocation"] as? String ?? ""
+        self.c = d["class"] as? String ?? ""
+    }
 }

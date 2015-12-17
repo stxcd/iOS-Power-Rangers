@@ -25,10 +25,11 @@ class BlpTableViewController: UITableViewController, UISearchBarDelegate, UISear
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         grabNames()
         
     }
+    
+    
     
     func setup() {
         tableView.separatorColor = UIColor.whiteColor()

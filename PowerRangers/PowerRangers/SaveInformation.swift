@@ -28,6 +28,7 @@ class SaveInformation {
         defaults.setObject(housing, forKey: HousingKey)
         defaults.synchronize()        
     }
+
     
     func getProfile() -> [String:String]? {
         if let profile = defaults.objectForKey(ProfileKey) as? [String:String] {

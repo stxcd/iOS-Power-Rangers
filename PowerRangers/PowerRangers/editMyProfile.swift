@@ -11,6 +11,10 @@ import Parse
 
 let profileImageKeyForDocumentsDirectory = "profileImage.png"
 
+protocol PassSavedObjectBack:class {
+    func savedObjectId(id:String)
+}
+
 func getDocumentsURL() -> NSURL? {
     if let url = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).last {
         return url
@@ -44,6 +48,7 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     let imagePickerController = UIImagePickerController()
     var selectedImage:UIImage?
 
+    weak var delegate:PassSavedObjectBack?
     
     @IBOutlet var pickerViewContainer: PickerViewContainer!
     private var selectedTextField:UITextField?
@@ -69,9 +74,9 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
         pickerViewContainer.setup()
         pickerViewContainer.delegate = self
         
-        let tap = UITapGestureRecognizer(target: self, action: "didTapPhotoImageView")
-        tap.numberOfTapsRequired = 1
-        photoImageView.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: "didTapPhotoImageView")
+//        tap.numberOfTapsRequired = 1
+//        photoImageView.addGestureRecognizer(tap)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "sizeOfKeyboard:", name: "UIKeyboardWillShowNotification", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "sizeOfKeyboard:", name: "UIKeyboardWillHideNotification", object: nil)
@@ -158,44 +163,44 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     // MARK: UIImagePickerControllerDelegate
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-         //Dismiss the picker if the user canceled.
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+//    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+//         //Dismiss the picker if the user canceled.
+//        dismissViewControllerAnimated(true, completion: nil)
+//    }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        
-         //The info dictionary contains multiple representations of the image, and this uses the original.
-        
-        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        
-        // Set photoImageView to display the selected image.
-        
-        photoImageView.image = selectedImage
-        self.selectedImage = selectedImage
-        
-        //Dismiss the picker.
-        
-        dismissViewControllerAnimated(true, completion: nil)
-        
-    }
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+//        
+//         //The info dictionary contains multiple representations of the image, and this uses the original.
+//        
+//        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+//        
+//        // Set photoImageView to display the selected image.
+//        
+//        photoImageView.image = selectedImage
+//        self.selectedImage = selectedImage
+//        
+//        //Dismiss the picker.
+//        
+//        dismissViewControllerAnimated(true, completion: nil)
+//        
+//    }
     
-    func didTapPhotoImageView() {
-        
-        //Hide the keyboard.
-        
-        nameTextField.resignFirstResponder()
-        
-        //Only allow photos to be picked, not taken.
-        
-        self.imagePickerController.sourceType = .PhotoLibrary
-        
-        //Make sure ViewController is notified when the user picks an image.
-        
-        self.imagePickerController.delegate = self
-        
-        presentViewController(self.imagePickerController, animated: true, completion: nil)
-    }
+//    func didTapPhotoImageView() {
+//        
+//        //Hide the keyboard.
+//        
+//        nameTextField.resignFirstResponder()
+//        
+//        //Only allow photos to be picked, not taken.
+//        
+//        self.imagePickerController.sourceType = .PhotoLibrary
+//        
+//        //Make sure ViewController is notified when the user picks an image.
+//        
+//        self.imagePickerController.delegate = self
+//        
+//        presentViewController(self.imagePickerController, animated: true, completion: nil)
+//    }
     
      //MARK: Actions
     
@@ -222,10 +227,11 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
             }else {
                 if let photoLocation = fileInDocumentsDirectory(profileImageKeyForDocumentsDirectory) {
                     print(photoLocation)
-                    let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "photo":photoLocation.path!, "class":c]
-                    if saveImage(photoLocation) {
-                        return true
-                    }
+                    let profileDict = ["firstName": name,"track":track,"phoneNum":phone,"email":email,"role":rotation,"interests":aboutme,"location":loc, "nextLocation":next, "housing":"NO", "class":c]
+                    saveProfile(profileDict)
+                    saveUserToParse(profileDict)
+                    print(profileDict)
+                    return true
                 }
             }
         }
@@ -233,32 +239,73 @@ class editMyProfile: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
 
-    func saveImage(path:NSURL) -> Bool {
-        
-        var result = false
-        
-        if let image = selectedImage {
-            let imageData = UIImagePNGRepresentation(image)
-            if imageData!.writeToURL(path, atomically: true) {
-                result = true
-            }
-        }
-        
-        return result
-    }
-    
-    func loadImageFromPath(path:String) -> UIImage? {
-        if let image = UIImage(contentsOfFile: path) {
-            return image
-        }
-        return nil
-    }
-    
+//    func saveImage(path:NSURL) -> Bool {
+//        
+//        var result = false
+//        
+//        if let image = selectedImage {
+//            let imageData = UIImagePNGRepresentation(image)
+//            if imageData!.writeToURL(path, atomically: true) {
+//                result = true
+//            }
+//        }
+//        
+//        return result
+//    }
+//    
+//    func loadImageFromPath(path:String) -> UIImage? {
+//        if let image = UIImage(contentsOfFile: path) {
+//            return image
+//        }
+//        return nil
+//    }
+//    
     func saveProfile(d:[String:String]) {
-//        let saveProfile = SaveInformation()
-//        saveProfile.saveProfile(d)
+        let saveProfile = SaveInformation()
+        saveProfile.saveProfile(d)
+        
+        let profile = BlpUser()
+        
+        
+        profile.create(d)
+        profile.saveInBackgroundWithBlock { (success, error) -> Void in
+                    }
     }
+    
+//    func updateProfile(d:[String:String]) {
+//        let profile = PFObject(className: "BlpUser")
+//        
+//        profile.saveInBackgroundWithBlock { (success, error) -> Void in
+//            if success {
+//                print("object successfully updated")
+//            }
+//        }
+//        
+//    }
+    
+    func saveUserToParse(d: [String:String]){
+        let count = d.count
+        print(count)
+        let d = PFObject(className: "BlpUser")
+        print(d)
+        if count > 0 {
+        d.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                print("saved")
+            } else {
+                print("no dice")
+            }
+            }
+        } else {
+            print("count not nil")
+        }
+    }
+    
+    
 }
+
+
 
 extension editMyProfile:DismissPickerView {
     func dismissPickerView(s:String) {
