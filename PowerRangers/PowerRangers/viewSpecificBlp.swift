@@ -101,9 +101,9 @@ class viewSpecificBlp: UIViewController {
             }
         }
         
-        DataManager.grabHousing { (data) -> Void in
+        DataManager.getHousing { (housingData) -> Void in
             do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+                let json = try NSJSONSerialization.JSONObjectWithData(housingData, options: .AllowFragments)
                 
                 if let blps = json["housing"] as? [[String: AnyObject]] {
                     for blps in blps {
